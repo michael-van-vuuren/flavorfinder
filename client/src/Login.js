@@ -1,13 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import App from "./App";
+import { MainContext } from "./MainContext"
 import "./App.css";
 
 
 
 
 function Login() {
-  const [clicked, setClicked] = useState(false);
-  if (clicked) {
+  const { login, setLogin } = useContext(MainContext);
+
+  if (login) {
     return (
       <App />
     )
@@ -15,7 +17,7 @@ function Login() {
   else {
     return (
       <div style={{ display: "flex", justifyContent: "center", marginTop: "10%" }}>
-        <button onClick={() => { setClicked(true) }}>Login</button>
+        <button onClick={() => { setLogin(true) }}>Login</button>
       </div>
     );
   }
