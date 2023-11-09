@@ -1,14 +1,14 @@
-import DatabaseDAO from '../dao/databaseDAO.js'
+import PantryDAO from '../dao/pantryDAO.js'
 import UnitConverter from '../utility/unitconverter.js'
 
-export default class DatabaseController {
+export default class PantryController {
   static async apiAddUser(req, res, next) {
     try {
       const user = req.body.user
       const pantry = req.body.pantry
       const pantrySI = UnitConverter.convertPantryToSI(pantry)
 
-      const userHandle = await DatabaseDAO.addUser(
+      const userHandle = await PantryDAO.addUser(
         user,
         pantrySI
       )
@@ -22,7 +22,7 @@ export default class DatabaseController {
     try {
       let id = req.params.id || {}
       
-      let userData = await DatabaseDAO.getUserData(id)
+      let userData = await PantryDAO.getUserData(id)
       if (!userData) {
         res.status(404).json({ error: 'cannot find user' })
         return
@@ -39,16 +39,16 @@ export default class DatabaseController {
       const userId = req.params.id
       const newPantry = req.body.pantry
 
-      const existingUserData = await DatabaseDAO.getUserData(userId)
+      const existingUserData = await PantryDAO.getUserData(userId)
       if (!existingUserData) {
         res.status(400).json({ error: 'cannot find user' })
         return
       }
 
       const newPantrySI = UnitConverter.convertPantryToSI(newPantry)
-      const combinedPantry = DatabaseController.combinePantries(existingUserData.pantry, newPantrySI)
+      const combinedPantry = PantryController.combinePantries(existingUserData.pantry, newPantrySI)
 
-      const result = await DatabaseDAO.updateUserPantry(userId, combinedPantry)
+      const result = await PantryDAO.updateUserPantry(userId, combinedPantry)
       if (result.error) {
         res.status(500).json({ error: result.error })
         return
@@ -87,7 +87,7 @@ export default class DatabaseController {
         return
       }
 
-      const result = await DatabaseDAO.deletePantryItem(userId, ingredientIdToDelete)
+      const result = await PantryDAO.deletePantryItem(userId, ingredientIdToDelete)
       if (result.modifiedCount === 0) {
         res.status(400).json({ error: 'user does not have that item' })
         return

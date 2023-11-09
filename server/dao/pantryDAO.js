@@ -3,7 +3,7 @@ const ObjectId = mongodb.ObjectId
 
 let pantrydb
 
-export default class DatabaseDAO {
+export default class PantryDAO {
   static async injectDB(conn) {
     if (pantrydb) {
       return

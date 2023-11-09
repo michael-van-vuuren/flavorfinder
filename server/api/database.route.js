@@ -1,14 +1,23 @@
 import express from "express"
-import DatabaseCtrl from "./database.controller.js"
+import PantryCtrl from "./pantry.controller.js"
+import IngredientCtrl from "./ingredient.controller.js"
 
 const router = express.Router()
 
-// create new user
-router.route("/new").post(DatabaseCtrl.apiAddUser)
-// get, update, delete items from user's pantry
+// create new user (flavorfinder.pantries)
+router.route("/new")
+  .post(PantryCtrl.apiAddUser)
+// get, update, delete items from user's pantry (flavorfinder.pantries)
 router.route("/:id")
-  .get(DatabaseCtrl.apiGetPantry)
-  .put(DatabaseCtrl.apiUpdatePantry)
-  .delete(DatabaseCtrl.apiDeletePantryItem)
+  .get(PantryCtrl.apiGetPantry)
+  .put(PantryCtrl.apiUpdatePantry)
+  .delete(PantryCtrl.apiDeletePantryItem)
+
+// get ingredients for dropdown (flavorfinder.ingredients)
+router.route("/ingredients")
+  .get(IngredientCtrl.apiGetIngredients)
+// get ingredients for dropdown (flavorfinder.ingredients)
+router.route("/ingredients/images/:id")
+  .get(IngredientCtrl.apiGetIngredientImage)
 
 export default router
