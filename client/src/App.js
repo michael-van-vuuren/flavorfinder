@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <div style={{ display: "flex", justifyContent: "flex-end", padding: "5px" }}>
-        <button onClick={() => { setLogin(false) }}>
+        <button id="more" onClick={() => { setLogin(false) }}>
           Logout
         </button>
       </div>
