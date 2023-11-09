@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./App.css";
-import RecipeRecommender from './RecipeRecommender';
-import Pantry from './Pantry';
+import Recommender from './recommender/Recommender';
+import Pantry from './pantry/Pantry';
 
 function Tabs() {
 
@@ -26,7 +26,7 @@ function Tabs() {
             <div className="content-tabs">
 
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <RecipeRecommender />
+                    <Recommender />
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
                     <Pantry />

@@ -17,7 +17,7 @@ function Login() {
   else {
     return (
       <div style={{ display: "flex", justifyContent: "center", marginTop: "10%" }}>
-        <button onClick={() => { setLogin(true) }}>Login</button>
+        <button id="more" onClick={() => { setLogin(true) }}>Login</button>
       </div>
     );
   }

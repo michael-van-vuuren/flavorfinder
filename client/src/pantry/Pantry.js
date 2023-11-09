@@ -1,9 +1,10 @@
 import React from 'react';
+import "./Pantry.css";
 
 const Pantry = () => {
   return (
     <div>
-      <h2>Add ingredients</h2>
+      <h2 id="pantry-title">Add ingredients</h2>
         <select id="fruitSelect">
         <option value="apple">Apple</option>
         <option value="banana">Banana</option>
