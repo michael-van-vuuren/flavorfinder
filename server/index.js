@@ -1,7 +1,8 @@
-import app from "./server.js"
+import app from './server.js'
 import 'dotenv/config'
-import mongodb from "mongodb"
-import PantryDAO from "./dao/pantryDAO.js"
+import mongodb from 'mongodb'
+import PantryDAO from './dao/pantryDAO.js'
+import IngredientDAO from './dao/ingredientDAO.js'
 
 const MongoClient = mongodb.MongoClient
 const mongo_username = process.env['MONGO_USERNAME']
@@ -22,6 +23,7 @@ MongoClient.connect(
   })
   .then(async client => {
     await PantryDAO.injectDB(client)
+    await IngredientDAO.injectDB(client)
     app.listen(port, () => {
       console.log(`listening on port ${port}`)
     })

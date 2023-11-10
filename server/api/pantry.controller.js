@@ -18,6 +18,7 @@ export default class PantryController {
     }
   }
 
+  // res = [{"ingredientId":"..","quantity":"..","units":".."},..]
   static async apiGetPantry(req, res, next) {
     try {
       let id = req.params.id || {}
