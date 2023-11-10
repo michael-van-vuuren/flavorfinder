@@ -29,4 +29,32 @@ export default class IngredientDAO {
       return { error: e }
     }
   }
+
+  static async getIngredientsNoImage() {
+    try {
+      const projection = { _id: 1, name: 1 }
+
+      return await ingredientdb.find(
+        {}, { projection }
+      ).toArray()  
+    } catch (e) {
+      console.error(`Unable to get ingredients: ${e}`)
+      return { error: e }
+    }
+  }
+
+  static async getIngredientImage(ingredientId) {
+    try {
+      const query = { _id: new ObjectId(ingredientId) }
+      const projection = { _id: 0, image: 1 }
+
+      const result = await ingredientdb.find(
+        query, { projection }
+      ).toArray()
+      return result[0] ? result[0].image : ''
+    } catch (e) {
+      console.error(`Unable to get ingredients: ${e}`)
+      return { error: e }
+    }
+  }
 }
