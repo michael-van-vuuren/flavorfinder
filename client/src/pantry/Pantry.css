@@ -1,3 +1,18 @@
 #pantry-title {
     color:green;
 }
+
+.pantry-buttons { 
+    display: flex;
+    flex-direction: row;
+    height: 23px;
+} 
+ 
+.button { 
+    margin-right: 10px;
+}
+
+.add-button { 
+    margin-right: 10px;
+    padding: 4px;
+}
