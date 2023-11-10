@@ -6,6 +6,7 @@ import "./App.css";
 
 
 
+
 function Login() {
   const { login, setLogin } = useContext(MainContext);
 
@@ -16,9 +17,13 @@ function Login() {
   }
   else {
     return (
-      <div style={{ display: "flex", justifyContent: "center", marginTop: "10%" }}>
-        <button id="more" onClick={() => { setLogin(true) }}>Login</button>
+      <div>
+        <h1 style={{ display: "flex", justifyContent: "center", marginTop: "1%" }}>FlavorFinder</h1>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "10%", borderStyle: "solid", marginLeft: "10%", marginRight: "10%", padding: "10%", borderColor: "#d4d4d4", borderRadius: "10px" }}>
+          <button id="more" onClick={() => { setLogin(true) }}>Login</button>
+        </div>
       </div>
+
     );
   }
 
