@@ -6,11 +6,11 @@ function DropDown({ toSelectUnits }) {
             <select id="unitSelect" onChange= {event => toSelectUnits(event.target.value)}>
                 <option>Select Units</option>
                 <option>oz</option>
-                <option>fl oz</option>
-                <option>grams</option>
+                <option>fl-oz</option>
+                <option>g</option>
                 <option>lb</option>
                 <option>ml</option>
-                <option>L</option>
+                <option>l</option>
             </select>
 	    </div>
     );

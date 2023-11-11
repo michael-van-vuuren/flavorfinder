@@ -4,8 +4,18 @@ import Recommender from './recommender/Recommender';
 import Pantry from './pantry/Pantry';
 
 function Tabs() {
-
     const [toggleState, setToggleState] = useState(1);
+    const [stuff, setStuff] = useState([])
+
+    const fetchIngredients = async () => {
+        try {
+            const response = await fetch('http://localhost:3001/api/v1/ingredients')
+            const stuff = await response.json()
+            setStuff(stuff)
+        } catch (e) {
+            console.error('error fetching ingredients:', e)
+        }
+    }
 
     const toggleTab = (index) => {
         setToggleState(index);
@@ -19,7 +29,7 @@ function Tabs() {
                 onClick={() => toggleTab(1)}
                 >Recipe Recommender</div>
                 <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                onClick={() => toggleTab(2)}
+                onClick={() => {toggleTab(2); fetchIngredients()}}
                 >Pantry</div>
             </div>
 
@@ -29,7 +39,7 @@ function Tabs() {
                     <Recommender />
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
-                    <Pantry />
+                    <Pantry stuff={stuff} />
                 </div>
             </div>
 

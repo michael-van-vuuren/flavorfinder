@@ -55,7 +55,7 @@ body {
   transform: translateX(-50%);
   width: calc(100% + 2px);
   height: 5px;
-  background: rgba(102, 235, 124, 0.708);
+  background: rgba(255, 195, 16, 0.708);
 }
 
 
