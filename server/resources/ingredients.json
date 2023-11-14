@@ -1,0 +1,52 @@
+[
+  {
+    "_id": 1,
+    "name": "apple",
+    "image": "https://openmoji.org/data/color/svg/1F34E.svg"
+  },
+  {
+    "_id": 2,
+    "name": "banana",
+    "image": "https://openmoji.org/data/color/svg/1F34C.svg"
+  },
+  {
+    "_id": 3,
+    "name": "carrot",
+    "image": "https://openmoji.org/data/color/svg/1F955.svg"
+  },
+  {
+    "_id": 4,
+    "name": "onion",
+    "image": "https://openmoji.org/data/color/svg/1F9C5.svg"
+  },
+  {
+    "_id": 5,
+    "name": "milk",
+    "image": "https://openmoji.org/data/color/svg/E153.svg"
+  },
+  {
+    "_id": 6,
+    "name": "chicken wing",
+    "image": "https://openmoji.org/data/color/svg/1F357.svg"
+  },
+  {
+    "_id": 7,
+    "name": "pear",
+    "image": "https://openmoji.org/data/color/svg/1F350.svg"
+  },
+  {
+    "_id": 8,
+    "name": "coconut",
+    "image": "https://openmoji.org/data/color/svg/1F965.svg"
+  },
+  {
+    "_id": 9,
+    "name": "watermelon",
+    "image": "https://openmoji.org/data/color/svg/1F349.svg"
+  },
+  {
+    "_id": 10,
+    "name": "lemon",
+    "image": "https://openmoji.org/data/color/svg/1F34B.svg"
+  }
+]
