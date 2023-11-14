@@ -15,9 +15,9 @@ router.route('/users/:id')
 
 // get ingredients for dropdown (flavorfinder.ingredients)
 router.route('/ingredients')
-  .get(IngredientCtrl.apiGetIngredientsNoImage)
+  .get(IngredientCtrl.serverGetIngredientsNoImage)
 // get ingredient image when it is added (flavorfinder.ingredients)
 router.route('/ingredients/images/:id')
-  .get(IngredientCtrl.apiGetIngredientImage)
+  .get(IngredientCtrl.serverGetIngredientImage)
 
 export default router
