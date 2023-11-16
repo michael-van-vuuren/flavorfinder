@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
+import pluralizeIngredient from '../utility/pluralizeIngredient'
 import "./Pantry.css"
 import SearchBar from "./SearchBar.js"
 import DropDown from "./DropDown.js"
@@ -8,6 +9,9 @@ const Pantry = ({ stuff }) => {
   const [quantityToAdd, setQuantityToAdd] = useState("")
   const [unitsToAdd, setUnitsToAdd] = useState("Select Units")
   const [addedIngredients, setAddedIngredients] = useState([])
+
+  const [scrollToBottom, setScrollToBottom] = useState(false)
+  const ingredientListRef = useRef(null)
 
   const getIngredientNameById = (id) => {
     const ingredient = stuff.find(item => item._id === id)
@@ -55,9 +59,28 @@ const Pantry = ({ stuff }) => {
           image: imageData.image,
         },
       ])
+
+      setScrollToBottom(true)
     } else {
       console.log("Invalid input")
     }
+  }
+
+  useEffect(() => {
+    if (scrollToBottom && ingredientListRef.current) {
+      ingredientListRef.current.scrollTop = ingredientListRef.current.scrollHeight
+      setScrollToBottom(false)
+    }
+  }, [scrollToBottom])
+
+  const handleRemove = (index) => {
+    const updatedIngredients = [...addedIngredients]
+    updatedIngredients.splice(index, 1)
+    setAddedIngredients(updatedIngredients)
+  }
+
+  const handleConfirm = () => {
+    console.log(`confirmed: ${addedIngredients}`)
   }
 
   const fetchImage = async (ingredientId) => {
@@ -99,20 +122,26 @@ const Pantry = ({ stuff }) => {
       </div>
       {/* Display added ingredients */}
       {addedIngredients.length > 0 && (
-        <div className='ingredient-list'>
+        <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
             {addedIngredients.map((ingredient, index) => (
-              <li key={index}>
+              <li key={index} className='highlight'>
                 <span style={{ color: '#99e386', fontWeight: 'bold' }}>+&ensp;</span>
-                {ingredient.quantity} {ingredient.units} of {getIngredientNameById(ingredient.ingredientId)}s
+                {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(getIngredientNameById(ingredient.ingredientId), ingredient.units)}
                 {ingredient.image && (
                   <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
                 )}
+                <button className="remove-button" onClick={() => handleRemove(index)}>Remove</button>
               </li>
             ))}
           </ul>
         </div>
       )}
+      <div>
+        <button className="confirm-button" onClick={handleConfirm}>
+          Confirm
+        </button>
+      </div>
     </div>
   )
 }
