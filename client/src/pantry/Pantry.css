@@ -22,17 +22,24 @@ button:active {
     background-color: #99e386;
 }
 
+.remove-button:hover {
+    color: white;
+    background-color: #ed5b5b;
+}
+
+.confirm-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+
 button {
-    background-color: white;
+    background-color: rgb(239, 239, 239);
     padding: 10px;
     vertical-align: top;
     box-shadow: 2px 1px 2px gray;
     margin: 4px 10px 4px 10px;
 }
-
-/* .ingredient-list {
-    padding-top: 20px;
-} */
 
 ul {
     list-style-type: none;
@@ -41,6 +48,8 @@ ul {
 .ingredient-list {
     list-style-type: none;
     padding: 0;
+    height: 300px;
+    overflow-y: scroll;
 }
 
 .ingredient-list li {
@@ -52,4 +61,18 @@ ul {
 .ingredient-list li img {
     width: 40px;
     margin-left: 10px;
+}
+
+@keyframes highlight {
+    0% {
+        background-color: #99e386;
+    }
+
+    100% {
+        background-color: transparent;
+    }
+}
+
+.ingredient-list li.highlight {
+    animation: highlight 1.5s;
 }
