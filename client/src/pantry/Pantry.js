@@ -1,57 +1,73 @@
-import React, { useState } from 'react';
-import "./Pantry.css";
-import SearchBar from "./SearchBar.js";
-import DropDown from "./DropDown.js";
+import React, { useState, useEffect } from 'react'
+import "./Pantry.css"
+import SearchBar from "./SearchBar.js"
+import DropDown from "./DropDown.js"
 
 const Pantry = ({ stuff }) => {
-  const [ingredientIdToAdd, setIngredientIdToAdd] = useState("");
-  const [quantityToAdd, setQuantityToAdd] = useState("");
-  const [unitsToAdd, setUnitsToAdd] = useState("Select Units");
-  const [addedIngredients, setAddedIngredients] = useState([]);
+  const [ingredientIdToAdd, setIngredientIdToAdd] = useState("")
+  const [quantityToAdd, setQuantityToAdd] = useState("")
+  const [unitsToAdd, setUnitsToAdd] = useState("Select Units")
+  const [addedIngredients, setAddedIngredients] = useState([])
 
   const getIngredientNameById = (id) => {
-    const ingredient = stuff.find(item => item._id === id);
-    return ingredient ? ingredient.name : '';
-  };
+    const ingredient = stuff.find(item => item._id === id)
+    return ingredient ? ingredient.name : ''
+  }
 
   const handleIngredient = (id) => {
-    setIngredientIdToAdd(id);
-  };
+    setIngredientIdToAdd(id)
+  }
 
   const handleQuantity = (event) => {
-    const quantity = event.target.value;
-    setQuantityToAdd(quantity);
-  };
+    const quantity = event.target.value
+    setQuantityToAdd(quantity)
+  }
 
   const handleUnits = (units) => {
-    setUnitsToAdd(units);
-  };
+    setUnitsToAdd(units)
+  }
 
   const isValidIngredientId = (id) => {
-    return stuff.some((item) => item._id === id);
-  };
+    return stuff.some((item) => item._id === id)
+  }
 
   const isValidQuantity = (quantity) => {
-    return !isNaN(+quantity);
-  };
+    return !isNaN(+quantity)
+  }
 
   // TODO: When the Add button is clicked, send object to database
-  const handleAdd = () => {
+  const handleAdd = async () => {
     if (
       unitsToAdd !== "Select Units" &&
       isValidQuantity(quantityToAdd) &&
       isValidIngredientId(ingredientIdToAdd)
     ) {
-      const newIngredient = {
-        ingredientId: ingredientIdToAdd,
-        quantity: quantityToAdd,
-        units: unitsToAdd,
-      };
-      setAddedIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+      // Fetch image
+      const imageData = await fetchImage(ingredientIdToAdd)
+
+      // Add ingredient with image to state
+      setAddedIngredients((prevIngredients) => [
+        ...prevIngredients,
+        {
+          ingredientId: ingredientIdToAdd,
+          quantity: quantityToAdd,
+          units: unitsToAdd,
+          image: imageData.image,
+        },
+      ])
     } else {
-      console.log("Invalid input");
+      console.log("Invalid input")
     }
-  };
+  }
+
+  const fetchImage = async (ingredientId) => {
+    try {
+      const response = await fetch(`http://localhost:3001/api/v1/ingredients/images/${ingredientId}`)
+      return await response.json()
+    } catch (error) {
+      console.error('Error fetching image:', error)
+    }
+  }
 
   return (
     <div>
@@ -87,14 +103,18 @@ const Pantry = ({ stuff }) => {
           <ul>
             {addedIngredients.map((ingredient, index) => (
               <li key={index}>
-                <span style={{ color: '#99e386', fontWeight: 'bold' }}>+</span> {ingredient.quantity} {ingredient.units} of {getIngredientNameById(ingredient.ingredientId)}s
+                <span style={{ color: '#99e386', fontWeight: 'bold' }}>+&ensp;</span>
+                {ingredient.quantity} {ingredient.units} of {getIngredientNameById(ingredient.ingredientId)}s
+                {ingredient.image && (
+                  <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
+                )}
               </li>
             ))}
           </ul>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Pantry;
+export default Pantry

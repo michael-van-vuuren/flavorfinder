@@ -36,7 +36,7 @@ export default class IngredientCtrl {
             const selectedIngredient = data.find((item) => item._id == id);
 
             if (selectedIngredient) {
-                res.json(selectedIngredient.image);
+                res.json({image: selectedIngredient.image});
             } else {
                 res.status(404).json({ error: 'ingredient not found' });
             }

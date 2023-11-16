@@ -8,7 +8,6 @@ function SearchBar({ placeholder, ingredients, toSelectIngredient }) {
 
   const handleFilter = (event) => {
     const searchInput = event.target.value.toLowerCase()
-    console.log(searchInput)
     setIngredientEntered(searchInput)
     setShowSuggestions(true)
 
