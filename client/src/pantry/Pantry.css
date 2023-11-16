@@ -30,10 +30,26 @@ button {
     margin: 4px 10px 4px 10px;
 }
 
-.ingredient-list {
+/* .ingredient-list {
     padding-top: 20px;
-}
+} */
 
 ul {
     list-style-type: none;
+}
+
+.ingredient-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.ingredient-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.ingredient-list li img {
+    width: 40px;
+    margin-left: 10px;
 }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import "./App.css";
 import Recommender from './recommender/Recommender';
 import Pantry from './pantry/Pantry';
+import RecipePool from './recipe-pool/RecipePool';
 
 function Tabs() {
     const [toggleState, setToggleState] = useState(1);
@@ -30,6 +31,9 @@ function Tabs() {
                 >Recipe Recommender</div>
                 <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
                 onClick={() => {toggleTab(2); fetchIngredients()}}
+                >Recipe Pool</div>
+                <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                onClick={() => {toggleTab(3); fetchIngredients()}}
                 >Pantry</div>
             </div>
 
@@ -39,6 +43,9 @@ function Tabs() {
                     <Recommender />
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
+                    <RecipePool />
+                </div>
+                <div className={toggleState === 3 ? "content active-content" : "content"}>
                     <Pantry stuff={stuff} />
                 </div>
             </div>
