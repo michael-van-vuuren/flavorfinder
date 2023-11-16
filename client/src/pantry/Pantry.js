@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import pluralizeIngredient from '../utility/pluralizeIngredient'
+import pluralizeIngredient from '../utility/pluralizeIngredient.js'
 import "./Pantry.css"
 import SearchBar from "./SearchBar.js"
 import DropDown from "./DropDown.js"
