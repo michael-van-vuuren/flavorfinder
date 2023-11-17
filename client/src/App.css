@@ -84,12 +84,3 @@ button {
 .active-content {
   display: block;
 }
-
-#more {
-  background:rgba(128, 128, 128, 0.326);
-  border:none;
-  padding: 10px;
-  color:#000;
-  font-family:Verdana, Geneva, sans-serif;
-  cursor:pointer;
-}

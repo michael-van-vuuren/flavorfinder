@@ -4,10 +4,11 @@ import "./Pantry.css"
 import SearchBar from "./SearchBar.js"
 import DropDown from "./DropDown.js"
 
-const Pantry = ({ stuff }) => {
+const Pantry = ({ stuff, setAddingIngredients }) => {
   const [ingredientIdToAdd, setIngredientIdToAdd] = useState("")
   const [quantityToAdd, setQuantityToAdd] = useState("")
   const [unitsToAdd, setUnitsToAdd] = useState("Select Units")
+  const [addedIngredientsDisplay, setAddedIngredientsDisplay] = useState([])
   const [addedIngredients, setAddedIngredients] = useState([])
 
   const [scrollToBottom, setScrollToBottom] = useState(false)
@@ -39,6 +40,12 @@ const Pantry = ({ stuff }) => {
     return !isNaN(+quantity)
   }
 
+  const createIngredient = () => ({
+    ingredientId: ingredientIdToAdd,
+    quantity: parseInt(quantityToAdd),
+    units: unitsToAdd,
+  })
+
   // TODO: When the Add button is clicked, send object to database
   const handleAdd = async () => {
     if (
@@ -46,20 +53,14 @@ const Pantry = ({ stuff }) => {
       isValidQuantity(quantityToAdd) &&
       isValidIngredientId(ingredientIdToAdd)
     ) {
-      // Fetch image
+      // Create ingredient
+      const ingredientObj = createIngredient()
       const imageData = await fetchImage(ingredientIdToAdd)
-
-      // Add ingredient with image to state
-      setAddedIngredients((prevIngredients) => [
-        ...prevIngredients,
-        {
-          ingredientId: ingredientIdToAdd,
-          quantity: quantityToAdd,
-          units: unitsToAdd,
-          image: imageData.image,
-        },
-      ])
-
+      // Sent to database
+      setAddedIngredients((prevIngredients) => [...prevIngredients, ingredientObj])
+      // Used in frontend ingredient display
+      setAddedIngredientsDisplay((prevIngredients) => [...prevIngredients, { ...ingredientObj, image: imageData.image }])
+      
       setScrollToBottom(true)
     } else {
       console.log("Invalid input")
@@ -74,13 +75,38 @@ const Pantry = ({ stuff }) => {
   }, [scrollToBottom])
 
   const handleRemove = (index) => {
-    const updatedIngredients = [...addedIngredients]
+    const updatedIngredients = [...addedIngredientsDisplay]
     updatedIngredients.splice(index, 1)
-    setAddedIngredients(updatedIngredients)
+    setAddedIngredientsDisplay(updatedIngredients)
   }
 
-  const handleConfirm = () => {
-    console.log(`confirmed: ${addedIngredients}`)
+  const handleConfirm = async (id, addToPantry) => {
+    console.log(addedIngredients)
+    setAddedIngredients([])
+    setAddedIngredientsDisplay([])
+    try {
+      const url = `http://localhost:3001/api/v1/users/${id}`;
+      const response = await fetch(url, {
+        method: 'PUT',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          pantry: addToPantry,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`Failed to update pantry: ${response.statusText}`);
+      }
+
+      const result = await response.json();
+      console.log(result);
+
+      setAddingIngredients(false);
+    } catch (e) {
+      console.error('Error updating pantry:', e.message);
+    }
   }
 
   const fetchImage = async (ingredientId) => {
@@ -105,7 +131,6 @@ const Pantry = ({ stuff }) => {
         </div>
         <div className="button 2">
           <input
-            type="text"
             placeholder="Enter a Quantity..."
             onChange={handleQuantity}
             value={quantityToAdd}
@@ -121,10 +146,10 @@ const Pantry = ({ stuff }) => {
         </div>
       </div>
       {/* Display added ingredients */}
-      {addedIngredients.length > 0 && (
+      {addedIngredientsDisplay.length > 0 && (
         <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
-            {addedIngredients.map((ingredient, index) => (
+            {addedIngredientsDisplay.map((ingredient, index) => (
               <li key={index} className='highlight'>
                 <span style={{ color: '#99e386', fontWeight: 'bold' }}>+&ensp;</span>
                 {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(getIngredientNameById(ingredient.ingredientId), ingredient.units)}
@@ -138,7 +163,9 @@ const Pantry = ({ stuff }) => {
         </div>
       )}
       <div>
-        <button className="confirm-button" onClick={handleConfirm}>
+        {/* michael - 6556b9a6b7de3c37de02c24b
+            tom     - 6556d131755e12ed18838678 */}
+        <button className="confirm-button" onClick={() => handleConfirm('6556d131755e12ed18838678', addedIngredients)}>
           Confirm
         </button>
       </div>

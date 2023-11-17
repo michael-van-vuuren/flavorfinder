@@ -5,8 +5,9 @@ import Pantry from './pantry/Pantry';
 import RecipePool from './recipe-pool/RecipePool';
 
 function Tabs() {
-    const [toggleState, setToggleState] = useState(1);
+    const [toggleState, setToggleState] = useState(1)
     const [stuff, setStuff] = useState([])
+    const [addingIngredients, setAddingIngredients] = useState(false)
 
     const fetchIngredients = async () => {
         try {
@@ -22,18 +23,22 @@ function Tabs() {
         setToggleState(index);
     }
 
+    const handleButtonClick = () => {
+        setAddingIngredients(true);
+      };
+
     return (
         <div className="container">
 
             <div className="bloc-tabs">
                 <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-                onClick={() => toggleTab(1)}
+                    onClick={() => toggleTab(1)}
                 >Recipe Recommender</div>
                 <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                onClick={() => {toggleTab(2); fetchIngredients()}}
+                    onClick={() => { toggleTab(2); fetchIngredients() }}
                 >Recipe Pool</div>
                 <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                onClick={() => {toggleTab(3); fetchIngredients()}}
+                    onClick={() => { toggleTab(3); fetchIngredients() }}
                 >Pantry</div>
             </div>
 
@@ -46,7 +51,14 @@ function Tabs() {
                     <RecipePool />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
-                    <Pantry stuff={stuff} />
+                    <div>
+                        {addingIngredients ? (
+                            <Pantry stuff={stuff} setAddingIngredients={setAddingIngredients} />
+                        ) : (
+                            <button onClick={handleButtonClick}>Add Ingredients</button>
+                        )}
+                    </div>
+                    {/* <Pantry stuff={stuff} /> */}
                 </div>
             </div>
 
