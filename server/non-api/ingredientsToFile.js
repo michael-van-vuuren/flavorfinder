@@ -18,7 +18,7 @@ function saveData(filePath, data) {
 }
 
 function findNextId(existingData) {
-    return existingData.length > 0 ? Math.max(...existingData.map(item => item.id)) + 1 : 1
+    return existingData.length > 0 ? Math.max(...existingData.map(item => item._id)) + 1 : 1
 }
 
 function createNewObject(filePath, newIngredient) {
@@ -31,7 +31,7 @@ function createNewObject(filePath, newIngredient) {
         }
 
         const nextId = findNextId(existingData)
-        const newData = { id: nextId, ...newIngredient }
+        const newData = { _id: nextId, ...newIngredient }
 
         existingData.push(newData)
         saveData(filePath, existingData)
@@ -47,10 +47,10 @@ function updateObject(filePath, updatedIngredient) {
     try {
         const existingData = loadData(filePath)
 
-        const index = existingData.findIndex(item => item.id === updatedIngredient.id)
+        const index = existingData.findIndex(item => item._id === updatedIngredient._id)
 
         if (index === -1) {
-            console.log(`Object with ID ${updatedIngredient.id} not found.`)
+            console.log(`Object with ID ${updatedIngredient._id} not found.`)
             return null
         }
 
@@ -68,7 +68,7 @@ function deleteObject(filePath, objectId) {
     try {
         const existingData = loadData(filePath)
 
-        const index = existingData.findIndex(item => item.id === objectId)
+        const index = existingData.findIndex(item => item._id === objectId)
 
         if (index === -1) {
             console.log(`Object with ID ${objectId} not found.`)
@@ -110,6 +110,9 @@ const newIngredients = [
     { name: "coconut", image: "https://openmoji.org/data/color/svg/1F965.svg" },
     { name: "watermelon", image: "https://openmoji.org/data/color/svg/1F349.svg" },
     { name: "lemon", image: "https://openmoji.org/data/color/svg/1F34B.svg" },
+    { name: "strawberry", image: "https://openmoji.org/data/color/svg/1F353.svg" },
+    { name: "blueberry", image: "https://openmoji.org/data/color/svg/1FAD0.svg" },
+    { name: "raspberry", image: "https://openmoji.org/data/color/svg/E1C9.svg" },
   ]
 
 const createdObjects = createObjectsFromArray(filePath, newIngredients)

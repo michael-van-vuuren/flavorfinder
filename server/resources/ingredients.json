@@ -48,5 +48,20 @@
     "_id": 10,
     "name": "lemon",
     "image": "https://openmoji.org/data/color/svg/1F34B.svg"
+  },
+  {
+    "_id": 11,
+    "name": "strawberry",
+    "image": "https://openmoji.org/data/color/svg/1F353.svg"
+  },
+  {
+    "_id": 12,
+    "name": "blueberry",
+    "image": "https://openmoji.org/data/color/svg/1FAD0.svg"
+  },
+  {
+    "_id": 13,
+    "name": "raspberry",
+    "image": "https://openmoji.org/data/color/svg/E1C9.svg"
   }
 ]
