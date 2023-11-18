@@ -4,7 +4,16 @@
     margin-bottom: 20px;
 }
 
+/* remove soon */
 .pantry-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(104, 104, 104, 0.064);
+    padding: 15px;
+}
+
+.pantry-interactives {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,7 +40,7 @@ button:active {
     position: absolute;
     bottom: 10px;
     right: 10px;
-  }
+}
 
 button {
     background-color: rgb(229, 229, 229);

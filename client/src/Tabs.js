@@ -1,31 +1,37 @@
 import { useState } from 'react';
 import "./App.css";
 import Recommender from './recommender/Recommender';
-import Pantry from './pantry/Pantry';
+import AddToPantry from './pantry/AddToPantry';
 import RecipePool from './recipe-pool/RecipePool';
+import Pantry from './pantry/Pantry';
+import PantryHome from './workspace/PantryHome'
 
 function Tabs() {
     const [toggleState, setToggleState] = useState(1)
-    const [stuff, setStuff] = useState([])
-    const [addingIngredients, setAddingIngredients] = useState(false)
+    const [pantry, setPantry] = useState([])
+    const [ingredients, setIngredients] = useState([])
+
+    const fetchPantry = async (id) => {
+        try {
+            const response = await fetch(`http://localhost:3001/api/v1/users/${id}`)
+            setPantry(await response.json())
+        } catch (e) {
+            console.error('error fetching pantry:', e)
+        }
+    }
 
     const fetchIngredients = async () => {
         try {
-            const response = await fetch('http://localhost:3001/api/v1/ingredients')
-            const stuff = await response.json()
-            setStuff(stuff)
+          const response = await fetch('http://localhost:3001/api/v1/ingredients')
+          setIngredients(await response.json())
         } catch (e) {
-            console.error('error fetching ingredients:', e)
+          console.error('error fetching ingredients:', e)
         }
-    }
+      }
 
     const toggleTab = (index) => {
         setToggleState(index);
     }
-
-    const handleButtonClick = () => {
-        setAddingIngredients(true);
-      };
 
     return (
         <div className="container">
@@ -35,10 +41,10 @@ function Tabs() {
                     onClick={() => toggleTab(1)}
                 >Recipe Recommender</div>
                 <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                    onClick={() => { toggleTab(2); fetchIngredients() }}
+                    onClick={() => toggleTab(2)}
                 >Recipe Pool</div>
                 <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                    onClick={() => { toggleTab(3); fetchIngredients() }}
+                    onClick={() => { toggleTab(3); fetchIngredients(); fetchPantry('6556d131755e12ed18838678') }}
                 >Pantry</div>
             </div>
 
@@ -51,13 +57,14 @@ function Tabs() {
                     <RecipePool />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
-                    <div>
+                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} />
+                    {/* <div>
                         {addingIngredients ? (
-                            <Pantry stuff={stuff} setAddingIngredients={setAddingIngredients} />
+                            <AddToPantry stuff={stuff} setAddingIngredients={setAddingIngredients} />
                         ) : (
-                            <button onClick={handleButtonClick}>Add Ingredients</button>
+                            <Pantry pantryContents={pantryContents} setAddingIngredients={setAddingIngredients} />
                         )}
-                    </div>
+                    </div> */}
                     {/* <Pantry stuff={stuff} /> */}
                 </div>
             </div>
