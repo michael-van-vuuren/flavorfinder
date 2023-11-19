@@ -5,12 +5,11 @@ export default class PantryController {
   static async apiAddUser(req, res, next) {
     try {
       const user = req.body.user
-      const pantry = req.body.pantry
-      const pantrySI = UnitConverter.convertPantryToSI(pantry)
+      const pantry = []
 
       const userHandle = await PantryDAO.addUser(
         user,
-        pantrySI
+        pantry
       )
       res.json({ status: 'success' })
     } catch (e) {
@@ -61,6 +60,8 @@ export default class PantryController {
   }
 
   static combinePantries(existingPantry, newPantry) {
+    console.log(`new pantry:`, newPantry)
+
     const combinedPantry = [...existingPantry] // copy current pantry
 
     for (const newItem of newPantry) {
@@ -75,6 +76,7 @@ export default class PantryController {
       }
     }
 
+    console.log(`combined pantry:`, combinedPantry)
     return combinedPantry
   }
 

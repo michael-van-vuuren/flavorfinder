@@ -18,7 +18,17 @@ export default class IngredientCtrl {
         }
     }
 
-    static async serverGetIngredientsNoImage(req, res) {
+    static async serverGetIngredients(req, res, next) {
+        try {
+            const data = await IngredientCtrl.fetchData();
+            res.json(data);
+        } catch (error) {
+            console.error('unexpected error:', error);
+            res.status(500).json({ error: 'internal server error' });
+        }
+    }
+
+    static async serverGetIngredientsNoImage(req, res, next) {
         try {
             const data = await IngredientCtrl.fetchData();
             const result = data.map(({ _id, name }) => ({ _id, name }));
@@ -29,7 +39,7 @@ export default class IngredientCtrl {
         }
     }
 
-    static async serverGetIngredientImage(req, res) {
+    static async serverGetIngredientImage(req, res, next) {
         try {
             const id = req.params.id;
             const data = await IngredientCtrl.fetchData();

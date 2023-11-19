@@ -4,7 +4,19 @@
     margin-bottom: 20px;
 }
 
-.pantry-buttons {
+.pantry-menu-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.cancel-button {
+    position: absolute;
+    bottom: 10px;
+    right: 90px;
+}
+
+.pantry-interactives {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -17,24 +29,22 @@ button:active {
     margin: 6px 10px 2px 10px;
 }
 
+button:hover {
+    background-color: rgb(206, 206, 206);
+}
+
 .add-button:hover {
     color: white;
-    background-color: #99e386;
+    background-color: #a9d97f;
 }
 
 .remove-button:hover {
     color: white;
-    background-color: #ed5b5b;
+    background-color: #ed6a5b;
 }
 
-.confirm-button {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-
 button {
-    background-color: rgb(239, 239, 239);
+    background-color: rgb(229, 229, 229);
     padding: 10px;
     vertical-align: top;
     box-shadow: 2px 1px 2px gray;
@@ -65,7 +75,7 @@ ul {
 
 @keyframes highlight {
     0% {
-        background-color: #99e386;
+        background-color: #a9d97f;
     }
 
     100% {
