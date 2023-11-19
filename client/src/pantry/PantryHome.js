@@ -1,10 +1,9 @@
-
 import { useState } from 'react'
 import Pantry from './Pantry.js'
 import AddToPantry from './AddToPantry.js'
-import './style.css'
+import './Pantry.css'
 
-const PantryHome = ({ pantry, ingredients, fetchPantry }) => {
+const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
   const [toggleAdd, setToggleAdd] = useState(false)
   const [pantryAddition, setPantryAddition] = useState([])
 
@@ -12,12 +11,17 @@ const PantryHome = ({ pantry, ingredients, fetchPantry }) => {
     setToggleAdd(true)
   }
 
-  const handleConfirmBtn = async (id) => {
+  const handleCancelBtn = () => {
     setToggleAdd(false)
-    console.log('PANTRY', pantryAddition)
+    setPantryAddition([])
+  }
+
+  const handleConfirmBtn = async () => {
+    setToggleAdd(false)
+    console.log('PANTRY ADDITION', pantryAddition)
     setPantryAddition([])
     try {
-      const url = `http://localhost:3001/api/v1/users/${id}`
+      const url = `http://localhost:3001/api/v1/users/${userId}`
       const response = await fetch(url, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
@@ -30,7 +34,7 @@ const PantryHome = ({ pantry, ingredients, fetchPantry }) => {
       const result = await response.json()
       console.log(result)
       
-      fetchPantry('6556d131755e12ed18838678')
+      fetchPantry(userId)
     } catch (e) {
       console.error('Error updating pantry:', e.message)
     }
@@ -40,15 +44,14 @@ const PantryHome = ({ pantry, ingredients, fetchPantry }) => {
     <div>
       {toggleAdd ? (
         <div>
-          {/* michael - 6556b9a6b7de3c37de02c24b
-            tom       - 6556d131755e12ed18838678 */}
-          <button className='pantry-menu-btn' onClick={() => handleConfirmBtn('6556d131755e12ed18838678')}>Confirm</button>
+          <button className='cancel-button' onClick={() => handleCancelBtn()}>Cancel</button>
+          <button className='pantry-menu-btn' onClick={() => handleConfirmBtn()}>Confirm</button>
           <AddToPantry pantryAddition={pantryAddition} setPantryAddition={setPantryAddition} ingredients={ingredients} />
         </div>
       ) : (
         <div>
           <button className='pantry-menu-btn' onClick={handleAddIngredientBtn}>Add Ingredients</button>
-          <Pantry pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} />
+          <Pantry pantry={pantry} fetchPantry={fetchPantry} userId={userId} />
         </div>
       )}
     </div>

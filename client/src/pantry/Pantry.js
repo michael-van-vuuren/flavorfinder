@@ -1,60 +1,51 @@
-import React, { useState, useEffect, useRef } from 'react'
-import "./Pantry.css"
+import React from 'react'
 import pluralizeIngredient from '../utility/pluralizeIngredient.js'
+import './Pantry.css'
 
-const Pantry = ({ pantryContents, setAddingIngredients }) => {
-    const [scrollToBottom, setScrollToBottom] = useState(false)
-    const ingredientListRef = useRef(null)
+const Pantry = ({ pantry, fetchPantry, userId }) => {
 
-    useEffect(() => {
-        if (scrollToBottom && ingredientListRef.current) {
-            ingredientListRef.current.scrollTop = ingredientListRef.current.scrollHeight
-            setScrollToBottom(false)
-        }
-    }, [scrollToBottom])
+  const handleRemove = async (idToRemove) => {
+    try {
+      const url = `http://localhost:3001/api/v1/users/${userId}`
+      const response = await fetch(url, {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ deleteme: idToRemove }),
+      })
 
-    const handleButtonClick = () => {
-        setAddingIngredients(true);
+      if (!response.ok) {
+        throw new Error(`Failed to remove ingredient: ${response.statusText}`)
+      }
+      const result = await response.json()
+      console.log(result)
+
+      fetchPantry(userId)
+    } catch (e) {
+      console.error('Error updating pantry:', e.message)
     }
+  }
 
-    const getIngredientNameById = (id) => {
-        const ingredient = pantryContents.find(item => item.ingredientId === id)
-        return ingredient ? ingredient.name : ''
-    }
-
-    const handleRemove = (index) => {
-        console.log("remove: todo")
-    }
-
-    return (
-        <div>
-            <div>
-                {/* Display pantry contents */}
-                {pantryContents.length > 0 && (
-                    <div className='ingredient-list' ref={ingredientListRef}>
-                        <ul>
-                            {pantryContents.map((ingredient, index) => {
-                                // console.log(ingredient); // Log the ingredient to the console
-                                console.log(ingredient.ingredientId)
-                                return (
-                                    <li key={index} className='highlight'>
-                                        {ingredient.quantity} {ingredient.units} of {getIngredientNameById(ingredient.ingredientId)}
-                                        {ingredient.image && (
-                                            <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
-                                        )}
-                                        <button className="remove-button" onClick={() => handleRemove(index)}>Remove</button>
-                                    </li>
-                                );
-                            })}
-                        </ul>
-                    </div>
+  return (
+    <div>
+      <h2>Pantry</h2>
+      {pantry.length > 0 && (
+        <div className='ingredient-list'>
+          <ul>
+            {pantry.map((ingredient, index) => (
+              <li key={index}>
+                {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(ingredient.name, ingredient.quantity)}
+                {ingredient.image && (
+                  <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
                 )}
-            </div>
-            <div>
-                <button onClick={handleButtonClick}>Add Ingredients</button>
-            </div>
+                <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
+              </li>
+            ))}
+          </ul>
         </div>
-    )
+      )}
+    </div>
+  )
+
 }
 
 export default Pantry

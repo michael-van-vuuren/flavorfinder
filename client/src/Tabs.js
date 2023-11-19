@@ -1,19 +1,33 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "./App.css";
 import Recommender from './recommender/Recommender';
-import AddToPantry from './pantry/AddToPantry';
 import RecipePool from './recipe-pool/RecipePool';
-import Pantry from './pantry/Pantry';
-import PantryHome from './workspace/PantryHome'
+import PantryHome from './pantry/PantryHome'
 
 function Tabs() {
-    const [toggleState, setToggleState] = useState(1)
+    const [toggleState, setToggleState] = useState(3)
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
 
-    const fetchPantry = async (id) => {
+    // LOGIN USER ID SET HERE RIGHT NOW
+    // below users are currently in flavorfinder.pantries in the db
+    // michael - 6556b9a6b7de3c37de02c24b
+    // tom     - 6556d131755e12ed18838678
+    const [userId, setUserId] = useState('6556d131755e12ed18838678')
+
+    useEffect(() => {
+        // entry
+        fetchIngredients() 
+        fetchPantry()
+        
+        return () => {
+            // exit
+        };
+    }, []);
+
+    const fetchPantry = async () => {
         try {
-            const response = await fetch(`http://localhost:3001/api/v1/users/${id}`)
+            const response = await fetch(`http://localhost:3001/api/v1/users/${userId}`)
             setPantry(await response.json())
         } catch (e) {
             console.error('error fetching pantry:', e)
@@ -22,12 +36,12 @@ function Tabs() {
 
     const fetchIngredients = async () => {
         try {
-          const response = await fetch('http://localhost:3001/api/v1/ingredients')
-          setIngredients(await response.json())
+            const response = await fetch('http://localhost:3001/api/v1/ingredients')
+            setIngredients(await response.json())
         } catch (e) {
-          console.error('error fetching ingredients:', e)
+            console.error('error fetching ingredients:', e)
         }
-      }
+    }
 
     const toggleTab = (index) => {
         setToggleState(index);
@@ -44,12 +58,11 @@ function Tabs() {
                     onClick={() => toggleTab(2)}
                 >Recipe Pool</div>
                 <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                    onClick={() => { toggleTab(3); fetchIngredients(); fetchPantry('6556d131755e12ed18838678') }}
+                    onClick={() => { toggleTab(3); fetchIngredients(); fetchPantry() }}
                 >Pantry</div>
             </div>
 
             <div className="content-tabs">
-
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
                     <Recommender />
                 </div>
@@ -57,15 +70,7 @@ function Tabs() {
                     <RecipePool />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
-                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} />
-                    {/* <div>
-                        {addingIngredients ? (
-                            <AddToPantry stuff={stuff} setAddingIngredients={setAddingIngredients} />
-                        ) : (
-                            <Pantry pantryContents={pantryContents} setAddingIngredients={setAddingIngredients} />
-                        )}
-                    </div> */}
-                    {/* <Pantry stuff={stuff} /> */}
+                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} />
                 </div>
             </div>
 
