@@ -2,7 +2,7 @@ import convert from 'convert-units'
 
 class UnitConverter {
   static convertToSI(ingredient) {
-    const { ingredientId, quantity, units } = ingredient
+    const { name, ingredientId, quantity, units, image } = ingredient
 
     if (units === 'g' || units === 'ml')
       return ingredient
@@ -13,12 +13,12 @@ class UnitConverter {
       // volume
       if (['l', 'cup', 'gal', 'fl-oz', 'qt', 'pnt', 'tsp', 'Tbs'].includes(units)) {
         convertedQuantity = convert(quantity).from(units).to('ml') 
-        return { ingredientId: ingredientId, quantity: convertedQuantity, units: 'ml' }
+        return { name: name, ingredientId: ingredientId, quantity: convertedQuantity, units: 'ml', image: image }
       }
       // mass
       else if (['oz', 'lb', 'kg', 'mg'].includes(units)) {
         convertedQuantity = convert(quantity).from(units).to('g') 
-        return { ingredientId: ingredientId, quantity: convertedQuantity, units: 'g' }
+        return { name: name, ingredientId: ingredientId, quantity: convertedQuantity, units: 'g', image: image }
       }
     } catch (error) {
       console.error(`error converting unit: ${error.message}`)

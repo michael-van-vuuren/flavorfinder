@@ -46,6 +46,7 @@ export default class PantryController {
       }
 
       const newPantrySI = UnitConverter.convertPantryToSI(newPantry)
+      console.log('new', newPantrySI)
       const combinedPantry = PantryController.combinePantries(existingUserData.pantry, newPantrySI)
 
       const result = await PantryDAO.updateUserPantry(userId, combinedPantry)
@@ -60,8 +61,6 @@ export default class PantryController {
   }
 
   static combinePantries(existingPantry, newPantry) {
-    console.log(`new pantry:`, newPantry)
-
     const combinedPantry = [...existingPantry] // copy current pantry
 
     for (const newItem of newPantry) {
@@ -76,7 +75,6 @@ export default class PantryController {
       }
     }
 
-    console.log(`combined pantry:`, combinedPantry)
     return combinedPantry
   }
 

@@ -18,8 +18,6 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
 
   const handleConfirmBtn = async () => {
     setToggleAdd(false)
-    console.log('PANTRY ADDITION', pantryAddition)
-    setPantryAddition([])
     try {
       const url = `http://localhost:3001/api/v1/users/${userId}`
       const response = await fetch(url, {
@@ -34,6 +32,7 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
       const result = await response.json()
       console.log(result)
       
+      setPantryAddition([])
       fetchPantry(userId)
     } catch (e) {
       console.error('Error updating pantry:', e.message)
