@@ -1,20 +1,51 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ReactDOM from 'react-dom/client';
+import { GoogleOAuthProvider } from '@react-oauth/google';
+
 import './index.css';
-import App from './App';
 import Login from './Login';
 import MainContextProvider from './MainContext';
 import reportWebVitals from './network/reportWebVitals';
 
+const App = () => {
+  const [storedClientID, setClientId] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+
+    const fetchClientId = async () => {
+      try {
+        const response = await fetch(`http://localhost:3001/api/v1/clientid`);
+        const res = await response.json();
+        console.log(res.clientid);
+        setClientId(res.clientid);
+      } catch (e) {
+        console.error('error fetching client ID:', e);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchClientId();
+
+  }, [storedClientID])
+  console.log(storedClientID)
+  return (
+    <React.StrictMode>
+      {loading ? (
+        <div>Loading...</div>
+      ) : (
+        <GoogleOAuthProvider clientId={storedClientID}>
+          <MainContextProvider>
+            <Login />
+          </MainContextProvider>
+        </GoogleOAuthProvider>
+      )}
+    </React.StrictMode>
+  );
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <MainContextProvider><Login /></MainContextProvider>
+root.render(<App />);
 
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
