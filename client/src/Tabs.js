@@ -25,6 +25,16 @@ function Tabs() {
         };
     }, []);
 
+    const fetchClientId = async () => {
+        try {
+            const response = await fetch(`http://localhost:3001/api/v1/clientid`)
+            const res = await response.json()
+            console.log(res.clientid)
+        } catch (e) {
+            console.error('error fetching pantry:', e)
+        }
+    }
+
     const fetchPantry = async () => {
         try {
             const response = await fetch(`http://localhost:3001/api/v1/users/${userId}`)

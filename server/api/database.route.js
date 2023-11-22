@@ -1,6 +1,7 @@
 import express from 'express'
 import PantryCtrl from './pantry.controller.js'
 import IngredientCtrl from './ingredient.controller.js'
+import GoogleLoginCtrl from './google-login.controller.js'
 
 const router = express.Router()
 
@@ -12,6 +13,9 @@ router.route('/users/:id')
   .get(PantryCtrl.apiGetPantry)
   .put(PantryCtrl.apiUpdatePantry)
   .delete(PantryCtrl.apiDeletePantryItem)
+// google login api
+router.route('/clientid')
+  .get(GoogleLoginCtrl.apiGetClientId)
 
 // get ingredients for dropdown; no image (server/resources/ingredients.json)
 router.route('/ingredients-noimage')
