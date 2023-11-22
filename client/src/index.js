@@ -16,7 +16,6 @@ const App = () => {
       try {
         const response = await fetch(`http://localhost:3001/api/v1/clientid`);
         const res = await response.json();
-        console.log(res.clientid);
         setClientId(res.clientid);
       } catch (e) {
         console.error('error fetching client ID:', e);
@@ -28,7 +27,7 @@ const App = () => {
     fetchClientId();
 
   }, [storedClientID])
-  console.log(storedClientID)
+
   return (
     <React.StrictMode>
       {loading ? (
