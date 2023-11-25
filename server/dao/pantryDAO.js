@@ -29,6 +29,17 @@ export default class PantryDAO {
     }
   }
 
+  static async checkUserExists(sub) {
+    try {
+      return await pantrydb.findOne(
+        { user: sub }
+      )
+    } catch (e) {
+      console.error(`Unable to get user: ${e}`)
+      return null
+    }
+  }
+
   static async getUserData(userId) {
     try {
       return await pantrydb.findOne(

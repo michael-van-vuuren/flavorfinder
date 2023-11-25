@@ -1,5 +1,6 @@
 import React, { useState, useContext } from "react";
 import { GoogleLogin } from '@react-oauth/google';
+import { jwtDecode } from 'jwt-decode';
 
 import App from "./App";
 import { MainContext } from "./MainContext"
@@ -15,24 +16,35 @@ function Login() {
   const responseMessage = (response) => {
     console.log(response);
   };
+
   const errorMessage = (error) => {
     console.log(error);
   };
 
   const handleGoogleLogin = async (response) => {
-
     try {
-      const url = `http://localhost:3001/api/v1/users/new`
-      const res = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-          user: response.credential
+      // Decode credential to get user info
+      const decoded = jwtDecode(response.credential)
+      console.log(decoded)
+      const sub = decoded.sub
+
+      // Check if user is already in database
+      const exists = await fetch(`http://localhost:3001/api/v1/users/exists/${sub}`)
+      console.log(exists)
+      
+      if (!exists.ok) {
+        // Add new user
+        const url = `http://localhost:3001/api/v1/users/new`
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ 
+            user: sub,
+          })
         })
-      })
-      console.log(res)
+      }
     } catch (e) {
-      console.error('Error adding new user:', e.message)
+      console.error('Error occurred during login: ', e.message)
     }
   }
 
