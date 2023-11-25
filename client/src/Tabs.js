@@ -1,19 +1,21 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import "./App.css";
 import Recommender from './recommender/Recommender';
 import RecipePool from './recipe-pool/RecipePool';
-import PantryHome from './pantry/PantryHome'
+import PantryHome from './pantry/PantryHome';
+import { MainContext } from './MainContext';
 
 function Tabs() {
     const [toggleState, setToggleState] = useState(3)
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
+    const { userId } = useContext(MainContext)
 
     // LOGIN USER ID SET HERE RIGHT NOW
     // below users are currently in flavorfinder.pantries in the db
     // michael - 6556b9a6b7de3c37de02c24b
     // tom     - 6556d131755e12ed18838678
-    const [userId, setUserId] = useState('6556d131755e12ed18838678')
+    //const [userId, setUserId] = useState('6556d131755e12ed18838678')
 
     useEffect(() => {
         // entry

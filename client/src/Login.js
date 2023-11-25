@@ -11,7 +11,7 @@ import "./App.css";
 
 
 function Login() {
-  const { login, setLogin } = useContext(MainContext);
+  const { login, setLogin, setUserId } = useContext(MainContext);
 
   const responseMessage = (response) => {
     console.log(response);
@@ -47,6 +47,7 @@ function Login() {
         _id = responseData._id
         console.log(_id)
       }
+      setUserId(_id)
     } catch (e) {
       console.error('Error occurred during login: ', e.message)
     }
