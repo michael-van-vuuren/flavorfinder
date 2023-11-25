@@ -23,14 +23,15 @@ function Login() {
 
   const handleGoogleLogin = async (response) => {
     try {
-      // Decode credential to get user info
+      // Decode credential to get user info, including unique sub field
       const decoded = jwtDecode(response.credential)
-      console.log(decoded)
       const sub = decoded.sub
 
       // Check if user is already in database
       const exists = await fetch(`http://localhost:3001/api/v1/users/exists/${sub}`)
-      console.log(exists)
+      let responseData = await exists.json()
+      let _id = responseData._id
+      console.log(_id)
       
       if (!exists.ok) {
         // Add new user
@@ -42,6 +43,9 @@ function Login() {
             user: sub,
           })
         })
+        responseData = await res.json()
+        _id = responseData._id
+        console.log(_id)
       }
     } catch (e) {
       console.error('Error occurred during login: ', e.message)
