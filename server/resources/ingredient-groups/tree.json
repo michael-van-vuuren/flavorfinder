@@ -1,0 +1,164 @@
+{
+  "herbs and spices": {
+    "herbs": [],
+    "spices": [],
+    "oilseed crops": [],
+    "other seeds": [],
+    "herb and spice mixtures": [],
+    "herbs and spices": []
+  },
+  "vegetables": {
+    "cabbages": [],
+    "onion-family vegetables": [],
+    "root vegetables": [],
+    "shoot vegetables": [],
+    "leaf vegetables": [],
+    "fruit vegetables": [],
+    "tubers": [],
+    "stalk vegetables": [],
+    "other vegetables": [],
+    "mushrooms": [],
+    "vegetable products": [],
+    "brassicas": [],
+    "green vegetables": []
+  },
+  "fruits": {
+    "tropical fruits": [],
+    "citrus": [],
+    "pomes": [],
+    "berries": [],
+    "other fruits": [],
+    "drupes": [],
+    "fruit products": [],
+    "fruits": []
+  },
+  "nuts": {
+    "nuts": []
+  },
+  "cereals and cereal products": {
+    "cereals": [],
+    "other breads": [],
+    "cereal products": [],
+    "doughs": [],
+    "flat breads": [],
+    "leavened breads": [],
+    "bread products": [],
+    "sweet breads": [],
+    "cereals and cereal products": []
+  },
+  "pulses": {
+    "peas": [],
+    "lentils": [],
+    "other pulses": [],
+    "beans": [],
+    "pulses": []
+  },
+  "teas": {
+    "teas": [],
+    "herbal teas": []
+  },
+  "gourds": {
+    "gourds": []
+  },
+  "coffee and coffee products": {
+    "coffee": [],
+    "coffee products": [],
+    "coffee and coffee products": []
+  },
+  "soy": {
+    "soy": [],
+    "soy products": []
+  },
+  "cocoa and cocoa products": {
+    "cocoa": [],
+    "cocoa products": [],
+    "cocoa and cocoa products": []
+  },
+  "beverages": {
+    "fermented beverages": [],
+    "distilled beverages": [],
+    "fortified wines": [],
+    "alcoholic beverages": [],
+    "waters": [],
+    "other beverages": [],
+    "nutritional beverages": [],
+    "beverages": []
+  },
+  "aquatic foods": {
+    "mollusks": [],
+    "seaweed": [],
+    "crustaceans": [],
+    "fishes": [],
+    "cetaceans": [],
+    "other aquatic foods": [],
+    "pinnipeds": [],
+    "amphibians": [],
+    "fish products": [],
+    "roe": [],
+    "bivalvia": []
+  },
+  "animal foods": {
+    "bovines": [],
+    "swine": [],
+    "poultry": [],
+    "venison": [],
+    "equines": [],
+    "lagomorphs": [],
+    "ovis": [],
+    "caprae": []
+  },
+  "milk and milk products": {
+    "fermented milk products": [],
+    "unfermented milks": [],
+    "other milk products": [],
+    "fermented milks": [],
+    "milk and milk products": []
+  },
+  "eggs": {
+    "eggs": []
+  },
+  "confectioneries": {
+    "frozen desserts": [],
+    "other confectioneries": [],
+    "candies": [],
+    "desserts": [],
+    "spreads": [],
+    "milk desserts": []
+  },
+  "baking goods": {
+    "seasonings": [],
+    "dressings": [],
+    "sauces": [],
+    "substitutes": [],
+    "sugars": [],
+    "condiments": [],
+    "baking goods": [],
+    "wrappers": []
+  },
+  "dishes": {
+    "other dishes": [],
+    "ground meat": [],
+    "tex-mex cuisine": [],
+    "sandwiches": [],
+    "asian cuisine": [],
+    "pasta dishes": [],
+    "berber cuisine": [],
+    "mexican cuisine": [],
+    "potato dishes": [],
+    "american cuisine": [],
+    "latin american cuisine": [],
+    "jewish cuisine": [],
+    "levantine cuisine": []
+  },
+  "snack foods": {
+    "snack foods": []
+  },
+  "baby foods": {
+    "baby foods": []
+  },
+  "fats and oils": {
+    "animal fats": [],
+    "vegetable fats": [],
+    "fats and oils": []
+  }
+}
