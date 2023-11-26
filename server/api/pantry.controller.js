@@ -7,13 +7,29 @@ export default class PantryController {
       const user = req.body.user
       const pantry = []
 
-      const userHandle = await PantryDAO.addUser(
+      const userAdded = await PantryDAO.addUser(
         user,
         pantry
       )
-      res.json({ status: 'success' })
+      let _id = userAdded.insertedId.toString()
+      res.json({ _id: _id, status: 'success' })
     } catch (e) {
-      res.status(500).join({ error: e.message })
+      res.status(500).json({ error: e.message })
+    }
+  }
+
+  static async apiUserExists(req, res, next) {
+    try {
+      let sub = req.params.sub
+      let user = await PantryDAO.checkUserExists(sub)
+      if (!user) {
+        res.status(404).json({ error: 'cannot find user' })
+        return
+      }
+      let _id = user._id
+      res.json({ _id: _id, status: 'success' })
+    } catch (e) {
+      res.status(500).json({ error: e })
     }
   }
 
