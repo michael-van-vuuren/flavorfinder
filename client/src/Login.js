@@ -66,7 +66,7 @@ function Login() {
         <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "50px", marginLeft: "auto", marginRight: "auto", width: "300px", padding: "20px", borderStyle: "solid", borderColor: "#d4d4d4", borderRadius: "10px" }}>
           <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="FlavorFinder" style={{ width: "100px", marginBottom: "20px", marginTop: "40px" }} />
           <h1 style={{ display: "flex", justifyContent: "center", marginTop: "1%", marginBottom: "30px", fontFamily: "Roboto, sans-serif" }}>FlavorFinder</h1>
-          <GoogleLogin onSuccess={(res) => { setLogin(true); responseMessage(res); }} onError={errorMessage} />
+          <GoogleLogin onSuccess={(res) => { setLogin(true); handleGoogleLogin(res); }} onError={errorMessage} />
         </div>
       </div>
     );

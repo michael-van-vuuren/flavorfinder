@@ -6,7 +6,7 @@ import PantryHome from './pantry/PantryHome';
 import { MainContext } from './MainContext';
 
 function Tabs() {
-    const [toggleState, setToggleState] = useState(3)
+    const [toggleState, setToggleState] = useState(1)
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
     const { userId } = useContext(MainContext)
