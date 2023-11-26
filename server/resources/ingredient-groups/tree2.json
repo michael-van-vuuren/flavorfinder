@@ -1,0 +1,1284 @@
+{
+  "herbs and spices": {
+    "herbs": [
+      "angelica",
+      "silver linden",
+      "garlic",
+      "chives",
+      "lemon verbena",
+      "dill",
+      "tarragon",
+      "mugwort",
+      "turnip",
+      "roman camomile",
+      "coriander",
+      "lemon grass",
+      "fennel",
+      "hyssop",
+      "sweet bay",
+      "lovage",
+      "mexican oregano",
+      "german camomile",
+      "lemon balm",
+      "mentha",
+      "orange mint",
+      "cornmint",
+      "spearmint",
+      "peppermint",
+      "sweet basil",
+      "sweet marjoram",
+      "pot marjoram",
+      "common oregano",
+      "parsley",
+      "anise",
+      "purslane",
+      "watercress",
+      "rosemary",
+      "sorrel",
+      "common sage",
+      "summer savory",
+      "winter savory",
+      "dandelion",
+      "common thyme",
+      "linden",
+      "small-leaf linden",
+      "fenugreek",
+      "common verbena",
+      "chinese chives",
+      "lemon thyme",
+      "welsh onion",
+      "celery leaves",
+      "italian oregano",
+      "pineappple sage",
+      "alfalfa",
+      "amaranth",
+      "dock",
+      "fireweed",
+      "rose hip",
+      "roselle",
+      "teff",
+      "tea leaf willow",
+      "epazote",
+      "sourdock",
+      "yellow pond-lily",
+      "soft-necked garlic",
+      "asparagus fern",
+      "guarana",
+      "mate",
+      "white mulberry",
+      "red clover"
+    ],
+    "spices": [
+      "wild celery",
+      "horseradish",
+      "capers",
+      "caraway",
+      "chinese cinnamon",
+      "ceylon cinnamon",
+      "saffron",
+      "cumin",
+      "turmeric",
+      "cardamom",
+      "star anise",
+      "nutmeg",
+      "pepper (spice)",
+      "cloves",
+      "vanilla",
+      "ginger",
+      "ginseng",
+      "allspice",
+      "chervil",
+      "white mustard",
+      "opium poppy",
+      "wasabi",
+      "cinnamon"
+    ],
+    "oilseed crops": [
+      "borage",
+      "safflower",
+      "sunflower",
+      "flaxseed",
+      "evening primrose",
+      "poppy",
+      "sesame",
+      "cottonseed",
+      "oil palm",
+      "sago palm",
+      "canola",
+      "babassu palm",
+      "cupuaçu",
+      "shea tree",
+      "oil-seed camellia",
+      "ucuhuba",
+      "olive oil",
+      "linseed oil",
+      "rapeseed oil",
+      "soybean oil",
+      "canola oil",
+      "sunflower oil",
+      "coconut oil",
+      "peanut oil",
+      "cottonseed oil",
+      "corn oil",
+      "avocado oil",
+      "grapeseed oil",
+      "sesame oil"
+    ],
+    "other seeds": [
+      "breadnut tree seed",
+      "chia",
+      "ginkgo nuts",
+      "lotus",
+      "quinoa",
+      "hedge mustard",
+      "rowal"
+    ],
+    "herb and spice mixtures": [
+      "curry powder"
+    ],
+    "herbs and spices": [
+      "herbs and spices"
+    ]
+  },
+  "vegetables": {
+    "cabbages": [
+      "savoy cabbage",
+      "chinese mustard",
+      "common cabbage",
+      "cauliflower",
+      "brussel sprouts",
+      "broccoli",
+      "chinese cabbage",
+      "tronchuda cabbage",
+      "black cabbage",
+      "komatsuna",
+      "pak choy",
+      "napa cabbage",
+      "kai-lan",
+      "oxheart cabbage",
+      "rapini",
+      "chinese broccoli",
+      "kale",
+      "mustard spinach",
+      "cabbage",
+      "white cabbage",
+      "green cabbage"
+    ],
+    "onion-family vegetables": [
+      "allium",
+      "garden onion",
+      "leek",
+      "garden onion (var.)",
+      "shallot",
+      "wild leek",
+      "onion-family vegetables",
+      "white onion",
+      "red onion",
+      "green onion"
+    ],
+    "root vegetables": [
+      "burdock",
+      "swede",
+      "rape",
+      "kohlrabi",
+      "chicory",
+      "wild carrot",
+      "parsnip",
+      "radish",
+      "celeriac",
+      "carrot",
+      "chicory roots",
+      "daikon radish",
+      "black radish",
+      "radish (var.)",
+      "red beetroot",
+      "oregon yampah",
+      "alpine sweetvetch",
+      "prairie turnip",
+      "common salsify",
+      "taro",
+      "jicama",
+      "black salsify",
+      "thistle",
+      "root vegetables",
+      "crosne",
+      "eddoe"
+    ],
+    "shoot vegetables": [
+      "asparagus",
+      "globe artichoke",
+      "bamboo shoots",
+      "cardoon",
+      "american pokeweed",
+      "asparagus racemosus"
+    ],
+    "leaf vegetables": [
+      "common beet",
+      "endive",
+      "rocket salad (ssp.)",
+      "swamp cabbage",
+      "lettuce",
+      "garden cress",
+      "spinach",
+      "swiss chard",
+      "rocket salad",
+      "chicory leaves",
+      "garland chrysanthemum",
+      "corn salad",
+      "jute",
+      "lambsquarters",
+      "malabar spinach",
+      "new zealand spinach",
+      "yautia",
+      "ostrich fern",
+      "romaine lettuce",
+      "iceberg lettuce",
+      "pea shoots",
+      "yau choy",
+      "water spinach"
+    ],
+    "fruit vegetables": [
+      "pepper",
+      "olive",
+      "avocado",
+      "garden tomato",
+      "cherry tomato",
+      "garden tomato (var.)",
+      "eggplant",
+      "pepper (c. baccatum)",
+      "pepper (c. chinense)",
+      "pepper (capsicum)",
+      "groundcherry",
+      "pepper (c. frutescens)",
+      "mexican groundcherry",
+      "pepper (c. pubescens)",
+      "green bell pepper",
+      "yellow bell pepper",
+      "orange bell pepper",
+      "red bell pepper",
+      "italian sweet red pepper",
+      "jalapeno pepper",
+      "cubanelle pepper"
+    ],
+    "tubers": [
+      "sweet potato",
+      "potato",
+      "arrowhead",
+      "arrowroot",
+      "cassava",
+      "jerusalem artichoke",
+      "mountain yam",
+      "yam"
+    ],
+    "stalk vegetables": [
+      "garden rhubarb",
+      "celery stalks",
+      "alaska wild rhubarb"
+    ],
+    "other vegetables": [
+      "giant butterbur",
+      "carob",
+      "chinese water chestnut",
+      "horseradish tree",
+      "sacred lotus",
+      "nopal",
+      "okra",
+      "sesbania flower",
+      "agave",
+      "narrowleaf cattail",
+      "heart of palm",
+      "tree fern"
+    ],
+    "mushrooms": [
+      "jew's ear",
+      "common mushroom",
+      "shiitake",
+      "enokitake",
+      "oyster mushroom",
+      "cloud ear fungus",
+      "maitake",
+      "chanterelle",
+      "morchella (morel)",
+      "mushrooms"
+    ],
+    "vegetable products": [
+      "other vegetable product"
+    ],
+    "brassicas": [
+      "brassicas"
+    ],
+    "green vegetables": [
+      "green vegetables"
+    ],
+    "": [
+      "castanospermum australe",
+      "gentiana lutea",
+      "juniperus communis",
+      "albizia gummifera"
+    ]
+  },
+  "fruits": {
+    "tropical fruits": [
+      "kiwi",
+      "pineapple",
+      "custard apple",
+      "star fruit",
+      "papaya",
+      "japanese persimmon",
+      "loquat",
+      "wax apple",
+      "lichee",
+      "mango",
+      "passion fruit",
+      "guava",
+      "pomegranate",
+      "tamarind",
+      "banana",
+      "longan",
+      "rambutan",
+      "abiyuch",
+      "acerola",
+      "breadfruit",
+      "natal plum",
+      "cherimoya",
+      "coconut",
+      "durian",
+      "jackfruit",
+      "java plum",
+      "kumquat",
+      "mammee apple",
+      "purple mangosteen",
+      "common persimmon",
+      "pitanga",
+      "plains prickly pear",
+      "french plantain",
+      "prickly pear",
+      "malabar plum",
+      "sapodilla",
+      "mamey sapote",
+      "soursop",
+      "sugar apple",
+      "feijoa",
+      "persimmon",
+      "nance",
+      "naranjilla",
+      "mundu",
+      "plantain",
+      "pitaya"
+    ],
+    "citrus": [
+      "lime",
+      "lemon",
+      "pummelo",
+      "mandarin orange (clementine, tangerine)",
+      "sweet orange",
+      "grapefruit/pummelo hybrid",
+      "grapefruit",
+      "persian lime",
+      "citrus",
+      "sour orange",
+      "mikan",
+      "clementine"
+    ],
+    "pomes": [
+      "quince",
+      "apple",
+      "medlar",
+      "pear",
+      "asian pear",
+      "malus (crab apple)",
+      "pomes",
+      "yali pear",
+      "green apple"
+    ],
+    "berries": [
+      "black crowberry",
+      "strawberry",
+      "black huckleberry",
+      "sea-buckthornberry",
+      "mulberry",
+      "black mulberry",
+      "black chokeberry",
+      "blackcurrant",
+      "redcurrant",
+      "gooseberry",
+      "rubus (blackberry, raspberry)",
+      "cloudberry",
+      "red raspberry",
+      "black raspberry",
+      "black elderberry",
+      "rowanberry",
+      "vaccinium (blueberry, cranberry, huckleberry)",
+      "lowbush blueberry",
+      "sparkleberry",
+      "highbush blueberry",
+      "american cranberry",
+      "bilberry",
+      "lingonberry",
+      "muscadine grape",
+      "common grape",
+      "arctic blackberry",
+      "bayberry",
+      "elliott's blueberry",
+      "canada blueberry",
+      "bog bilberry",
+      "buffalo currant",
+      "european cranberry",
+      "deerberry",
+      "cascade huckleberry",
+      "oval-leaf huckleberry",
+      "evergreen huckleberry",
+      "red huckleberry",
+      "summer grape",
+      "fox grape",
+      "half-highbush blueberry",
+      "jostaberry",
+      "sweet rowanberry",
+      "skunk currant",
+      "squashberry",
+      "elderberry",
+      "grape",
+      "alaska blueberry",
+      "loganberry",
+      "ohelo berry",
+      "salmonberry",
+      "strawberry guava",
+      "boysenberry",
+      "chinese bayberry",
+      "saskatoon berry",
+      "nanking cherry",
+      "rabbiteye blueberry",
+      "evergreen blackberry",
+      "thornless blackberry",
+      "tropical highland blackberry",
+      "andean blackberry",
+      "blackberry",
+      "partridge berry",
+      "green grape",
+      "red grape",
+      "black plum",
+      "black raisin",
+      "chineese plum",
+      "green plum",
+      "wampee",
+      "goji",
+      "monk fruit",
+      "hawthorn",
+      "lantern fruit",
+      "cape gooseberry"
+    ],
+    "other fruits": [
+      "fig",
+      "date",
+      "jujube"
+    ],
+    "drupes": [
+      "prunus (cherry, plum)",
+      "apricot",
+      "sweet cherry",
+      "sour cherry",
+      "european plum",
+      "peach",
+      "nectarine",
+      "peach (var.)",
+      "common chokecherry"
+    ],
+    "fruit products": [
+      "fruit preserve",
+      "other fruit product",
+      "fruit salad"
+    ],
+    "fruits": [
+      "fruits"
+    ]
+  },
+  "nuts": {
+    "nuts": [
+      "cashew nut",
+      "peanut",
+      "brazil nut",
+      "pecan nut",
+      "chestnut",
+      "common hazelnut",
+      "black walnut",
+      "common walnut",
+      "pine nut",
+      "pistachio",
+      "almond",
+      "macadamia nut (m. tetraphylla)",
+      "japanese walnut",
+      "acorn",
+      "beech nut",
+      "butternut",
+      "chinese chestnut",
+      "european chestnut",
+      "hazelnut",
+      "hickory nut",
+      "japanese chestnut",
+      "pili nut",
+      "colorado pinyon",
+      "macadamia nut",
+      "walnut",
+      "mixed nuts",
+      "nuts"
+    ]
+  },
+  "cereals and cereal products": {
+    "cereals": [
+      "oat",
+      "common buckwheat",
+      "tartary buckwheat",
+      "barley",
+      "rice",
+      "millet",
+      "rye",
+      "sorghum",
+      "common wheat",
+      "corn",
+      "red rice",
+      "annual wild rice",
+      "hard wheat",
+      "triticale",
+      "spelt",
+      "wild rice",
+      "oriental wheat",
+      "wheat",
+      "whole wheat bread",
+      "white bread"
+    ],
+    "other breads": [
+      "other bread",
+      "potato bread"
+    ],
+    "cereal products": [
+      "breakfast cereal",
+      "other cereal product",
+      "pasta",
+      "biscuit",
+      "bulgur",
+      "semolina",
+      "flour",
+      "corn grits"
+    ],
+    "doughs": [
+      "sourdough",
+      "dough"
+    ],
+    "flat breads": [
+      "crisp bread",
+      "tortilla",
+      "pita bread",
+      "focaccia",
+      "piki bread",
+      "cornbread"
+    ],
+    "leavened breads": [
+      "zwieback",
+      "bagel",
+      "french toast",
+      "wheat bread",
+      "rye bread",
+      "oat bread",
+      "multigrain bread",
+      "rice bread",
+      "pan dulce"
+    ],
+    "bread products": [
+      "other bread product"
+    ],
+    "sweet breads": [
+      "raisin bread"
+    ],
+    "cereals and cereal products": [
+      "cereals and cereal products"
+    ]
+  },
+  "pulses": {
+    "peas": [
+      "pigeon pea",
+      "chickpea",
+      "grass pea",
+      "common pea",
+      "cowpea",
+      "catjang pea",
+      "black-eyed pea",
+      "yardlong bean"
+    ],
+    "lentils": [
+      "lentils"
+    ],
+    "other pulses": [
+      "lupine",
+      "white lupine"
+    ],
+    "beans": [
+      "scarlet bean",
+      "lima bean",
+      "common bean",
+      "broad bean",
+      "adzuki bean",
+      "gram bean",
+      "mung bean",
+      "climbing bean",
+      "hyacinth bean",
+      "moth bean",
+      "winged bean",
+      "bean",
+      "yellow wax bean",
+      "green bean",
+      "cannellini bean"
+    ],
+    "pulses": [
+      "pulses",
+      "green lentil"
+    ]
+  },
+  "teas": {
+    "teas": [
+      "tea",
+      "black tea",
+      "green tea",
+      "red tea",
+      "herbal tea"
+    ],
+    "herbal teas": [
+      "hibiscus tea",
+      "greenthread tea"
+    ]
+  },
+  "gourds": {
+    "gourds": [
+      "watermelon",
+      "muskmelon",
+      "cucumber",
+      "cucurbita",
+      "bitter gourd",
+      "winter squash",
+      "butternut squash",
+      "calabash",
+      "chayote",
+      "towel gourd",
+      "wax gourd",
+      "tinda",
+      "horned melon",
+      "sunburst squash (pattypan squash)",
+      "green zucchini",
+      "yellow zucchini",
+      "japanese pumpkin",
+      "acorn squash",
+      "cantaloupe melon"
+    ]
+  },
+  "coffee and coffee products": {
+    "coffee": [
+      "coffee",
+      "arabica coffee",
+      "robusta coffee"
+    ],
+    "coffee products": [
+      "coffee mocha"
+    ],
+    "coffee and coffee products": [
+      "coffee and coffee products"
+    ]
+  },
+  "soy": {
+    "soy": [
+      "soy bean"
+    ],
+    "soy products": [
+      "other soy product",
+      "soy sauce",
+      "miso",
+      "tofu",
+      "soy milk",
+      "soy yogurt",
+      "soy cream",
+      "natto"
+    ]
+  },
+  "cocoa and cocoa products": {
+    "cocoa": [
+      "cocoa bean"
+    ],
+    "cocoa products": [
+      "other cocoa product",
+      "cocoa butter",
+      "cocoa powder",
+      "cocoa liquor",
+      "chocolate",
+      "hot chocolate"
+    ],
+    "cocoa and cocoa products": [
+      "cocoa and cocoa products"
+    ]
+  },
+  "beverages": {
+    "fermented beverages": [
+      "beer",
+      "grape wine",
+      "berry wine",
+      "other wine",
+      "apple cider",
+      "sake",
+      "red wine",
+      "white wine",
+      "rosé wine",
+      "dessert wine"
+    ],
+    "distilled beverages": [
+      "spirit",
+      "liquor",
+      "vodka",
+      "whisky",
+      "gin",
+      "rum"
+    ],
+    "fortified wines": [
+      "fortified wine",
+      "port wine",
+      "vermouth",
+      "sherry",
+      "madeira wine"
+    ],
+    "alcoholic beverages": [
+      "other alcoholic beverage",
+      "cocktail",
+      "alcoholic beverages",
+      "red champagne",
+      "white champagne"
+    ],
+    "waters": [
+      "water"
+    ],
+    "other beverages": [
+      "other beverage",
+      "fruit juice",
+      "fruit-flavor drink",
+      "vegetable juice",
+      "horchata",
+      "soft drink"
+    ],
+    "nutritional beverages": [
+      "energy drink",
+      "nutritional drink"
+    ],
+    "beverages": [
+      "beverages",
+      "red grape juice",
+      "white grape juice"
+    ]
+  },
+  "aquatic foods": {
+    "mollusks": [
+      "abalone",
+      "blue mussel",
+      "nuttall cockle",
+      "common octopus",
+      "cuttlefish",
+      "eastern oyster",
+      "leather chiton",
+      "north pacific giant octopus",
+      "pacific oyster",
+      "scallop",
+      "whelk",
+      "bivalvia (clam, mussel, oyster)",
+      "squid",
+      "marine mussel",
+      "true oyster",
+      "snail",
+      "conch",
+      "mollusks"
+    ],
+    "seaweed": [
+      "agar",
+      "irish moss",
+      "kelp",
+      "spirulina",
+      "purple laver",
+      "wakame",
+      "red algae",
+      "kombu",
+      "macroalgae"
+    ],
+    "crustaceans": [
+      "red king crab",
+      "blue crab",
+      "dungeness crab",
+      "american lobster",
+      "spiny lobster",
+      "snow crab",
+      "shrimp",
+      "crayfish",
+      "crab",
+      "clawed lobster",
+      "norway lobster",
+      "crustaceans"
+    ],
+    "fishes": [
+      "atlantic herring",
+      "atlantic mackerel",
+      "painted comber",
+      "atlantic pollock",
+      "atlantic wolffish",
+      "striped bass",
+      "alaska blackfish",
+      "northern bluefin tuna",
+      "bluefish",
+      "burbot",
+      "american butterfish",
+      "common carp",
+      "channel catfish",
+      "cisco",
+      "pacific cod",
+      "atlantic cod",
+      "atlantic croaker",
+      "cusk",
+      "devilfish",
+      "dolphin fish",
+      "freshwater drum",
+      "freshwater eel",
+      "european anchovy",
+      "turbot",
+      "florida pompano",
+      "greenland halibut/turbot",
+      "grouper",
+      "haddock",
+      "hippoglossus (common halibut)",
+      "pacific jack mackerel",
+      "king mackerel",
+      "common ling",
+      "lingcod",
+      "milkfish",
+      "monkfish",
+      "striped mullet",
+      "ocean pout",
+      "pacific herring",
+      "pacific rockfish",
+      "northern pike",
+      "rainbow smelt",
+      "rainbow trout",
+      "orange roughy",
+      "sablefish",
+      "pink salmon",
+      "chum salmon",
+      "coho salmon",
+      "sockeye salmon",
+      "chinook salmon",
+      "atlantic salmon",
+      "spanish mackerel",
+      "pacific sardine",
+      "scup",
+      "sea trout",
+      "american shad",
+      "shark",
+      "sheefish",
+      "sheepshead",
+      "skipjack tuna",
+      "snapper",
+      "greater sturgeon",
+      "white sucker",
+      "pumpkinseed sunfish",
+      "swordfish",
+      "tilefish",
+      "salmonidae (salmon, trout)",
+      "walleye",
+      "alaska pollock",
+      "coalfish pollock",
+      "broad whitefish",
+      "whitefish",
+      "whiting",
+      "yellowfin tuna",
+      "yellowtail amberjack",
+      "pollock",
+      "albacore tuna",
+      "gadus (common cod)",
+      "atlantic halibut",
+      "pacific halibut",
+      "pacific salmon",
+      "smelt",
+      "clupeinae (herring, sardine, sprat)",
+      "percoidei (bass and others)",
+      "perciformes",
+      "flatfish",
+      "spot croaker",
+      "atlantic menhaden",
+      "anchovy",
+      "blue whiting",
+      "carp bream",
+      "sturgeon",
+      "charr",
+      "common dab",
+      "spiny dogfish",
+      "anguilliformes",
+      "garfish",
+      "gadiformes",
+      "lake trout",
+      "lemon sole",
+      "lumpsucker",
+      "scombridae (bonito, mackerel, tuna)",
+      "norway haddock",
+      "norway pout",
+      "pikeperch",
+      "pleuronectidae (dab, halibut, plaice)",
+      "pacific ocean perch",
+      "true sole",
+      "catfish",
+      "thunnus",
+      "cichlidae (tilapia)",
+      "fishes",
+      "japanese sea bass"
+    ],
+    "cetaceans": [
+      "beluga whale",
+      "bowhead whale",
+      "cetacea (dolphin, porpoise, whale)"
+    ],
+    "other aquatic foods": [
+      "tunicate",
+      "sea cucumber",
+      "jellyfish",
+      "green turtle",
+      "ascidians"
+    ],
+    "pinnipeds": [
+      "spotted seal",
+      "steller sea lion",
+      "bearded seal",
+      "ringed seal",
+      "walrus",
+      "true seal"
+    ],
+    "amphibians": [
+      "true frog"
+    ],
+    "fish products": [
+      "other fish product"
+    ],
+    "roe": [
+      "roe"
+    ],
+    "bivalvia": [
+      "clam"
+    ]
+  },
+  "animal foods": {
+    "bovines": [
+      "bison",
+      "buffalo",
+      "cattle (beef, veal)",
+      "beefalo"
+    ],
+    "swine": [
+      "wild boar",
+      "domestic pig"
+    ],
+    "poultry": [
+      "chicken",
+      "mallard duck",
+      "emu",
+      "greylag goose",
+      "guinea hen",
+      "ostrich",
+      "velvet duck",
+      "pheasant",
+      "squab",
+      "turkey",
+      "quail",
+      "anatidae",
+      "rock ptarmigan",
+      "columbidae (dove, pigeon)"
+    ],
+    "venison": [
+      "mule deer",
+      "elk",
+      "deer"
+    ],
+    "equines": [
+      "horse"
+    ],
+    "lagomorphs": [
+      "european rabbit",
+      "rabbit",
+      "mountain hare"
+    ],
+    "ovis": [
+      "sheep (mutton, lamb)"
+    ],
+    "caprae": [
+      "domestic goat"
+    ]
+  },
+  "milk and milk products": {
+    "fermented milk products": [
+      "cheese",
+      "yogurt",
+      "ymer",
+      "processed cheese",
+      "mozzarella cheese",
+      "plain cream cheese",
+      "cheddar cheese",
+      "parmesan cheese",
+      "monterey jack cheese",
+      "swiss cheese",
+      "cottage cheese",
+      "blue cheese",
+      "greek feta cheese"
+    ],
+    "unfermented milks": [
+      "milk (cow)",
+      "milk (human)",
+      "milk (other mammals)",
+      "cow milk, pasteurized, vitamin a + d added, 0% fat",
+      "cow milk, pasteurized, vitamin a + d added, 1% fat",
+      "cow milk, pasteurized, vitamin a + d added, 2% fat",
+      "cow milk, pasteurized, vitamin d added, 3.25% fat"
+    ],
+    "other milk products": [
+      "butter",
+      "cream",
+      "whey",
+      "casein",
+      "dried milk",
+      "butterfat",
+      "evaporated milk",
+      "condensed milk",
+      "almond milk",
+      "coconut milk",
+      "salted butter",
+      "sour cream"
+    ],
+    "fermented milks": [
+      "kefir",
+      "buttermilk",
+      "other fermented milk"
+    ],
+    "milk and milk products": [
+      "milk and milk products"
+    ]
+  },
+  "eggs": {
+    "eggs": [
+      "eggs",
+      "egg yolk"
+    ]
+  },
+  "confectioneries": {
+    "frozen desserts": [
+      "ice cream",
+      "other frozen dessert",
+      "frozen yogurt",
+      "milkshake"
+    ],
+    "other confectioneries": [
+      "honey",
+      "nougat",
+      "toffee",
+      "marzipan",
+      "meringue",
+      "icing"
+    ],
+    "candies": [
+      "liquorice",
+      "dragée",
+      "chewing gum",
+      "marshmallow",
+      "fruit gum",
+      "other candy",
+      "fudge",
+      "candy bar"
+    ],
+    "desserts": [
+      "cake",
+      "pastry",
+      "gelatin dessert",
+      "pudding",
+      "pie",
+      "akutaq",
+      "chocolate mousse"
+    ],
+    "spreads": [
+      "chocolate spread",
+      "dulce de leche"
+    ],
+    "milk desserts": [
+      "sweet custard",
+      "junket"
+    ]
+  },
+  "baking goods": {
+    "seasonings": [
+      "vinegar",
+      "salt",
+      "adobo"
+    ],
+    "dressings": [
+      "salad dressing"
+    ],
+    "sauces": [
+      "sauce"
+    ],
+    "substitutes": [
+      "butter substitute",
+      "sugar substitute",
+      "cream substitute",
+      "coffee substitute",
+      "egg substitute",
+      "milk substitute"
+    ],
+    "sugars": [
+      "sugar"
+    ],
+    "condiments": [
+      "mustard",
+      "remoulade",
+      "ketchup",
+      "relish"
+    ],
+    "baking goods": [
+      "meat bouillon",
+      "leavening agent",
+      "gelatin",
+      "syrup",
+      "topping",
+      "pectin",
+      "tapioca pearl",
+      "spread",
+      "phyllo dough",
+      "cooking oil",
+      "pie filling",
+      "molasses",
+      "stuffing"
+    ],
+    "wrappers": [
+      "pie crust",
+      "ice cream cone",
+      "wonton wrapper",
+      "edible shell"
+    ]
+  },
+  "dishes": {
+    "other dishes": [
+      "pizza",
+      "dumpling",
+      "soup",
+      "baked beans",
+      "salad",
+      "stew",
+      "falafel",
+      "frybread",
+      "pancake",
+      "waffle",
+      "vegetarian food",
+      "other dish",
+      "pot pie"
+    ],
+    "ground meat": [
+      "sausage",
+      "meatball",
+      "pate",
+      "meatloaf",
+      "cold cut"
+    ],
+    "tex-mex cuisine": [
+      "burrito",
+      "chili",
+      "taco",
+      "nachos"
+    ],
+    "sandwiches": [
+      "hamburger",
+      "hot dog",
+      "other sandwich",
+      "breakfast sandwich",
+      "veggie burger",
+      "fish burger"
+    ],
+    "asian cuisine": [
+      "egg roll",
+      "rice cake"
+    ],
+    "pasta dishes": [
+      "lasagna",
+      "macaroni and cheese",
+      "ravioli",
+      "other pasta dish"
+    ],
+    "berber cuisine": [
+      "couscous"
+    ],
+    "mexican cuisine": [
+      "chimichanga",
+      "tostada",
+      "quesadilla",
+      "enchilada"
+    ],
+    "potato dishes": [
+      "baked potato",
+      "potato puffs",
+      "potato gratin"
+    ],
+    "american cuisine": [
+      "hushpuppy",
+      "scrapple",
+      "succotash"
+    ],
+    "latin american cuisine": [
+      "tamale",
+      "pupusa",
+      "empanada",
+      "arepa"
+    ],
+    "jewish cuisine": [
+      "gefilte fish"
+    ],
+    "levantine cuisine": [
+      "hummus"
+    ]
+  },
+  "snack foods": {
+    "snack foods": [
+      "other snack food",
+      "snack bar",
+      "popcorn",
+      "potato chip",
+      "tortilla chip",
+      "corn chip",
+      "cracker",
+      "trail mix"
+    ]
+  },
+  "baby foods": {
+    "baby foods": [
+      "baby food"
+    ]
+  },
+  "unclassified": {
+    "unclassified": [
+      "unclassified food or beverage"
+    ]
+  },
+  "fats and oils": {
+    "animal fats": [
+      "tallow",
+      "lard",
+      "other animal fat",
+      "dripping"
+    ],
+    "vegetable fats": [
+      "shortening",
+      "margarine",
+      "margarine-like spread"
+    ],
+    "fats and oils": [
+      "fats and oils"
+    ]
+  },
+  "null": {
+    "null": [
+      "fish oil",
+      "taco shell",
+      "tostada shell"
+    ]
+  }
+}

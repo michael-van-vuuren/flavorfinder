@@ -6,6 +6,8 @@ import App from "./App";
 import { MainContext } from "./MainContext"
 import "./App.css";
 
+import "typeface-roboto";
+
 
 
 
@@ -61,13 +63,12 @@ function Login() {
   else {
     return (
       <div>
-        <h1 style={{ display: "flex", justifyContent: "center", marginTop: "1%" }}>FlavorFinder</h1>
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "10%", borderStyle: "solid", marginLeft: "10%", marginRight: "10%", padding: "10%", borderColor: "#d4d4d4", borderRadius: "10px" }}>
-          <GoogleLogin onSuccess={(res) => { setLogin(true); handleGoogleLogin(res); }} onError={errorMessage} />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", marginTop: "50px", marginLeft: "auto", marginRight: "auto", width: "300px", padding: "20px", borderStyle: "solid", borderColor: "#d4d4d4", borderRadius: "10px" }}>
+          <img src={process.env.PUBLIC_URL + "/logo192.png"} alt="FlavorFinder" style={{ width: "100px", marginBottom: "20px", marginTop: "40px" }} />
+          <h1 style={{ display: "flex", justifyContent: "center", marginTop: "1%", marginBottom: "30px", fontFamily: "Roboto, sans-serif" }}>FlavorFinder</h1>
+          <GoogleLogin onSuccess={(res) => { setLogin(true); responseMessage(res); }} onError={errorMessage} />
         </div>
-
       </div>
-
     );
   }
 
