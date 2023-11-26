@@ -5,10 +5,12 @@ export default class PantryController {
   static async apiAddUser(req, res, next) {
     try {
       const user = req.body.user
+      const name = req.body.name
       const pantry = []
 
       const userAdded = await PantryDAO.addUser(
         user,
+        name,
         pantry
       )
       let _id = userAdded.insertedId.toString()
@@ -33,10 +35,24 @@ export default class PantryController {
     }
   }
 
+  static async apiGetName(req, res, next) {
+    try {
+      let id = req.params.id
+      let userData = await PantryDAO.getUserName(id)
+      if (!userData) {
+        res.status(404).json({ error: 'cannot find user' })
+        return
+      }
+      res.json(userData.name || '')
+    } catch (e) {
+      res.status(500).json({ error: e})
+    }
+  }
+
   // res = [{"ingredientId":"..","quantity":"..","units":".."},..]
   static async apiGetPantry(req, res, next) {
     try {
-      let id = req.params.id || {}
+      let id = req.params.id
       
       let userData = await PantryDAO.getUserData(id)
       if (!userData) {

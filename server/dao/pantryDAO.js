@@ -15,10 +15,11 @@ export default class PantryDAO {
     }
   }
 
-  static async addUser(user, pantry) {
+  static async addUser(user, name, pantry) {
     try {
       const newUser = {
         user: user,
+        name: name,
         pantry: pantry
       }
       return await pantrydb.insertOne(newUser)
@@ -34,6 +35,18 @@ export default class PantryDAO {
       return await pantrydb.findOne(
         { user: sub }
       )
+    } catch (e) {
+      console.error(`Unable to get user: ${e}`)
+      return null
+    }
+  }
+
+  static async getUserName(userId) {
+    try {
+      return await pantrydb.findOne(
+        { _id: new ObjectId(userId) }
+      )
+      
     } catch (e) {
       console.error(`Unable to get user: ${e}`)
       return null

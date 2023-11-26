@@ -10,30 +10,25 @@ function Tabs() {
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
     const { userId } = useContext(MainContext)
-
-    // LOGIN USER ID SET HERE RIGHT NOW
-    // below users are currently in flavorfinder.pantries in the db
-    // michael - 6556b9a6b7de3c37de02c24b
-    // tom     - 6556d131755e12ed18838678
-    //const [userId, setUserId] = useState('6556d131755e12ed18838678')
+    const [name, setName] = useState('')
 
     useEffect(() => {
         // entry
-        fetchIngredients() 
+        fetchName()
+        fetchIngredients()
         fetchPantry()
-        
+
         return () => {
             // exit
         };
     }, []);
 
-    const fetchClientId = async () => {
+    const fetchName = async () => {
         try {
-            const response = await fetch(`http://localhost:3001/api/v1/clientid`)
-            const res = await response.json()
-            console.log(res.clientid)
+            const response = await fetch(`http://localhost:3001/api/v1/users/name/${userId}`)
+            setName(await response.json())
         } catch (e) {
-            console.error('error fetching pantry:', e)
+            console.error('error fetching name:', e)
         }
     }
 
@@ -65,24 +60,31 @@ function Tabs() {
             <div className="bloc-tabs">
                 <div className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
                     onClick={() => toggleTab(1)}
-                >Recipe Recommender</div>
+                >Home</div>
                 <div className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-                    onClick={() => toggleTab(2)}
-                >Recipe Pool</div>
-                <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-                    onClick={() => { toggleTab(3); fetchIngredients(); fetchPantry() }}
+                    onClick={() => { toggleTab(2); fetchIngredients(); fetchPantry() }}
                 >Pantry</div>
+                <div className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+                    onClick={() => toggleTab(3)}
+                >Recipes</div>
+                <div className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+                    onClick={() => toggleTab(4)}
+                >RecipeBot</div>
             </div>
 
             <div className="content-tabs">
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <Recommender />
+                    <h2>Welcome, {name}!</h2>
+                    <p>tutorial text</p>
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
-                    <RecipePool />
+                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
-                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} />
+                    <RecipePool />
+                </div>
+                <div className={toggleState === 4 ? "content active-content" : "content"}>
+                    <Recommender />
                 </div>
             </div>
 
