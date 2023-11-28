@@ -74,7 +74,7 @@ function Tabs() {
 
             <div className="content-tabs">
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <h2>Welcome, {name}!</h2>
+                    <h2>{name ? `Welcome, ${name}!` : ''}</h2>
                     <p>tutorial text</p>
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>

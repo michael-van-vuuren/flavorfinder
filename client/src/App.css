@@ -7,7 +7,7 @@
 }
 
 body {
-  background: #fff;
+  background: white;
 }
 
 .container {
@@ -22,10 +22,14 @@ body {
   margin: 100px auto 0;
   word-break: break-all;
   border: 1px solid rgba(0, 0, 0, 0.274);
+  border-radius: 4px;
+  filter: drop-shadow(0 0 1.0rem #00000054);
 }
 
 .bloc-tabs {
   display: flex;
+  background-color: rgba(0, 0, 0, 0.315);
+  border-radius: 4px;
 }
 
 .tabs:not(.active-tabs):hover {
@@ -36,12 +40,14 @@ body {
   padding: 15px;
   text-align: center;
   width: 50%;
-  background: rgba(128, 128, 128, 0.075);
+  background: rgb(238, 238, 238);
   cursor: pointer;
   border-bottom: 1px solid rgba(0, 0, 0, 0.274);
   box-sizing: content-box;
   position: relative;
   outline: none;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
 
 .tabs:not(:last-child) {
@@ -51,25 +57,12 @@ body {
 .active-tabs {
   background: white;
   border-bottom: 1px solid transparent;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
 }
-
-/* .active-tabs::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: -4px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: calc(100% + 2px);
-  height: 4px;
-  background: rgba(255, 195, 16, 0.708);
-} */
-
-
 
 button {
   border: none;
-
 }
 
 .content-tabs {
@@ -95,4 +88,5 @@ button {
 
 .active-content {
   display: block;
+  border-radius: 4px;
 }
