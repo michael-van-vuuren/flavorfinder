@@ -1,3 +1,22 @@
+body {
+    position: relative;
+    height: 100vh;
+    margin: 0;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://img.freepik.com/premium-vector/vector-fruits-icons_313218-806.jpg?w=1380') center center fixed;
+    background-size: cover;
+    filter: contrast(0.2) brightness(1.7);
+    z-index: -1;
+}
+
 #pantry-title {
     color: black;
     font-size: 24px;
@@ -22,6 +41,7 @@
     align-items: center;
     background-color: rgba(104, 104, 104, 0.064);
     padding: 15px;
+    border-radius: 4px;
 }
 
 button:active {
@@ -49,6 +69,7 @@ button {
     vertical-align: top;
     box-shadow: 2px 1px 2px gray;
     margin: 4px 10px 4px 10px;
+    border-radius: 2px;
 }
 
 ul {
@@ -58,8 +79,12 @@ ul {
 .ingredient-list {
     list-style-type: none;
     padding: 0;
-    height: 300px;
+    height: 325px;
     overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
+    padding: 8px;
+    margin-top: 10px;
 }
 
 .ingredient-list li {

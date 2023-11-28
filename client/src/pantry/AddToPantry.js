@@ -17,6 +17,7 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
   const ingredientListRef = useRef(null)
 
   useEffect(() => {
+    console.log(ingredients)
     if (scrollToBottom && ingredientListRef.current) {
       ingredientListRef.current.scrollTop = ingredientListRef.current.scrollHeight
       setScrollToBottom(false)
@@ -92,7 +93,8 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
           <button className="add-button" onClick={handleAdd}>Add</button>
         </div>
       </div>
-      {pantryAddition.length > 0 && (
+
+      {pantryAddition.length > 0 ? (
         <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
             {pantryAddition.map((ingredient, index) => (
@@ -107,6 +109,8 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
             ))}
           </ul>
         </div>
+      ) : (
+        <div className='ingredient-list' ref={ingredientListRef}></div>
       )}
     </div>
   )

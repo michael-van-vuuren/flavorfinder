@@ -7,6 +7,8 @@ const irregular =
         'quinoa',
         'octopus',
         'corn',
+        'broccoli',
+        'garlic',
     ]
 
 irregular.forEach(x => {
