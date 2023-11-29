@@ -3,7 +3,7 @@ import { MainContext } from "./MainContext"
 import "./App.css";
 import Tabs from './Tabs';
 
-function App() {
+function App({ returningUser }) {
   const { login, setLogin } = useContext(MainContext);
   return (
     <div>
@@ -14,7 +14,7 @@ function App() {
       </div>
 
       <div className="App">
-        <Tabs />
+        <Tabs returningUser={returningUser} />
       </div>
     </div>
 

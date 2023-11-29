@@ -35,21 +35,7 @@ export default class PantryController {
     }
   }
 
-  static async apiGetName(req, res, next) {
-    try {
-      let id = req.params.id
-      let userData = await PantryDAO.getUserName(id)
-      if (!userData) {
-        res.status(404).json({ error: 'cannot find user' })
-        return
-      }
-      res.json(userData.name || '')
-    } catch (e) {
-      res.status(500).json({ error: e})
-    }
-  }
-
-  // res = [{"ingredientId":"..","quantity":"..","units":".."},..]
+  // res = [{name: <username>, pantry: {"ingredientId":"..","quantity":"..","units":".."},..}]
   static async apiGetPantry(req, res, next) {
     try {
       let id = req.params.id
@@ -59,7 +45,7 @@ export default class PantryController {
         res.status(404).json({ error: 'cannot find user' })
         return
       }
-      res.json(userData.pantry || [])
+      res.json(userData || [])
     } catch (e) {
       console.log(`api, ${e}`)
       res.status(500).json({ error: e })

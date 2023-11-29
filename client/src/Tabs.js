@@ -4,38 +4,40 @@ import Recommender from './recommender/Recommender';
 import RecipePool from './recipe-pool/RecipePool';
 import PantryHome from './pantry/PantryHome';
 import { MainContext } from './MainContext';
+import Typewriter from 'typewriter-effect';
 
-function Tabs() {
+function Tabs({ returningUser }) {
     const [toggleState, setToggleState] = useState(1)
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
     const { userId } = useContext(MainContext)
     const [name, setName] = useState('')
 
+    const welcomeStrings = returningUser
+        ? [`Welcome back ${name}`]
+        : [`Welcome, ${name}!`];
+
+    const tutorialStrings = returningUser
+        ? ['Visit the Pantry tab to add ingredients']
+        : ['Visit the Pantry tab to get started'];
+
     useEffect(() => {
         // entry
-        fetchName()
         fetchIngredients()
         fetchPantry()
+        console.log(returningUser)
 
         return () => {
             // exit
         };
     }, []);
 
-    const fetchName = async () => {
-        try {
-            const response = await fetch(`http://localhost:3001/api/v1/users/name/${userId}`)
-            setName(await response.json())
-        } catch (e) {
-            console.error('error fetching name:', e)
-        }
-    }
-
     const fetchPantry = async () => {
         try {
             const response = await fetch(`http://localhost:3001/api/v1/users/${userId}`)
-            setPantry(await response.json())
+            const pantryData = await response.json()
+            setName(pantryData.name)
+            setPantry(pantryData.pantry)
         } catch (e) {
             console.error('error fetching pantry:', e)
         }
@@ -74,8 +76,21 @@ function Tabs() {
 
             <div className="content-tabs">
                 <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <h2>{name ? `Welcome, ${name}!` : ''}</h2>
-                    <p>tutorial text</p>
+                    <h2>
+                        <Typewriter
+                            options={{
+                                strings: welcomeStrings,
+                                autoStart: true,
+                                loop: false,
+                                delay: 75,
+                                deleteSpeed: Infinity,
+                                cursor: '',
+                            }}
+                        />
+                    </h2>
+                    <p>
+                        {tutorialStrings}
+                    </p>
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
                     <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} />

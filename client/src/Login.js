@@ -17,6 +17,7 @@ function Login() {
   const [hasUsername, setHasUsername] = useState(false)
   const [username, setUsername] = useState('')
   const [sub, setSub] = useState('')
+  const [returningUser, setReturningUser] = useState(false)
 
   const responseMessage = (response) => {
     console.log(response)
@@ -32,6 +33,7 @@ function Login() {
       setHasUsername(false)
       setUsername('')
       setSub('')
+      setReturningUser(false)
 
       // Decode credential to get user info, including unique sub field
       const decoded = jwtDecode(response.credential)
@@ -44,6 +46,7 @@ function Login() {
       if (exists.ok) {
         setUserId(responseData._id)
         setHasUsername(true)
+        setReturningUser(true)
       }
 
     } catch (e) {
@@ -95,7 +98,7 @@ function Login() {
       </div >
     )
   }
-  return <App />
+  return <App returningUser={returningUser} />
 }
 
 export default Login
