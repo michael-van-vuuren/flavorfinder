@@ -41,18 +41,6 @@ export default class PantryDAO {
     }
   }
 
-  static async getUserName(userId) {
-    try {
-      return await pantrydb.findOne(
-        { _id: new ObjectId(userId) }
-      )
-      
-    } catch (e) {
-      console.error(`Unable to get user: ${e}`)
-      return null
-    }
-  }
-
   static async getUserData(userId) {
     try {
       return await pantrydb.findOne(

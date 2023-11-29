@@ -1,6 +1,7 @@
 import React from 'react'
 import pluralizeIngredient from '../utility/pluralizeIngredient.js'
 import './Pantry.css'
+import Tags from './Tags.js'
 
 const Pantry = ({ pantry, fetchPantry, userId }) => {
 
@@ -33,10 +34,13 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
           <ul>
             {pantry.map((ingredient, index) => (
               <li key={index}>
-                {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(ingredient.name, ingredient.quantity)}
                 {ingredient.image && (
                   <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
                 )}
+                <p style={{ lineHeight: 2 }}>
+                  {/* onClick={Tags.ingredientTag()} */}
+                  {ingredient.quantity}{ingredient.units} of <span className='tag' onClick={() => Tags.ingredientTag(ingredient.ingredientId)}>{pluralizeIngredient(ingredient.name, ingredient.quantity)}</span>
+                </p>
                 <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
               </li>
             ))}

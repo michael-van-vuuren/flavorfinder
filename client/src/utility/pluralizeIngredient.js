@@ -16,6 +16,10 @@ const irregular =
         'acorn squash',
         'butternut squash',
         'chocolate',
+        'cumin',
+        'celery',
+        'wild celery',
+        'beer',
     ]
 
 irregular.forEach(x => {

@@ -50,7 +50,7 @@ button:active {
 }
 
 button:hover {
-    background-color: rgb(206, 206, 206);
+    background-color: #cecece;
 }
 
 .add-button:hover {
@@ -70,6 +70,7 @@ button {
     box-shadow: 2px 1px 2px gray;
     margin: 4px 10px 4px 10px;
     border-radius: 2px;
+    font-family: 'Roboto';font-size: 14px;
 }
 
 ul {
@@ -85,11 +86,12 @@ ul {
     border-radius: 4px;
     padding: 8px;
     margin-top: 10px;
+    margin: 10px 20px;
     box-shadow: inset 0px 0px 2px gray;
 }
 
 .ingredient-list li {
-    margin-bottom: 10px;
+    margin: 0px 10px 0px 10px;
     display: flex;
     align-items: center;
 }
@@ -97,6 +99,13 @@ ul {
 .ingredient-list li img {
     width: 40px;
     margin-left: 10px;
+    margin-right: 10px;
+}
+
+.ingredient-list li p {
+    margin-right: 20px;
+    margin-left: 10px;
+    max-width: 67%;
 }
 
 @keyframes highlight {
@@ -111,4 +120,16 @@ ul {
 
 .ingredient-list li.highlight {
     animation: highlight 1.5s;
+}
+
+.tag { 
+    background-color: #eeeeee; 
+    padding: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer; 
+}
+
+.tag:hover {
+    background-color: black; 
+    color: white;
 }
