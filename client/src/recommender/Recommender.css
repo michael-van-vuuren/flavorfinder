@@ -1,3 +1,16 @@
-#recommender-title {
-    color:black;
+.chatBox {
+    background-color: rgb(232, 232, 231);
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(189, 189, 189);
+    width: 700px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputDiv {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 5px;
 }
