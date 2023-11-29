@@ -9,6 +9,13 @@ const irregular =
         'corn',
         'broccoli',
         'garlic',
+        'tea',
+        'coffee',
+        'chicken',
+        'winter squash',
+        'acorn squash',
+        'butternut squash',
+        'chocolate',
     ]
 
 irregular.forEach(x => {

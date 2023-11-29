@@ -35,7 +35,7 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
               <li key={index}>
                 {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(ingredient.name, ingredient.quantity)}
                 {ingredient.image && (
-                  <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
+                  <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
                 )}
                 <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
               </li>

@@ -102,7 +102,7 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
                 <span style={{ color: '#99e386', fontWeight: 'bold' }}>+&ensp;</span>
                 {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(getIngredientNameById(ingredient.ingredientId), ingredient.quantity)}
                 {ingredient.image && (
-                  <img src={ingredient.image} alt="Ingredient" className="ingredient-image" />
+                  <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
                 )}
                 <button className="remove-button" onClick={() => handleRemove(index)}>Remove</button>
               </li>

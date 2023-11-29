@@ -1,0 +1,6946 @@
+[
+  {
+    "_id": 1,
+    "name": "angelica",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 2,
+    "name": "savoy cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 3,
+    "name": "silver linden",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 4,
+    "name": "kiwi",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 5,
+    "name": "allium",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 6,
+    "name": "garden onion",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 7,
+    "name": "leek",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 8,
+    "name": "garlic",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 9,
+    "name": "chives",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 10,
+    "name": "lemon verbena",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 11,
+    "name": "cashew nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 12,
+    "name": "pineapple",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 13,
+    "name": "dill",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 14,
+    "name": "custard apple",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 15,
+    "name": "wild celery",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 16,
+    "name": "peanut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 17,
+    "name": "burdock",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 18,
+    "name": "horseradish",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 19,
+    "name": "tarragon",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 20,
+    "name": "mugwort",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 21,
+    "name": "asparagus",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 22,
+    "name": "oat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 23,
+    "name": "star fruit",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 24,
+    "name": "brazil nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 25,
+    "name": "common beet",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 26,
+    "name": "borage",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 27,
+    "name": "chinese mustard",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 28,
+    "name": "swede",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 29,
+    "name": "rape",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 30,
+    "name": "common cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 31,
+    "name": "cauliflower",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 32,
+    "name": "brussel sprouts",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 33,
+    "name": "kohlrabi",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 34,
+    "name": "broccoli",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 35,
+    "name": "chinese cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 36,
+    "name": "turnip",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 37,
+    "name": "pigeon pea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 38,
+    "name": "tea",
+    "food_group": "teas",
+    "food_subgroup": "teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 39,
+    "name": "capers",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 40,
+    "name": "pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 41,
+    "name": "papaya",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 42,
+    "name": "safflower",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 43,
+    "name": "caraway",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 44,
+    "name": "pecan nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 45,
+    "name": "chestnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 46,
+    "name": "roman camomile",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 47,
+    "name": "chickpea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 48,
+    "name": "endive",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 49,
+    "name": "chicory",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 50,
+    "name": "chinese cinnamon",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 51,
+    "name": "ceylon cinnamon",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 52,
+    "name": "watermelon",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 53,
+    "name": "lime",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 54,
+    "name": "lemon",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 55,
+    "name": "pummelo",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 56,
+    "name": "mandarin orange (clementine, tangerine)",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 57,
+    "name": "sweet orange",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 58,
+    "name": "coffee",
+    "food_group": "coffee and coffee products",
+    "food_subgroup": "coffee",
+    "image": "coffee-and-coffee-products.svg"
+  },
+  {
+    "_id": 59,
+    "name": "arabica coffee",
+    "food_group": "coffee and coffee products",
+    "food_subgroup": "coffee",
+    "image": "coffee-and-coffee-products.svg"
+  },
+  {
+    "_id": 60,
+    "name": "robusta coffee",
+    "food_group": "coffee and coffee products",
+    "food_subgroup": "coffee",
+    "image": "coffee-and-coffee-products.svg"
+  },
+  {
+    "_id": 61,
+    "name": "coriander",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 62,
+    "name": "common hazelnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 63,
+    "name": "saffron",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 64,
+    "name": "muskmelon",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 65,
+    "name": "cucumber",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 66,
+    "name": "cucurbita",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 67,
+    "name": "cumin",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 68,
+    "name": "turmeric",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 69,
+    "name": "quince",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 70,
+    "name": "lemon grass",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 71,
+    "name": "globe artichoke",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 72,
+    "name": "wild carrot",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 73,
+    "name": "japanese persimmon",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 74,
+    "name": "cardamom",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 75,
+    "name": "black crowberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 76,
+    "name": "loquat",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 77,
+    "name": "rocket salad (ssp.)",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 78,
+    "name": "wax apple",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 79,
+    "name": "common buckwheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 80,
+    "name": "tartary buckwheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 81,
+    "name": "fig",
+    "food_group": "fruits",
+    "food_subgroup": "other fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 82,
+    "name": "fennel",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 83,
+    "name": "strawberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 84,
+    "name": "black huckleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 85,
+    "name": "soy bean",
+    "food_group": "soy",
+    "food_subgroup": "soy",
+    "image": "default.svg"
+  },
+  {
+    "_id": 86,
+    "name": "sunflower",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 87,
+    "name": "sea-buckthornberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 88,
+    "name": "barley",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 89,
+    "name": "hyssop",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 90,
+    "name": "star anise",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 91,
+    "name": "swamp cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 92,
+    "name": "sweet potato",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 93,
+    "name": "black walnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 94,
+    "name": "common walnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 95,
+    "name": "lettuce",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 96,
+    "name": "grass pea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 97,
+    "name": "sweet bay",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 98,
+    "name": "lentils",
+    "food_group": "pulses",
+    "food_subgroup": "lentils",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 99,
+    "name": "garden cress",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 100,
+    "name": "lovage",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 101,
+    "name": "flaxseed",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 102,
+    "name": "mexican oregano",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 103,
+    "name": "lichee",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 104,
+    "name": "lupine",
+    "food_group": "pulses",
+    "food_subgroup": "other pulses",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 105,
+    "name": "apple",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 106,
+    "name": "mango",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 107,
+    "name": "german camomile",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 108,
+    "name": "lemon balm",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 109,
+    "name": "mentha",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 110,
+    "name": "orange mint",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 111,
+    "name": "cornmint",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 112,
+    "name": "spearmint",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 113,
+    "name": "peppermint",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 114,
+    "name": "medlar",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 115,
+    "name": "bitter gourd",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 116,
+    "name": "mulberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 117,
+    "name": "black mulberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 118,
+    "name": "nutmeg",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 119,
+    "name": "sweet basil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 120,
+    "name": "evening primrose",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 121,
+    "name": "olive",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 122,
+    "name": "sweet marjoram",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 123,
+    "name": "pot marjoram",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 124,
+    "name": "common oregano",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 125,
+    "name": "rice",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 126,
+    "name": "millet",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 127,
+    "name": "poppy",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 128,
+    "name": "passion fruit",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 129,
+    "name": "parsnip",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 130,
+    "name": "avocado",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 131,
+    "name": "parsley",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 132,
+    "name": "scarlet bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 133,
+    "name": "lima bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 134,
+    "name": "common bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 135,
+    "name": "date",
+    "food_group": "fruits",
+    "food_subgroup": "other fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 136,
+    "name": "black chokeberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 137,
+    "name": "anise",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 138,
+    "name": "pine nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 139,
+    "name": "pepper (spice)",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 140,
+    "name": "pistachio",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 141,
+    "name": "common pea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 142,
+    "name": "purslane",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 143,
+    "name": "prunus (cherry, plum)",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 144,
+    "name": "apricot",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 145,
+    "name": "sweet cherry",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 146,
+    "name": "sour cherry",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 147,
+    "name": "european plum",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 148,
+    "name": "almond",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 149,
+    "name": "peach",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 150,
+    "name": "guava",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 151,
+    "name": "pomegranate",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 152,
+    "name": "pear",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 153,
+    "name": "radish",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 154,
+    "name": "garden rhubarb",
+    "food_group": "vegetables",
+    "food_subgroup": "stalk vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 155,
+    "name": "blackcurrant",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 156,
+    "name": "redcurrant",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 157,
+    "name": "gooseberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 158,
+    "name": "watercress",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 159,
+    "name": "rosemary",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 160,
+    "name": "rubus (blackberry, raspberry)",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 161,
+    "name": "cloudberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 162,
+    "name": "red raspberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 163,
+    "name": "black raspberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 164,
+    "name": "sorrel",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 165,
+    "name": "common sage",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 166,
+    "name": "black elderberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 167,
+    "name": "summer savory",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 168,
+    "name": "winter savory",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 169,
+    "name": "rye",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 170,
+    "name": "sesame",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 171,
+    "name": "garden tomato",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 172,
+    "name": "cherry tomato",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 173,
+    "name": "garden tomato (var.)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 174,
+    "name": "eggplant",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 175,
+    "name": "potato",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 176,
+    "name": "rowanberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 177,
+    "name": "sorghum",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 178,
+    "name": "spinach",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 179,
+    "name": "cloves",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 180,
+    "name": "tamarind",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 181,
+    "name": "dandelion",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 182,
+    "name": "cocoa bean",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 183,
+    "name": "common thyme",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 184,
+    "name": "linden",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 185,
+    "name": "small-leaf linden",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 186,
+    "name": "fenugreek",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 187,
+    "name": "common wheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 188,
+    "name": "vaccinium (blueberry, cranberry, huckleberry)",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 189,
+    "name": "lowbush blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 190,
+    "name": "sparkleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 191,
+    "name": "highbush blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 192,
+    "name": "american cranberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 193,
+    "name": "bilberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 194,
+    "name": "lingonberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 195,
+    "name": "vanilla",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 196,
+    "name": "common verbena",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 197,
+    "name": "broad bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 198,
+    "name": "adzuki bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 199,
+    "name": "gram bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 200,
+    "name": "mung bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 201,
+    "name": "climbing bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 202,
+    "name": "cowpea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 203,
+    "name": "muscadine grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 204,
+    "name": "common grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 205,
+    "name": "corn",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 206,
+    "name": "ginger",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 207,
+    "name": "arctic blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 208,
+    "name": "banana",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 209,
+    "name": "bayberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 210,
+    "name": "elliott's blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 211,
+    "name": "canada blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 212,
+    "name": "bog bilberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 213,
+    "name": "buffalo currant",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 214,
+    "name": "celeriac",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 215,
+    "name": "celery stalks",
+    "food_group": "vegetables",
+    "food_subgroup": "stalk vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 216,
+    "name": "chinese chives",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 217,
+    "name": "european cranberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 218,
+    "name": "deerberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 219,
+    "name": "ginseng",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 220,
+    "name": "cascade huckleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 221,
+    "name": "oval-leaf huckleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 222,
+    "name": "evergreen huckleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 223,
+    "name": "red huckleberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 224,
+    "name": "longan",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 225,
+    "name": "macadamia nut (m. tetraphylla)",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 226,
+    "name": "garden onion (var.)",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 227,
+    "name": "summer grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 228,
+    "name": "fox grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 229,
+    "name": "nectarine",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 230,
+    "name": "peach (var.)",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 231,
+    "name": "pepper (c. baccatum)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 232,
+    "name": "pepper (c. chinense)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 233,
+    "name": "pepper (capsicum)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 234,
+    "name": "rambutan",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 235,
+    "name": "red rice",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 236,
+    "name": "annual wild rice",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 237,
+    "name": "swiss chard",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 238,
+    "name": "lemon thyme",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 239,
+    "name": "tronchuda cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 240,
+    "name": "japanese walnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 241,
+    "name": "welsh onion",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 242,
+    "name": "hard wheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 243,
+    "name": "shallot",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 244,
+    "name": "rocket salad",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 245,
+    "name": "carrot",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 246,
+    "name": "triticale",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 247,
+    "name": "black cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 248,
+    "name": "half-highbush blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 249,
+    "name": "celery leaves",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 250,
+    "name": "chicory leaves",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 251,
+    "name": "komatsuna",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 252,
+    "name": "pak choy",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 253,
+    "name": "napa cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 254,
+    "name": "chicory roots",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 255,
+    "name": "grapefruit/pummelo hybrid",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 256,
+    "name": "grapefruit",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 257,
+    "name": "jostaberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 258,
+    "name": "kai-lan",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 259,
+    "name": "italian oregano",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 260,
+    "name": "oxheart cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 261,
+    "name": "daikon radish",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 262,
+    "name": "black radish",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 263,
+    "name": "radish (var.)",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 264,
+    "name": "red beetroot",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 265,
+    "name": "sweet rowanberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 266,
+    "name": "pineappple sage",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 267,
+    "name": "skunk currant",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 268,
+    "name": "beer",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 269,
+    "name": "other bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "other breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 270,
+    "name": "breakfast cereal",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 272,
+    "name": "other soy product",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 273,
+    "name": "other cereal product",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 274,
+    "name": "pasta",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 275,
+    "name": "biscuit",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 276,
+    "name": "sourdough",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "doughs",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 277,
+    "name": "spirit",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 278,
+    "name": "fortified wine",
+    "food_group": "beverages",
+    "food_subgroup": "fortified wines",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 279,
+    "name": "other alcoholic beverage",
+    "food_group": "beverages",
+    "food_subgroup": "alcoholic beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 280,
+    "name": "abalone",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 281,
+    "name": "abiyuch",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 282,
+    "name": "acerola",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 283,
+    "name": "acorn",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 284,
+    "name": "winter squash",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 285,
+    "name": "agar",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 286,
+    "name": "red king crab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 287,
+    "name": "alfalfa",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 288,
+    "name": "allspice",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 289,
+    "name": "amaranth",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 290,
+    "name": "arrowhead",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 291,
+    "name": "arrowroot",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 292,
+    "name": "asian pear",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 293,
+    "name": "atlantic herring",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 294,
+    "name": "atlantic mackerel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 295,
+    "name": "painted comber",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 296,
+    "name": "atlantic pollock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 297,
+    "name": "atlantic wolffish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 298,
+    "name": "bamboo shoots",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 299,
+    "name": "striped bass",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 301,
+    "name": "beech nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 302,
+    "name": "beluga whale",
+    "food_group": "aquatic foods",
+    "food_subgroup": "cetaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 303,
+    "name": "bison",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
+    "image": "default.svg"
+  },
+  {
+    "_id": 305,
+    "name": "alaska blackfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 306,
+    "name": "blue crab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 307,
+    "name": "blue mussel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 308,
+    "name": "northern bluefin tuna",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 309,
+    "name": "bluefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 310,
+    "name": "wild boar",
+    "food_group": "animal foods",
+    "food_subgroup": "swine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 311,
+    "name": "bowhead whale",
+    "food_group": "aquatic foods",
+    "food_subgroup": "cetaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 312,
+    "name": "breadfruit",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 313,
+    "name": "breadnut tree seed",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 314,
+    "name": "rapini",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 316,
+    "name": "buffalo",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
+    "image": "default.svg"
+  },
+  {
+    "_id": 317,
+    "name": "burbot",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 318,
+    "name": "giant butterbur",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 319,
+    "name": "american butterfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 320,
+    "name": "butternut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 321,
+    "name": "butternut squash",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 322,
+    "name": "calabash",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 323,
+    "name": "cardoon",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 325,
+    "name": "natal plum",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 326,
+    "name": "carob",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 327,
+    "name": "common carp",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 328,
+    "name": "cassava",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 329,
+    "name": "channel catfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 330,
+    "name": "chayote",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 331,
+    "name": "cherimoya",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 332,
+    "name": "chervil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 333,
+    "name": "chia",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 334,
+    "name": "chicken",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 335,
+    "name": "chinese broccoli",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 336,
+    "name": "chinese chestnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 337,
+    "name": "chinese water chestnut",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 338,
+    "name": "garland chrysanthemum",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 339,
+    "name": "cisco",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 340,
+    "name": "nuttall cockle",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 341,
+    "name": "coconut",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 342,
+    "name": "pacific cod",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 343,
+    "name": "atlantic cod",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 344,
+    "name": "common octopus",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 345,
+    "name": "corn salad",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 346,
+    "name": "cottonseed",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 347,
+    "name": "catjang pea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 348,
+    "name": "malus (crab apple)",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 349,
+    "name": "squashberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 350,
+    "name": "atlantic croaker",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 351,
+    "name": "cusk",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 352,
+    "name": "cuttlefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 353,
+    "name": "mule deer",
+    "food_group": "animal foods",
+    "food_subgroup": "venison",
+    "image": "default.svg"
+  },
+  {
+    "_id": 354,
+    "name": "devilfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 355,
+    "name": "dock",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 356,
+    "name": "dolphin fish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 357,
+    "name": "freshwater drum",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 358,
+    "name": "mallard duck",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 359,
+    "name": "dungeness crab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 360,
+    "name": "durian",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 361,
+    "name": "eastern oyster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 362,
+    "name": "freshwater eel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 363,
+    "name": "elderberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 364,
+    "name": "elk",
+    "food_group": "animal foods",
+    "food_subgroup": "venison",
+    "image": "default.svg"
+  },
+  {
+    "_id": 365,
+    "name": "emu",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 366,
+    "name": "oregon yampah",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 367,
+    "name": "european anchovy",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 368,
+    "name": "european chestnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 369,
+    "name": "turbot",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 370,
+    "name": "fireweed",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 371,
+    "name": "florida pompano",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 372,
+    "name": "ginkgo nuts",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 373,
+    "name": "greylag goose",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 374,
+    "name": "grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 375,
+    "name": "greenland halibut/turbot",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 376,
+    "name": "groundcherry",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 377,
+    "name": "grouper",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 378,
+    "name": "guinea hen",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 379,
+    "name": "haddock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 380,
+    "name": "hippoglossus (common halibut)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 381,
+    "name": "hazelnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 382,
+    "name": "hickory nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 383,
+    "name": "horse",
+    "food_group": "animal foods",
+    "food_subgroup": "equines",
+    "image": "default.svg"
+  },
+  {
+    "_id": 384,
+    "name": "horseradish tree",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 385,
+    "name": "alaska blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 386,
+    "name": "hyacinth bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 387,
+    "name": "irish moss",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 388,
+    "name": "pacific jack mackerel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 389,
+    "name": "jackfruit",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 390,
+    "name": "japanese chestnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 391,
+    "name": "java plum",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 392,
+    "name": "jerusalem artichoke",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 393,
+    "name": "jujube",
+    "food_group": "fruits",
+    "food_subgroup": "other fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 394,
+    "name": "jute",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 395,
+    "name": "kale",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 396,
+    "name": "kelp",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 397,
+    "name": "king mackerel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 398,
+    "name": "kumquat",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 399,
+    "name": "lambsquarters",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 400,
+    "name": "leather chiton",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 401,
+    "name": "wild leek",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 402,
+    "name": "common ling",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 403,
+    "name": "lingcod",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 404,
+    "name": "american lobster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 405,
+    "name": "loganberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 406,
+    "name": "lotus",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 407,
+    "name": "sacred lotus",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 408,
+    "name": "white lupine",
+    "food_group": "pulses",
+    "food_subgroup": "other pulses",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 409,
+    "name": "malabar spinach",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 410,
+    "name": "mammee apple",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 411,
+    "name": "purple mangosteen",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 412,
+    "name": "alpine sweetvetch",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 413,
+    "name": "milkfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 414,
+    "name": "monkfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 416,
+    "name": "moth bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 417,
+    "name": "mountain yam",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 418,
+    "name": "striped mullet",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 420,
+    "name": "white mustard",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 421,
+    "name": "mustard spinach",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 422,
+    "name": "new zealand spinach",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 423,
+    "name": "nopal",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 424,
+    "name": "ocean pout",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 425,
+    "name": "north pacific giant octopus",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 426,
+    "name": "ohelo berry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 427,
+    "name": "okra",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 428,
+    "name": "tunicate",
+    "food_group": "aquatic foods",
+    "food_subgroup": "other aquatic foods",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 430,
+    "name": "ostrich",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 431,
+    "name": "spotted seal",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 432,
+    "name": "pacific herring",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 433,
+    "name": "pacific oyster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 434,
+    "name": "pacific rockfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 435,
+    "name": "velvet duck",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 436,
+    "name": "pepper (c. frutescens)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 437,
+    "name": "common persimmon",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 438,
+    "name": "pheasant",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 439,
+    "name": "northern pike",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 440,
+    "name": "pili nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 441,
+    "name": "colorado pinyon",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 442,
+    "name": "pitanga",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 443,
+    "name": "plains prickly pear",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 444,
+    "name": "french plantain",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 445,
+    "name": "american pokeweed",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 447,
+    "name": "opium poppy",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 448,
+    "name": "prairie turnip",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 449,
+    "name": "prickly pear",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 450,
+    "name": "quinoa",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 451,
+    "name": "european rabbit",
+    "food_group": "animal foods",
+    "food_subgroup": "lagomorphs",
+    "image": "default.svg"
+  },
+  {
+    "_id": 453,
+    "name": "rainbow smelt",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 454,
+    "name": "rainbow trout",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 455,
+    "name": "malabar plum",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 456,
+    "name": "rose hip",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 457,
+    "name": "roselle",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 458,
+    "name": "orange roughy",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 459,
+    "name": "sablefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 460,
+    "name": "pink salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 461,
+    "name": "chum salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 462,
+    "name": "coho salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 463,
+    "name": "sockeye salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 464,
+    "name": "chinook salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 465,
+    "name": "atlantic salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 466,
+    "name": "salmonberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 467,
+    "name": "common salsify",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 468,
+    "name": "sapodilla",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 469,
+    "name": "mamey sapote",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 470,
+    "name": "spanish mackerel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 471,
+    "name": "pacific sardine",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 472,
+    "name": "scallop",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 473,
+    "name": "scup",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 474,
+    "name": "sea cucumber",
+    "food_group": "aquatic foods",
+    "food_subgroup": "other aquatic foods",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 475,
+    "name": "steller sea lion",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 476,
+    "name": "bearded seal",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 477,
+    "name": "ringed seal",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 478,
+    "name": "sea trout",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 479,
+    "name": "sesbania flower",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 480,
+    "name": "american shad",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 481,
+    "name": "shark",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 482,
+    "name": "sheefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 483,
+    "name": "sheep (mutton, lamb)",
+    "food_group": "animal foods",
+    "food_subgroup": "ovis",
+    "image": "default.svg"
+  },
+  {
+    "_id": 484,
+    "name": "sheepshead",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 485,
+    "name": "hedge mustard",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 486,
+    "name": "skipjack tuna",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 487,
+    "name": "snapper",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 488,
+    "name": "soursop",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 489,
+    "name": "spelt",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 490,
+    "name": "spirulina",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 491,
+    "name": "squab",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 493,
+    "name": "strawberry guava",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 494,
+    "name": "greater sturgeon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 495,
+    "name": "white sucker",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 496,
+    "name": "sugar apple",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 497,
+    "name": "pumpkinseed sunfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 498,
+    "name": "swordfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 499,
+    "name": "taro",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 500,
+    "name": "teff",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 501,
+    "name": "tilefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 502,
+    "name": "mexican groundcherry",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 503,
+    "name": "towel gourd",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 504,
+    "name": "salmonidae (salmon, trout)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 505,
+    "name": "turkey",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 506,
+    "name": "cattle (beef, veal)",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
+    "image": "default.svg"
+  },
+  {
+    "_id": 507,
+    "name": "walleye",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 508,
+    "name": "alaska pollock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 509,
+    "name": "wasabi",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 510,
+    "name": "wax gourd",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 511,
+    "name": "whelk",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 512,
+    "name": "coalfish pollock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 513,
+    "name": "broad whitefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 514,
+    "name": "whitefish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 515,
+    "name": "whiting",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 516,
+    "name": "wild rice",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 517,
+    "name": "tea leaf willow",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 518,
+    "name": "winged bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 519,
+    "name": "yam",
+    "food_group": "vegetables",
+    "food_subgroup": "tubers",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 520,
+    "name": "jicama",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 521,
+    "name": "yautia",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 522,
+    "name": "yellowfin tuna",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 523,
+    "name": "yellowtail amberjack",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 524,
+    "name": "pollock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 525,
+    "name": "albacore tuna",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 526,
+    "name": "gadus (common cod)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 527,
+    "name": "atlantic halibut",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 528,
+    "name": "pacific halibut",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 529,
+    "name": "pacific salmon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 530,
+    "name": "smelt",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 531,
+    "name": "clupeinae (herring, sardine, sprat)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 532,
+    "name": "spiny lobster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 533,
+    "name": "snow crab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 534,
+    "name": "black-eyed pea",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 535,
+    "name": "deer",
+    "food_group": "animal foods",
+    "food_subgroup": "venison",
+    "image": "default.svg"
+  },
+  {
+    "_id": 536,
+    "name": "macadamia nut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 537,
+    "name": "percoidei (bass and others)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 538,
+    "name": "perciformes",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 540,
+    "name": "rabbit",
+    "food_group": "animal foods",
+    "food_subgroup": "lagomorphs",
+    "image": "default.svg"
+  },
+  {
+    "_id": 541,
+    "name": "domestic goat",
+    "food_group": "animal foods",
+    "food_subgroup": "caprae",
+    "image": "default.svg"
+  },
+  {
+    "_id": 542,
+    "name": "beefalo",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
+    "image": "default.svg"
+  },
+  {
+    "_id": 544,
+    "name": "bivalvia (clam, mussel, oyster)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 545,
+    "name": "squid",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 546,
+    "name": "shrimp",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 547,
+    "name": "crayfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 548,
+    "name": "flatfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 549,
+    "name": "domestic pig",
+    "food_group": "animal foods",
+    "food_subgroup": "swine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 550,
+    "name": "walrus",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 551,
+    "name": "alaska wild rhubarb",
+    "food_group": "vegetables",
+    "food_subgroup": "stalk vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 552,
+    "name": "oriental wheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 553,
+    "name": "yardlong bean",
+    "food_group": "pulses",
+    "food_subgroup": "peas",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 555,
+    "name": "quail",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 556,
+    "name": "boysenberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 557,
+    "name": "persian lime",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 558,
+    "name": "feijoa",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 559,
+    "name": "rowal",
+    "food_group": "herbs and spices",
+    "food_subgroup": "other seeds",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 560,
+    "name": "jew's ear",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 561,
+    "name": "common mushroom",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 562,
+    "name": "shiitake",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 563,
+    "name": "purple laver",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 564,
+    "name": "wakame",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 565,
+    "name": "enokitake",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 566,
+    "name": "epazote",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 567,
+    "name": "oyster mushroom",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 568,
+    "name": "cloud ear fungus",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 569,
+    "name": "maitake",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 570,
+    "name": "ostrich fern",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 571,
+    "name": "spot croaker",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 572,
+    "name": "sourdock",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 573,
+    "name": "tinda",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 574,
+    "name": "atlantic menhaden",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 575,
+    "name": "wheat",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 576,
+    "name": "common chokecherry",
+    "food_group": "fruits",
+    "food_subgroup": "drupes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 577,
+    "name": "agave",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 578,
+    "name": "narrowleaf cattail",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 579,
+    "name": "jellyfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "other aquatic foods",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 580,
+    "name": "anchovy",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 581,
+    "name": "blue whiting",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 582,
+    "name": "carp bream",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 583,
+    "name": "chanterelle",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 584,
+    "name": "sturgeon",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 585,
+    "name": "charr",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 586,
+    "name": "cinnamon",
+    "food_group": "herbs and spices",
+    "food_subgroup": "spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 587,
+    "name": "crab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 588,
+    "name": "common dab",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 589,
+    "name": "spiny dogfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 590,
+    "name": "anatidae",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 591,
+    "name": "anguilliformes",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 592,
+    "name": "true frog",
+    "food_group": "aquatic foods",
+    "food_subgroup": "amphibians",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 593,
+    "name": "garfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 594,
+    "name": "gadiformes",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 595,
+    "name": "mountain hare",
+    "food_group": "animal foods",
+    "food_subgroup": "lagomorphs",
+    "image": "default.svg"
+  },
+  {
+    "_id": 596,
+    "name": "lake trout",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 597,
+    "name": "lemon sole",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 598,
+    "name": "clawed lobster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 599,
+    "name": "lumpsucker",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 600,
+    "name": "scombridae (bonito, mackerel, tuna)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 601,
+    "name": "marine mussel",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 602,
+    "name": "norway haddock",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 603,
+    "name": "norway lobster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 604,
+    "name": "norway pout",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 605,
+    "name": "oil palm",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 606,
+    "name": "true oyster",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 607,
+    "name": "sago palm",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 608,
+    "name": "persimmon",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 609,
+    "name": "pikeperch",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 610,
+    "name": "pleuronectidae (dab, halibut, plaice)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 611,
+    "name": "rock ptarmigan",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 612,
+    "name": "pacific ocean perch",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 613,
+    "name": "black salsify",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 614,
+    "name": "true seal",
+    "food_group": "aquatic foods",
+    "food_subgroup": "pinnipeds",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 615,
+    "name": "red algae",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 616,
+    "name": "kombu",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 617,
+    "name": "snail",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 618,
+    "name": "true sole",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 619,
+    "name": "catfish",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 620,
+    "name": "thistle",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 621,
+    "name": "thunnus",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 622,
+    "name": "walnut",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 623,
+    "name": "cetacea (dolphin, porpoise, whale)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "cetaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 624,
+    "name": "columbidae (dove, pigeon)",
+    "food_group": "animal foods",
+    "food_subgroup": "poultry",
+    "image": "default.svg"
+  },
+  {
+    "_id": 625,
+    "name": "conch",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 626,
+    "name": "grape wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 627,
+    "name": "berry wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 628,
+    "name": "other wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 629,
+    "name": "apple cider",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 630,
+    "name": "liquor",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 631,
+    "name": "cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 632,
+    "name": "milk (cow)",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 633,
+    "name": "eggs",
+    "food_group": "eggs",
+    "food_subgroup": "eggs",
+    "image": "default.svg"
+  },
+  {
+    "_id": 634,
+    "name": "yogurt",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 638,
+    "name": "bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 639,
+    "name": "vodka",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 640,
+    "name": "whisky",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 641,
+    "name": "ice cream",
+    "food_group": "confectioneries",
+    "food_subgroup": "frozen desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 642,
+    "name": "gin",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 643,
+    "name": "honey",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 644,
+    "name": "liquorice",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 645,
+    "name": "vinegar",
+    "food_group": "baking goods",
+    "food_subgroup": "seasonings",
+    "image": "default.svg"
+  },
+  {
+    "_id": 646,
+    "name": "rum",
+    "food_group": "beverages",
+    "food_subgroup": "distilled beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 647,
+    "name": "port wine",
+    "food_group": "beverages",
+    "food_subgroup": "fortified wines",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 648,
+    "name": "vermouth",
+    "food_group": "beverages",
+    "food_subgroup": "fortified wines",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 649,
+    "name": "sherry",
+    "food_group": "beverages",
+    "food_subgroup": "fortified wines",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 650,
+    "name": "madeira wine",
+    "food_group": "beverages",
+    "food_subgroup": "fortified wines",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 651,
+    "name": "nougat",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 653,
+    "name": "toffee",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 654,
+    "name": "cake",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 655,
+    "name": "pizza",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 656,
+    "name": "ymer",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 657,
+    "name": "other snack food",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 659,
+    "name": "crisp bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 660,
+    "name": "pastry",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 661,
+    "name": "dragée",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 662,
+    "name": "chewing gum",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 663,
+    "name": "marzipan",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 664,
+    "name": "salad dressing",
+    "food_group": "baking goods",
+    "food_subgroup": "dressings",
+    "image": "default.svg"
+  },
+  {
+    "_id": 665,
+    "name": "sauce",
+    "food_group": "baking goods",
+    "food_subgroup": "sauces",
+    "image": "default.svg"
+  },
+  {
+    "_id": 666,
+    "name": "salt",
+    "food_group": "baking goods",
+    "food_subgroup": "seasonings",
+    "image": "default.svg"
+  },
+  {
+    "_id": 667,
+    "name": "butter",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 668,
+    "name": "butter substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 669,
+    "name": "cream",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 670,
+    "name": "sugar",
+    "food_group": "baking goods",
+    "food_subgroup": "sugars",
+    "image": "default.svg"
+  },
+  {
+    "_id": 671,
+    "name": "sausage",
+    "food_group": "dishes",
+    "food_subgroup": "ground meat",
+    "image": "default.svg"
+  },
+  {
+    "_id": 672,
+    "name": "meatball",
+    "food_group": "dishes",
+    "food_subgroup": "ground meat",
+    "image": "default.svg"
+  },
+  {
+    "_id": 673,
+    "name": "mustard",
+    "food_group": "baking goods",
+    "food_subgroup": "condiments",
+    "image": "default.svg"
+  },
+  {
+    "_id": 674,
+    "name": "pate",
+    "food_group": "dishes",
+    "food_subgroup": "ground meat",
+    "image": "default.svg"
+  },
+  {
+    "_id": 676,
+    "name": "sugar substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 677,
+    "name": "meat bouillon",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 679,
+    "name": "whey",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 680,
+    "name": "casein",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 681,
+    "name": "fruit preserve",
+    "food_group": "fruits",
+    "food_subgroup": "fruit products",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 682,
+    "name": "leavening agent",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 683,
+    "name": "marshmallow",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 684,
+    "name": "gelatin",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 685,
+    "name": "water",
+    "food_group": "beverages",
+    "food_subgroup": "waters",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 686,
+    "name": "other fish product",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fish products",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 687,
+    "name": "milk (human)",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 689,
+    "name": "other beverage",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 690,
+    "name": "baby food",
+    "food_group": "baby foods",
+    "food_subgroup": "baby foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 691,
+    "name": "dumpling",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 692,
+    "name": "soup",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 693,
+    "name": "other vegetable product",
+    "food_group": "vegetables",
+    "food_subgroup": "vegetable products",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 694,
+    "name": "unclassified food or beverage",
+    "food_group": "unclassified",
+    "food_subgroup": "unclassified",
+    "image": "default.svg"
+  },
+  {
+    "_id": 695,
+    "name": "syrup",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 696,
+    "name": "tallow",
+    "food_group": "fats and oils",
+    "food_subgroup": "animal fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 697,
+    "name": "remoulade",
+    "food_group": "baking goods",
+    "food_subgroup": "condiments",
+    "image": "default.svg"
+  },
+  {
+    "_id": 698,
+    "name": "chocolate spread",
+    "food_group": "confectioneries",
+    "food_subgroup": "spreads",
+    "image": "default.svg"
+  },
+  {
+    "_id": 699,
+    "name": "fruit gum",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 700,
+    "name": "curry powder",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herb and spice mixtures",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 701,
+    "name": "other candy",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 702,
+    "name": "meringue",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 703,
+    "name": "lard",
+    "food_group": "fats and oils",
+    "food_subgroup": "animal fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 704,
+    "name": "other animal fat",
+    "food_group": "fats and oils",
+    "food_subgroup": "animal fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 705,
+    "name": "other cocoa product",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 706,
+    "name": "cocoa butter",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 707,
+    "name": "cocoa powder",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 708,
+    "name": "cocoa liquor",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 709,
+    "name": "chocolate",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 710,
+    "name": "hot chocolate",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 711,
+    "name": "dried milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 712,
+    "name": "milk (other mammals)",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 713,
+    "name": "kefir",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 714,
+    "name": "buttermilk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 715,
+    "name": "other fermented milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 716,
+    "name": "soy sauce",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 717,
+    "name": "miso",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 718,
+    "name": "tofu",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 721,
+    "name": "zwieback",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 722,
+    "name": "roe",
+    "food_group": "aquatic foods",
+    "food_subgroup": "roe",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 723,
+    "name": "cichlidae (tilapia)",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 724,
+    "name": "icing",
+    "food_group": "confectioneries",
+    "food_subgroup": "other confectioneries",
+    "image": "default.svg"
+  },
+  {
+    "_id": 725,
+    "name": "snack bar",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 726,
+    "name": "green turtle",
+    "food_group": "aquatic foods",
+    "food_subgroup": "other aquatic foods",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 727,
+    "name": "energy drink",
+    "food_group": "beverages",
+    "food_subgroup": "nutritional beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 728,
+    "name": "burrito",
+    "food_group": "dishes",
+    "food_subgroup": "tex-mex cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 729,
+    "name": "hamburger",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 730,
+    "name": "baked beans",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 731,
+    "name": "chili",
+    "food_group": "dishes",
+    "food_subgroup": "tex-mex cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 732,
+    "name": "taco",
+    "food_group": "dishes",
+    "food_subgroup": "tex-mex cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 733,
+    "name": "tortilla",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 734,
+    "name": "nachos",
+    "food_group": "dishes",
+    "food_subgroup": "tex-mex cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 735,
+    "name": "processed cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 736,
+    "name": "salad",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 737,
+    "name": "cream substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 738,
+    "name": "dulce de leche",
+    "food_group": "confectioneries",
+    "food_subgroup": "spreads",
+    "image": "default.svg"
+  },
+  {
+    "_id": 739,
+    "name": "topping",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 740,
+    "name": "sweet custard",
+    "food_group": "confectioneries",
+    "food_subgroup": "milk desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 742,
+    "name": "egg roll",
+    "food_group": "dishes",
+    "food_subgroup": "asian cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 743,
+    "name": "heart of palm",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 744,
+    "name": "popcorn",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 745,
+    "name": "potato chip",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 746,
+    "name": "tortilla chip",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 747,
+    "name": "corn chip",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 748,
+    "name": "hibiscus tea",
+    "food_group": "teas",
+    "food_subgroup": "herbal teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 749,
+    "name": "stew",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 750,
+    "name": "gelatin dessert",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 751,
+    "name": "junket",
+    "food_group": "confectioneries",
+    "food_subgroup": "milk desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 752,
+    "name": "falafel",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 753,
+    "name": "frybread",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 754,
+    "name": "other frozen dessert",
+    "food_group": "confectioneries",
+    "food_subgroup": "frozen desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 755,
+    "name": "lasagna",
+    "food_group": "dishes",
+    "food_subgroup": "pasta dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 756,
+    "name": "morchella (morel)",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 757,
+    "name": "pancake",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 758,
+    "name": "pectin",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 759,
+    "name": "pudding",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 760,
+    "name": "waffle",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 761,
+    "name": "soy milk",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 762,
+    "name": "meatloaf",
+    "food_group": "dishes",
+    "food_subgroup": "ground meat",
+    "image": "default.svg"
+  },
+  {
+    "_id": 763,
+    "name": "sake",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 764,
+    "name": "cocktail",
+    "food_group": "beverages",
+    "food_subgroup": "alcoholic beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 765,
+    "name": "couscous",
+    "food_group": "dishes",
+    "food_subgroup": "berber cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 766,
+    "name": "bulgur",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 767,
+    "name": "coffee substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 768,
+    "name": "coffee mocha",
+    "food_group": "coffee and coffee products",
+    "food_subgroup": "coffee products",
+    "image": "coffee-and-coffee-products.svg"
+  },
+  {
+    "_id": 769,
+    "name": "chimichanga",
+    "food_group": "dishes",
+    "food_subgroup": "mexican cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 770,
+    "name": "semolina",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 771,
+    "name": "tapioca pearl",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 772,
+    "name": "tostada",
+    "food_group": "dishes",
+    "food_subgroup": "mexican cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 773,
+    "name": "quesadilla",
+    "food_group": "dishes",
+    "food_subgroup": "mexican cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 774,
+    "name": "baked potato",
+    "food_group": "dishes",
+    "food_subgroup": "potato dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 775,
+    "name": "hot dog",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 776,
+    "name": "spread",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 777,
+    "name": "enchilada",
+    "food_group": "dishes",
+    "food_subgroup": "mexican cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 778,
+    "name": "egg substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 779,
+    "name": "nutritional drink",
+    "food_group": "beverages",
+    "food_subgroup": "nutritional beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 780,
+    "name": "other sandwich",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 781,
+    "name": "ketchup",
+    "food_group": "baking goods",
+    "food_subgroup": "condiments",
+    "image": "default.svg"
+  },
+  {
+    "_id": 782,
+    "name": "breakfast sandwich",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 783,
+    "name": "adobo",
+    "food_group": "baking goods",
+    "food_subgroup": "seasonings",
+    "image": "default.svg"
+  },
+  {
+    "_id": 784,
+    "name": "macaroni and cheese",
+    "food_group": "dishes",
+    "food_subgroup": "pasta dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 785,
+    "name": "butterfat",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 786,
+    "name": "horned melon",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 787,
+    "name": "hushpuppy",
+    "food_group": "dishes",
+    "food_subgroup": "american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 788,
+    "name": "fruit juice",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 789,
+    "name": "relish",
+    "food_group": "baking goods",
+    "food_subgroup": "condiments",
+    "image": "default.svg"
+  },
+  {
+    "_id": 790,
+    "name": "other fruit product",
+    "food_group": "fruits",
+    "food_subgroup": "fruit products",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 791,
+    "name": "fruit salad",
+    "food_group": "fruits",
+    "food_subgroup": "fruit products",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 792,
+    "name": "soy yogurt",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 793,
+    "name": "vegetarian food",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 794,
+    "name": "veggie burger",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 795,
+    "name": "cold cut",
+    "food_group": "dishes",
+    "food_subgroup": "ground meat",
+    "image": "default.svg"
+  },
+  {
+    "_id": 796,
+    "name": "mixed nuts",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 797,
+    "name": "canola",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 798,
+    "name": "babassu palm",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 799,
+    "name": "cupuaçu",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 800,
+    "name": "shea tree",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 801,
+    "name": "oil-seed camellia",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 802,
+    "name": "ucuhuba",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 803,
+    "name": "phyllo dough",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 804,
+    "name": "cooking oil",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 805,
+    "name": "pie crust",
+    "food_group": "baking goods",
+    "food_subgroup": "wrappers",
+    "image": "default.svg"
+  },
+  {
+    "_id": 806,
+    "name": "pie filling",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 807,
+    "name": "pie",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 808,
+    "name": "shortening",
+    "food_group": "fats and oils",
+    "food_subgroup": "vegetable fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 809,
+    "name": "soy cream",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 810,
+    "name": "ice cream cone",
+    "food_group": "baking goods",
+    "food_subgroup": "wrappers",
+    "image": "default.svg"
+  },
+  {
+    "_id": 811,
+    "name": "molasses",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 812,
+    "name": "cracker",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 813,
+    "name": "nance",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 814,
+    "name": "naranjilla",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 815,
+    "name": "natto",
+    "food_group": "soy",
+    "food_subgroup": "soy products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 816,
+    "name": "ravioli",
+    "food_group": "dishes",
+    "food_subgroup": "pasta dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 817,
+    "name": "scrapple",
+    "food_group": "dishes",
+    "food_subgroup": "american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 818,
+    "name": "other pasta dish",
+    "food_group": "dishes",
+    "food_subgroup": "pasta dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 819,
+    "name": "succotash",
+    "food_group": "dishes",
+    "food_subgroup": "american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 820,
+    "name": "tamale",
+    "food_group": "dishes",
+    "food_subgroup": "latin american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 822,
+    "name": "rice cake",
+    "food_group": "dishes",
+    "food_subgroup": "asian cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 823,
+    "name": "tree fern",
+    "food_group": "vegetables",
+    "food_subgroup": "other vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 824,
+    "name": "evaporated milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 825,
+    "name": "flour",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 826,
+    "name": "akutaq",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 828,
+    "name": "dough",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "doughs",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 829,
+    "name": "pita bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 830,
+    "name": "focaccia",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 831,
+    "name": "bagel",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 832,
+    "name": "other bread product",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "bread products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 834,
+    "name": "piki bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 835,
+    "name": "french toast",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 836,
+    "name": "wheat bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 837,
+    "name": "rye bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 838,
+    "name": "oat bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 839,
+    "name": "potato bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "other breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 840,
+    "name": "cornbread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "flat breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 841,
+    "name": "corn grits",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 842,
+    "name": "multigrain bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 843,
+    "name": "rice bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 844,
+    "name": "pan dulce",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 845,
+    "name": "raisin bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "sweet breads",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 846,
+    "name": "wonton wrapper",
+    "food_group": "baking goods",
+    "food_subgroup": "wrappers",
+    "image": "default.svg"
+  },
+  {
+    "_id": 848,
+    "name": "trail mix",
+    "food_group": "snack foods",
+    "food_subgroup": "snack foods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 849,
+    "name": "greenthread tea",
+    "food_group": "teas",
+    "food_subgroup": "herbal teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 850,
+    "name": "fruit-flavor drink",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 851,
+    "name": "vegetable juice",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 852,
+    "name": "horchata",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 853,
+    "name": "soft drink",
+    "food_group": "beverages",
+    "food_subgroup": "other beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 854,
+    "name": "frozen yogurt",
+    "food_group": "confectioneries",
+    "food_subgroup": "frozen desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 855,
+    "name": "milkshake",
+    "food_group": "confectioneries",
+    "food_subgroup": "frozen desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 856,
+    "name": "chocolate mousse",
+    "food_group": "confectioneries",
+    "food_subgroup": "desserts",
+    "image": "default.svg"
+  },
+  {
+    "_id": 857,
+    "name": "dripping",
+    "food_group": "fats and oils",
+    "food_subgroup": "animal fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 858,
+    "name": "pupusa",
+    "food_group": "dishes",
+    "food_subgroup": "latin american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 859,
+    "name": "empanada",
+    "food_group": "dishes",
+    "food_subgroup": "latin american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 860,
+    "name": "arepa",
+    "food_group": "dishes",
+    "food_subgroup": "latin american cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 861,
+    "name": "ascidians",
+    "food_group": "aquatic foods",
+    "food_subgroup": "other aquatic foods",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 862,
+    "name": "gefilte fish",
+    "food_group": "dishes",
+    "food_subgroup": "jewish cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 863,
+    "name": "yellow pond-lily",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 864,
+    "name": "fish burger",
+    "food_group": "dishes",
+    "food_subgroup": "sandwiches",
+    "image": "default.svg"
+  },
+  {
+    "_id": 865,
+    "name": "other dish",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 866,
+    "name": "pot pie",
+    "food_group": "dishes",
+    "food_subgroup": "other dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 867,
+    "name": "stuffing",
+    "food_group": "baking goods",
+    "food_subgroup": "baking goods",
+    "image": "default.svg"
+  },
+  {
+    "_id": 868,
+    "name": "edible shell",
+    "food_group": "baking goods",
+    "food_subgroup": "wrappers",
+    "image": "default.svg"
+  },
+  {
+    "_id": 869,
+    "name": "fudge",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 870,
+    "name": "candy bar",
+    "food_group": "confectioneries",
+    "food_subgroup": "candies",
+    "image": "default.svg"
+  },
+  {
+    "_id": 871,
+    "name": "condensed milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 872,
+    "name": "margarine",
+    "food_group": "fats and oils",
+    "food_subgroup": "vegetable fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 873,
+    "name": "margarine-like spread",
+    "food_group": "fats and oils",
+    "food_subgroup": "vegetable fats",
+    "image": "default.svg"
+  },
+  {
+    "_id": 874,
+    "name": "hummus",
+    "food_group": "dishes",
+    "food_subgroup": "levantine cuisine",
+    "image": "default.svg"
+  },
+  {
+    "_id": 876,
+    "name": "potato puffs",
+    "food_group": "dishes",
+    "food_subgroup": "potato dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 877,
+    "name": "potato gratin",
+    "food_group": "dishes",
+    "food_subgroup": "potato dishes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 878,
+    "name": "milk substitute",
+    "food_group": "baking goods",
+    "food_subgroup": "substitutes",
+    "image": "default.svg"
+  },
+  {
+    "_id": 879,
+    "name": "pepper (c. pubescens)",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 880,
+    "name": "soft-necked garlic",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 881,
+    "name": "cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 882,
+    "name": "chinese bayberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 883,
+    "name": "mushrooms",
+    "food_group": "vegetables",
+    "food_subgroup": "mushrooms",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 884,
+    "name": "alcoholic beverages",
+    "food_group": "beverages",
+    "food_subgroup": "alcoholic beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 885,
+    "name": "onion-family vegetables",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 886,
+    "name": "pomes",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 887,
+    "name": "brassicas",
+    "food_group": "vegetables",
+    "food_subgroup": "brassicas",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 888,
+    "name": "cereals and cereal products",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals and cereal products",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 889,
+    "name": "citrus",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 890,
+    "name": "cocoa and cocoa products",
+    "food_group": "cocoa and cocoa products",
+    "food_subgroup": "cocoa and cocoa products",
+    "image": "cocoa-and-cocoa-products.svg"
+  },
+  {
+    "_id": 891,
+    "name": "coffee and coffee products",
+    "food_group": "coffee and coffee products",
+    "food_subgroup": "coffee and coffee products",
+    "image": "coffee-and-coffee-products.svg"
+  },
+  {
+    "_id": 892,
+    "name": "crustaceans",
+    "food_group": "aquatic foods",
+    "food_subgroup": "crustaceans",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 893,
+    "name": "milk and milk products",
+    "food_group": "milk and milk products",
+    "food_subgroup": "milk and milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 894,
+    "name": "fats and oils",
+    "food_group": "fats and oils",
+    "food_subgroup": "fats and oils",
+    "image": "default.svg"
+  },
+  {
+    "_id": 896,
+    "name": "fishes",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 897,
+    "name": "herbs and spices",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs and spices",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 898,
+    "name": "pulses",
+    "food_group": "pulses",
+    "food_subgroup": "pulses",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 900,
+    "name": "mollusks",
+    "food_group": "aquatic foods",
+    "food_subgroup": "mollusks",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 901,
+    "name": "nuts",
+    "food_group": "nuts",
+    "food_subgroup": "nuts",
+    "image": "nuts.svg"
+  },
+  {
+    "_id": 902,
+    "name": "beverages",
+    "food_group": "beverages",
+    "food_subgroup": "beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 903,
+    "name": "fruits",
+    "food_group": "fruits",
+    "food_subgroup": "fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 904,
+    "name": "green vegetables",
+    "food_group": "vegetables",
+    "food_subgroup": "green vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 905,
+    "name": "root vegetables",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 906,
+    "name": "sunburst squash (pattypan squash)",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 907,
+    "name": "green zucchini",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 908,
+    "name": "yellow zucchini",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 909,
+    "name": "green bell pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 910,
+    "name": "yellow bell pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 911,
+    "name": "orange bell pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 912,
+    "name": "red bell pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 913,
+    "name": "italian sweet red pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 914,
+    "name": "yellow wax bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 915,
+    "name": "green bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 916,
+    "name": "saskatoon berry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 917,
+    "name": "nanking cherry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 918,
+    "name": "japanese pumpkin",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 919,
+    "name": "white cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 920,
+    "name": "romaine lettuce",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 921,
+    "name": "cow milk, pasteurized, vitamin a + d added, 0% fat",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 922,
+    "name": "cow milk, pasteurized, vitamin a + d added, 1% fat",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 923,
+    "name": "cow milk, pasteurized, vitamin a + d added, 2% fat",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 924,
+    "name": "cow milk, pasteurized, vitamin d added, 3.25% fat",
+    "food_group": "milk and milk products",
+    "food_subgroup": "unfermented milks",
+    "image": "default.svg"
+  },
+  {
+    "_id": 925,
+    "name": "castanospermum australe",
+    "food_group": "vegetables",
+    "food_subgroup": "",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 926,
+    "name": "gentiana lutea",
+    "food_group": "vegetables",
+    "food_subgroup": "",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 927,
+    "name": "juniperus communis",
+    "food_group": "vegetables",
+    "food_subgroup": "",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 928,
+    "name": "albizia gummifera",
+    "food_group": "vegetables",
+    "food_subgroup": "",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 929,
+    "name": "mundu",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 930,
+    "name": "rabbiteye blueberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 931,
+    "name": "yali pear",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 932,
+    "name": "asparagus racemosus",
+    "food_group": "vegetables",
+    "food_subgroup": "shoot vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 933,
+    "name": "evergreen blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 934,
+    "name": "asparagus fern",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 935,
+    "name": "thornless blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 936,
+    "name": "tropical highland blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 937,
+    "name": "andean blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 938,
+    "name": "blackberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 939,
+    "name": "black tea",
+    "food_group": "teas",
+    "food_subgroup": "teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 940,
+    "name": "green tea",
+    "food_group": "teas",
+    "food_subgroup": "teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 941,
+    "name": "olive oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 942,
+    "name": "macroalgae",
+    "food_group": "aquatic foods",
+    "food_subgroup": "seaweed",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 943,
+    "name": "red wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 944,
+    "name": "linseed oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 945,
+    "name": "rapeseed oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 946,
+    "name": "soybean oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 947,
+    "name": "guarana",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 948,
+    "name": "mate",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 949,
+    "name": "white wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 950,
+    "name": "sour orange",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 951,
+    "name": "egg yolk",
+    "food_group": "eggs",
+    "food_subgroup": "eggs",
+    "image": "default.svg"
+  },
+  {
+    "_id": 952,
+    "name": "rosé wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 953,
+    "name": "white mulberry",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 954,
+    "name": "canola oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 955,
+    "name": "dessert wine",
+    "food_group": "beverages",
+    "food_subgroup": "fermented beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 956,
+    "name": "red champagne",
+    "food_group": "beverages",
+    "food_subgroup": "alcoholic beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 957,
+    "name": "red tea",
+    "food_group": "teas",
+    "food_subgroup": "teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 958,
+    "name": "white champagne",
+    "food_group": "beverages",
+    "food_subgroup": "alcoholic beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 959,
+    "name": "red grape juice",
+    "food_group": "beverages",
+    "food_subgroup": "beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 960,
+    "name": "white grape juice",
+    "food_group": "beverages",
+    "food_subgroup": "beverages",
+    "image": "beverages.svg"
+  },
+  {
+    "_id": 961,
+    "name": "crosne",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 962,
+    "name": "red clover",
+    "food_group": "herbs and spices",
+    "food_subgroup": "herbs",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 963,
+    "name": "partridge berry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 964,
+    "name": "mikan",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 965,
+    "name": "mozzarella cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 966,
+    "name": "plain cream cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 967,
+    "name": "cheddar cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 968,
+    "name": "parmesan cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 969,
+    "name": "almond milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 970,
+    "name": "coconut milk",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 971,
+    "name": "salted butter",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 972,
+    "name": "sunflower oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 973,
+    "name": "coconut oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 974,
+    "name": "peanut oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 975,
+    "name": "cottonseed oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 976,
+    "name": "corn oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 977,
+    "name": "avocado oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 978,
+    "name": "grapeseed oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 979,
+    "name": "sesame oil",
+    "food_group": "herbs and spices",
+    "food_subgroup": "oilseed crops",
+    "image": "herbs-and-spices.svg"
+  },
+  {
+    "_id": 980,
+    "name": "monterey jack cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 981,
+    "name": "swiss cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 982,
+    "name": "cottage cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 983,
+    "name": "blue cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 984,
+    "name": "clam",
+    "food_group": "aquatic foods",
+    "food_subgroup": "bivalvia",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 985,
+    "name": "sour cream",
+    "food_group": "milk and milk products",
+    "food_subgroup": "other milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 986,
+    "name": "whole wheat bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 987,
+    "name": "jalapeno pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 988,
+    "name": "greek feta cheese",
+    "food_group": "milk and milk products",
+    "food_subgroup": "fermented milk products",
+    "image": "default.svg"
+  },
+  {
+    "_id": 989,
+    "name": "eddoe",
+    "food_group": "vegetables",
+    "food_subgroup": "root vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 990,
+    "name": "plantain",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 991,
+    "name": "clementine",
+    "food_group": "fruits",
+    "food_subgroup": "citrus",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 992,
+    "name": "green apple",
+    "food_group": "fruits",
+    "food_subgroup": "pomes",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 993,
+    "name": "white onion",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 994,
+    "name": "red onion",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 995,
+    "name": "green onion",
+    "food_group": "vegetables",
+    "food_subgroup": "onion-family vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 996,
+    "name": "green grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 997,
+    "name": "red grape",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 998,
+    "name": "black plum",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 999,
+    "name": "green cabbage",
+    "food_group": "vegetables",
+    "food_subgroup": "cabbages",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1000,
+    "name": "black raisin",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1001,
+    "name": "cannellini bean",
+    "food_group": "pulses",
+    "food_subgroup": "beans",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 1002,
+    "name": "green lentil",
+    "food_group": "pulses",
+    "food_subgroup": "pulses",
+    "image": "pulses.svg"
+  },
+  {
+    "_id": 1003,
+    "name": "cubanelle pepper",
+    "food_group": "vegetables",
+    "food_subgroup": "fruit vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1004,
+    "name": "acorn squash",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 1005,
+    "name": "iceberg lettuce",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1006,
+    "name": "japanese sea bass",
+    "food_group": "aquatic foods",
+    "food_subgroup": "fishes",
+    "image": "aquatic-foods.svg"
+  },
+  {
+    "_id": 1007,
+    "name": "pea shoots",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1008,
+    "name": "yau choy",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1009,
+    "name": "water spinach",
+    "food_group": "vegetables",
+    "food_subgroup": "leaf vegetables",
+    "image": "vegetables.svg"
+  },
+  {
+    "_id": 1010,
+    "name": "chineese plum",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1011,
+    "name": "green plum",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1012,
+    "name": "wampee",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1013,
+    "name": "pitaya",
+    "food_group": "fruits",
+    "food_subgroup": "tropical fruits",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1014,
+    "name": "goji",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1015,
+    "name": "monk fruit",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1016,
+    "name": "cantaloupe melon",
+    "food_group": "gourds",
+    "food_subgroup": "gourds",
+    "image": "gourds.svg"
+  },
+  {
+    "_id": 1017,
+    "name": "hawthorn",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1018,
+    "name": "lantern fruit",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1019,
+    "name": "white bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "cereals",
+    "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 1020,
+    "name": "cape gooseberry",
+    "food_group": "fruits",
+    "food_subgroup": "berries",
+    "image": "fruits.svg"
+  },
+  {
+    "_id": 1021,
+    "name": "herbal tea",
+    "food_group": "teas",
+    "food_subgroup": "teas",
+    "image": "teas.svg"
+  },
+  {
+    "_id": 1022,
+    "name": "fish oil",
+    "food_group": null,
+    "food_subgroup": null,
+    "image": "default.svg"
+  },
+  {
+    "_id": 1023,
+    "name": "taco shell",
+    "food_group": "null",
+    "food_subgroup": null,
+    "image": "default.svg"
+  },
+  {
+    "_id": 1024,
+    "name": "tostada shell",
+    "food_group": null,
+    "food_subgroup": null,
+    "image": "default.svg"
+  }
+]

@@ -1,0 +1,75 @@
+{
+    "image": "default.svg",
+    "herbs and spices": {
+      "image": "herbs-and-spices.svg"
+    },
+    "vegetables": {
+      "image": "vegetables.svg"
+    },
+    "fruits": {
+      "image": "fruits.svg"
+    },
+    "nuts": {
+      "image": "nuts.svg"
+    },
+    "cereals and cereal products": {
+      "image": "cereals-and-cereal-products.svg"
+    },
+    "pulses": {
+      "image": "pulses.svg"
+    },
+    "teas": {
+      "image": "teas.svg"
+    },
+    "gourds": {
+      "image": "gourds.svg"
+    },
+    "coffee and coffee products": {
+      "image": "coffee-and-coffee-products.svg"
+    },
+    "soy": {
+      "image": ""
+    },
+    "cocoa and cocoa products": {
+      "image": "cocoa-and-cocoa-products.svg"
+    },
+    "beverages": {
+      "image": "beverages.svg"
+    },
+    "aquatic foods": {
+      "image": "aquatic-foods.svg"
+    },
+    "animal foods": {
+      "image": ""
+    },
+    "milk and milk products": {
+      "image": ""
+    },
+    "eggs": {
+      "image": ""
+    },
+    "confectioneries": {
+      "image": ""
+    },
+    "baking goods": {
+      "image": ""
+    },
+    "dishes": {
+      "image": ""
+    },
+    "snack foods": {
+      "image": ""
+    },
+    "baby foods": {
+      "image": ""
+    },
+    "unclassified": {
+      "image": ""
+    },
+    "fats and oils": {
+      "image": ""
+    },
+    "null": {
+      "image": ""
+    }
+  }
