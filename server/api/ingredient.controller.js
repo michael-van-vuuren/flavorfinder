@@ -6,7 +6,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default class IngredientCtrl {
-    static filePath = join(__dirname, '../resources/ingredients.json');
+    static filePath = join(__dirname, '../resources/ingredients-with-images.json');
 
     static async fetchData() {
         try {
