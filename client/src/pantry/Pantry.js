@@ -5,7 +5,7 @@ import InfoBox from './InfoBox.js'
 import IngredientList from './IngredientList.js'
 
 const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
-  const [info, setInfo] = useState({ name: '', longName: '', description: '', image: null })
+  const [info, setInfo] = useState({ name: '', longName: '', description: '', group: '', subgroup: '', image: null })
 
   const handleRemove = async (idToRemove) => {
     try {
@@ -28,7 +28,30 @@ const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
     }
   }
 
-  const handleTagClick = async (name, id) => {
+  const handleTagClick = async (name, id, event) => {
+    try {
+      // reset image for fade in
+      event.stopPropagation()
+      setInfo(member => ({ ...member, image: null }))
+
+      const tagResult = await Tags.ingredientTag(id);
+      const imagePath = `https://foodb.ca/system/foods/pictures/${id}/full/${id}.png`;
+
+      setInfo({
+        name: name,
+        group: tagResult.food_group,
+        subgroup: tagResult.food_subgroup,
+        image: imagePath,
+
+        longName: '',
+        description: '',
+      });
+    } catch (error) {
+      console.error('Error handling tag click:', error);
+    }
+  }
+
+  const handleRowClick = async (name, id) => {
     try {
       // reset image for fade in
       setInfo(member => ({ ...member, image: null }))
@@ -40,7 +63,10 @@ const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
         name: name,
         longName: tagResult.name_scientific,
         description: tagResult.description,
-        image: imagePath
+        image: imagePath,
+
+        group: '',
+        subgroup: '',
       });
     } catch (error) {
       console.error('Error handling tag click:', error);
@@ -53,13 +79,13 @@ const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
       {pantry.length > 0 ? (
         <div className="pantry-page">
 
-          <div className="ingredient-list">
-            <ul>
-              <IngredientList mode={true} pantry={pantry} removeToggle={removeToggle} handleTagClick={handleTagClick} handleRemove={handleRemove} />
+          <div>
+            <ul className="ingredient-list">
+              <IngredientList mode={true} pantry={pantry} removeToggle={removeToggle} handleRowClick={handleRowClick} handleTagClick={handleTagClick} handleRemove={handleRemove} />
             </ul>
           </div>
 
-          <InfoBox name={info.name} image={info.image} longName={info.longName} description={info.description} />
+          <InfoBox name={info.name} longName={info.longName} description={info.description} group={info.group} subgroup={info.subgroup} image={info.image} />
 
         </div>
       ) : (

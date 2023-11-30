@@ -92,7 +92,7 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
       <div className='pantry-add-page'>
         <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
-            <IngredientList mode={false} pantry={pantryAddition} removeToggle={true} handleRemove={handleRemove} />
+            <IngredientList mode={false} pantry={pantryAddition} removeToggle={true} handleRowClick={() => {}} handleRemove={handleRemove} />
           </ul>
         </div>
       </div>

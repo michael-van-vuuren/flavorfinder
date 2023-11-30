@@ -81,28 +81,28 @@ button {
     font-size: 14px;
 }
 
-ul {
-    list-style-type: none;
-}
-
 .ingredient-list {
     display: flex;
+    flex-direction: column;
     list-style-type: none;
     height: 325px;
+    flex: 1;
     overflow-y: scroll;
     border: 1px solid rgba(0, 0, 0, 0.274);
     border-radius: 4px;
-    padding: 8px;
     margin: 10px 20px;
     box-shadow: inset 0px 0px 2px gray;
 }
 
 .ingredient-list li {
-    margin: 0px 10px 0px 10px;
     display: flex;
     align-items: center;
     width: 100%;
     padding: 3px;
+}
+
+.ingredient-list li:hover:not(li.highlight) {
+    background-color: #eeeeee;
 }
 
 .ingredient-list li img {
@@ -126,25 +126,25 @@ ul {
 }
 
 .tag {
-    background-color: #eeeeee;
+    background-color: #00000013;
     padding: 3px 5px;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 11px;
 }
 
 .tag.hidden {
     background-color: #ffffff00;
     cursor: text;
+    margin-top: 11px;
 }
 
 .quantity-display {
     padding: 3px 5px;
-    margin-top: 11px;
 }
 
 .quantity-display.hidden {
     padding: 3px 0px 3px 5px;
+    margin-top: 11px;
 }
 
 .tag:hover:not(.tag.hidden) {
