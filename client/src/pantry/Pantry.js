@@ -3,8 +3,8 @@ import pluralizeIngredient from '../utility/pluralizeIngredient.js'
 import './Pantry.css'
 import Tags from './Tags.js'
 
-const Pantry = ({ pantry, fetchPantry, userId }) => {
-  const [info, setInfo] = useState({})
+const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
+  const [info, setInfo] = useState({ name: '', longName: '', description: '', image: null })
 
   const handleRemove = async (idToRemove) => {
     try {
@@ -29,8 +29,12 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
 
   const handleTagClick = async (name, id) => {
     try {
+      // reset image for fade in
+      setInfo(member => ({...member, image: null}))
+
       const tagResult = await Tags.ingredientTag(id);
       const imagePath = `https://foodb.ca/system/foods/pictures/${id}/full/${id}.png`;
+      
       setInfo({
         name: name,
         longName: tagResult.name_scientific,
@@ -42,7 +46,6 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
     }
   }
 
-
   return (
     <div>
       <h2>Pantry</h2>
@@ -53,7 +56,7 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
               {pantry.map((ingredient, index) => (
                 <li key={index}>
                   {ingredient.image && (
-                    <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
+                    <img className="ingredient-image" src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" />
                   )}
                   <div className="row">
                     <span className="quantity-display">{ingredient.quantity}{ingredient.units} of</span>
@@ -63,14 +66,19 @@ const Pantry = ({ pantry, fetchPantry, userId }) => {
                       </span>
                     </div>
                   </div>
-                  <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
+                  {removeToggle && (
+                    <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
+                  )}
                 </li>
               ))}
             </ul>
           </div>
+
           <div className="info-box" style={{ padding: "25px" }}>
-            <strong style={{ fontSize: "14pt" }}>{info.name && info.name.charAt(0).toUpperCase() + info.name.slice(1)}</strong>
-            <img className="ingredient-image" src={info.image} alt={info.name} style={{ marginRight: '10px', float:'right', borderRadius: '50%', width: '55px', height: '55px'}}></img>
+            <strong style={{ fontSize: "14pt" }}>{info.name ? info.name.charAt(0).toUpperCase() + info.name.slice(1) : 'No ingredient selected'}</strong>
+            {info.image && (
+              <img className="ingredient-image" src={info.image} alt={info.name} style={{ marginRight: '10px', float: 'right', borderRadius: '50%', width: '55px', height: '55px' }}></img>
+            )}
             <br />
             {info.longName ? (<i>{` ${info.longName.toLowerCase()}`}</i>) : (<i>n/a</i>)}
             <div style={{

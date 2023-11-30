@@ -26,13 +26,19 @@ body::before {
 .pantry-menu-btn {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 30px;
 }
 
-.cancel-button {
+.pantry-menu-cancel-btn {
     position: absolute;
     bottom: 10px;
-    right: 90px;
+    right: 110px;
+}
+
+.pantry-menu-remove-toggle-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 160px;
 }
 
 .pantry-interactives {
@@ -77,7 +83,6 @@ button {
 
 ul {
     list-style-type: none;
-    width: 100%;
 }
 
 .ingredient-list {
@@ -96,6 +101,8 @@ ul {
     margin: 0px 10px 0px 10px;
     display: flex;
     align-items: center;
+    width: 100%;
+    padding: 3px;
 }
 
 .ingredient-list li img {
@@ -157,10 +164,6 @@ ul {
     justify-content: space-between;
 }
 
-.remove-button {
-    margin-left: auto;
-}
-
 .info-box {
     list-style-type: none;
     height: 200px;
@@ -172,9 +175,21 @@ ul {
 }
 
 .ingredient-image {
+    opacity: 0;
     transition: transform 0.2s ease;
+    animation: fadeIn 0.7s ease-in forwards;
 }
 
 .ingredient-image:hover {
     transform: scale(1.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
