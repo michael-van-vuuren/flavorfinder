@@ -95,12 +95,17 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
             {pantryAddition.map((ingredient, index) => (
               <li key={index} className='highlight'>
                 {ingredient.image && (
-                  <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
-                )}
-                <p style={{ lineHeight: 2 }}>
-                  {ingredient.quantity}{ingredient.units} of <span className='tag'>{pluralizeIngredient(ingredient.name, ingredient.quantity)}</span>
-                </p>
-                <button className="remove-button" onClick={() => handleRemove(index)}>Remove</button>
+                    <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
+                  )}
+                  <div className="row">
+                    <span className="quantity-display hidden">{ingredient.quantity}{ingredient.units} of</span>
+                    <div className="col">
+                      <span className="tag hidden">
+                        {pluralizeIngredient(ingredient.name, ingredient.quantity)}
+                      </span>
+                    </div>
+                  </div>
+                  <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
               </li>
             ))}
           </ul>

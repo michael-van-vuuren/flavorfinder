@@ -42,6 +42,7 @@ body::before {
     background-color: rgba(104, 104, 104, 0.064);
     padding: 15px;
     border-radius: 4px;
+    margin-bottom: 45px;
 }
 
 button:active {
@@ -70,22 +71,23 @@ button {
     box-shadow: 2px 1px 2px gray;
     margin: 4px 10px 4px 10px;
     border-radius: 2px;
-    font-family: 'Roboto';font-size: 14px;
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
 ul {
     list-style-type: none;
+    width: 100%;
 }
 
 .ingredient-list {
+    display: flex;
     list-style-type: none;
-    padding: 0;
     height: 325px;
     overflow-y: scroll;
     border: 1px solid rgba(0, 0, 0, 0.274);
     border-radius: 4px;
     padding: 8px;
-    margin-top: 10px;
     margin: 10px 20px;
     box-shadow: inset 0px 0px 2px gray;
 }
@@ -102,12 +104,6 @@ ul {
     margin-right: 10px;
 }
 
-.ingredient-list li p {
-    margin-right: 20px;
-    margin-left: 10px;
-    max-width: 67%;
-}
-
 @keyframes highlight {
     0% {
         background-color: #a9d97f;
@@ -122,14 +118,63 @@ ul {
     animation: highlight 1.5s;
 }
 
-.tag { 
-    background-color: #eeeeee; 
+.tag {
+    background-color: #eeeeee;
     padding: 3px 5px;
     border-radius: 4px;
-    cursor: pointer; 
+    cursor: pointer;
+    margin-top: 11px;
 }
 
-.tag:hover {
-    background-color: black; 
+.tag.hidden {
+    background-color: #ffffff00;
+    cursor: text;
+}
+
+.quantity-display {
+    padding: 3px 5px;
+    margin-top: 11px;
+}
+
+.quantity-display.hidden {
+    padding: 3px 0px 3px 5px;
+}
+
+.tag:hover:not(.tag.hidden) {
+    background-color: black;
     color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.remove-button {
+    margin-left: auto;
+}
+
+.info-box {
+    list-style-type: none;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
+    margin: 35px 20px;
+    box-shadow: inset 0px 0px 2px gray;
+}
+
+.ingredient-image {
+    transition: transform 0.2s ease;
+}
+
+.ingredient-image:hover {
+    transform: scale(1.4);
 }

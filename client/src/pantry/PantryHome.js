@@ -3,7 +3,7 @@ import Pantry from './Pantry.js'
 import AddToPantry from './AddToPantry.js'
 import './Pantry.css'
 
-const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
+const PantryHome = ({ pantry, ingredients, fetchPantry, fetchIngredients, userId }) => {
   const [toggleAdd, setToggleAdd] = useState(false)
   const [pantryAddition, setPantryAddition] = useState([])
 
@@ -14,6 +14,7 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
   const handleCancelBtn = () => {
     setToggleAdd(false)
     setPantryAddition([])
+    fetchIngredients()
   }
 
   const handleConfirmBtn = async () => {
@@ -34,6 +35,7 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, userId }) => {
       
       setPantryAddition([])
       fetchPantry(userId)
+      fetchIngredients()
     } catch (e) {
       console.error('Error updating pantry:', e.message)
     }

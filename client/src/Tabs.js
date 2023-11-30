@@ -93,7 +93,7 @@ function Tabs({ returningUser }) {
                     </p>
                 </div>
                 <div className={toggleState === 2 ? "content active-content" : "content"}>
-                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} />
+                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} fetchIngredients={fetchIngredients} userId={userId} />
                 </div>
                 <div className={toggleState === 3 ? "content active-content" : "content"}>
                     <RecipePool />

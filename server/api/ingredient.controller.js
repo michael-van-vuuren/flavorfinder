@@ -6,11 +6,9 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
 export default class IngredientCtrl {
-    static filePath = join(__dirname, '../resources/ingredients-with-images.json');
-
-    static async fetchData() {
+    static async fetchData(filePath) {
         try {
-            const data = await readFile(IngredientCtrl.filePath, 'utf-8');
+            const data = await readFile(filePath, 'utf-8');
             return JSON.parse(data);
         } catch (error) {
             console.error('error reading or parsing data:', error);
@@ -20,7 +18,8 @@ export default class IngredientCtrl {
 
     static async serverGetIngredients(req, res, next) {
         try {
-            const data = await IngredientCtrl.fetchData();
+            const filePath = join(__dirname, '../resources/ingredients-with-images.json');
+            const data = await IngredientCtrl.fetchData(filePath);
             res.json(data);
         } catch (error) {
             console.error('unexpected error:', error);
@@ -28,27 +27,18 @@ export default class IngredientCtrl {
         }
     }
 
-    static async serverGetIngredientsNoImage(req, res, next) {
+    static async serverGetIngredient(req, res, next) {
         try {
-            const data = await IngredientCtrl.fetchData();
-            const result = data.map(({ _id, name }) => ({ _id, name }));
-            res.json(result);
-        } catch (error) {
-            console.error('unexpected error:', error);
-            res.status(500).json({ error: 'internal server error' });
-        }
-    }
+            let id = req.params.id
+            const filePath = join(__dirname, '../resources/ingredients-verbose.json');
+            const data = await IngredientCtrl.fetchData(filePath);
+            // find the ingredient with the specified id
+            const ingredient = data.find(item => item.id === parseInt(id, 10));
 
-    static async serverGetIngredientImage(req, res, next) {
-        try {
-            const id = req.params.id;
-            const data = await IngredientCtrl.fetchData();
-            const selectedIngredient = data.find((item) => item._id == id);
-
-            if (selectedIngredient) {
-                res.json({image: selectedIngredient.image});
+            if (ingredient) {
+                res.json(ingredient);
             } else {
-                res.status(404).json({ error: 'ingredient not found' });
+                res.status(404).json({ error: 'Ingredient not found' });
             }
         } catch (error) {
             console.error('unexpected error:', error);

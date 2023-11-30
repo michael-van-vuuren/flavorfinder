@@ -20,14 +20,11 @@ router.route('/users/:id')
 router.route('/clientid')
   .get(GoogleLoginCtrl.apiGetClientId)
 
-// get ingredients for dropdown; no image (server/resources/ingredients.json)
-router.route('/ingredients-noimage')
-  .get(IngredientCtrl.serverGetIngredientsNoImage)
 // get ingredients for pantry; name and image (server/resources/ingredients.json)
 router.route('/ingredients')
   .get(IngredientCtrl.serverGetIngredients)
-// get single ingredient image (server/resources/ingredients.json)
-router.route('/ingredients/images/:id')
-  .get(IngredientCtrl.serverGetIngredientImage)
+// get expanded-form ingredient
+router.route('/ingredient/:id')
+  .get(IngredientCtrl.serverGetIngredient)
 
 export default router
