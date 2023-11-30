@@ -3458,13 +3458,6 @@
     "image": ""
   },
   {
-    "_id": 506,
-    "name": "cattle (beef, veal)",
-    "food_group": "animal foods",
-    "food_subgroup": "bovines",
-    "image": ""
-  },
-  {
     "_id": 507,
     "name": "walleye",
     "food_group": "aquatic foods",
@@ -3700,13 +3693,6 @@
     "name": "domestic goat",
     "food_group": "animal foods",
     "food_subgroup": "caprae",
-    "image": ""
-  },
-  {
-    "_id": 542,
-    "name": "beefalo",
-    "food_group": "animal foods",
-    "food_subgroup": "bovines",
     "image": ""
   },
   {
@@ -6941,6 +6927,20 @@
     "name": "tostada shell",
     "food_group": null,
     "food_subgroup": null,
+    "image": ""
+  },
+  {
+    "_id": 1025,
+    "name": "beef",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
+    "image": ""
+  },
+  {
+    "_id": 1026,
+    "name": "veal",
+    "food_group": "animal foods",
+    "food_subgroup": "bovines",
     "image": ""
   }
 ]

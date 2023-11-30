@@ -20,9 +20,11 @@
     "express": "^4.18.2",
     "graphlib": "^2.1.8",
     "graphviz": "^0.0.9",
+    "jwt-decode": "^4.0.0",
     "mongodb": "^6.2.0",
     "pluralize": "^8.0.0",
-    "typeface-roboto": "^1.1.13"
+    "typeface-roboto": "^1.1.13",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"

@@ -26,13 +26,19 @@ body::before {
 .pantry-menu-btn {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 30px;
 }
 
-.cancel-button {
+.pantry-menu-cancel-btn {
     position: absolute;
     bottom: 10px;
-    right: 90px;
+    right: 110px;
+}
+
+.pantry-menu-remove-toggle-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 160px;
 }
 
 .pantry-interactives {
@@ -42,6 +48,7 @@ body::before {
     background-color: rgba(104, 104, 104, 0.064);
     padding: 15px;
     border-radius: 4px;
+    margin-bottom: 45px;
 }
 
 button:active {
@@ -50,7 +57,7 @@ button:active {
 }
 
 button:hover {
-    background-color: rgb(206, 206, 206);
+    background-color: #cecece;
 }
 
 .add-button:hover {
@@ -70,6 +77,8 @@ button {
     box-shadow: 2px 1px 2px gray;
     margin: 4px 10px 4px 10px;
     border-radius: 2px;
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
 ul {
@@ -77,26 +86,29 @@ ul {
 }
 
 .ingredient-list {
+    display: flex;
     list-style-type: none;
-    padding: 0;
     height: 325px;
     overflow-y: scroll;
     border: 1px solid rgba(0, 0, 0, 0.274);
     border-radius: 4px;
     padding: 8px;
-    margin-top: 10px;
+    margin: 10px 20px;
     box-shadow: inset 0px 0px 2px gray;
 }
 
 .ingredient-list li {
-    margin-bottom: 10px;
+    margin: 0px 10px 0px 10px;
     display: flex;
     align-items: center;
+    width: 100%;
+    padding: 3px;
 }
 
 .ingredient-list li img {
     width: 40px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 @keyframes highlight {
@@ -111,4 +123,73 @@ ul {
 
 .ingredient-list li.highlight {
     animation: highlight 1.5s;
+}
+
+.tag {
+    background-color: #eeeeee;
+    padding: 3px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 11px;
+}
+
+.tag.hidden {
+    background-color: #ffffff00;
+    cursor: text;
+}
+
+.quantity-display {
+    padding: 3px 5px;
+    margin-top: 11px;
+}
+
+.quantity-display.hidden {
+    padding: 3px 0px 3px 5px;
+}
+
+.tag:hover:not(.tag.hidden) {
+    background-color: black;
+    color: white;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-box {
+    list-style-type: none;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
+    margin: 35px 20px;
+    box-shadow: inset 0px 0px 2px gray;
+}
+
+.ingredient-image {
+    opacity: 0;
+    transition: transform 0.2s ease;
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+.ingredient-image:hover {
+    transform: scale(1.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }

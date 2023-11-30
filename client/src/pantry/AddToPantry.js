@@ -17,29 +17,23 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
   const ingredientListRef = useRef(null)
 
   useEffect(() => {
-    console.log(ingredients)
     if (scrollToBottom && ingredientListRef.current) {
       ingredientListRef.current.scrollTop = ingredientListRef.current.scrollHeight
       setScrollToBottom(false)
     }
   }, [scrollToBottom])
 
-  // TODO
-  const fetchImageBlobFromServer = async (id) => {
-    try {
-      const response = await fetch(`http://localhost:3001/api/v1/ingredients/images/${id}`)
-      return await response.json()
-    } catch (e) {
-      console.error('Error fetching image:', e)
-    }
+  const getIngredientNameById = (id) => { 
+    if (id) { return ingredients.find(item => item._id === id).name }
+    else { return '' }
   }
-
-  const getIngredientNameById = (id) => { return ingredients.find(item => item._id === id).name }
-  const getIngredientImageById = (id) => { return ingredients.find(item => item._id === id).image }
+  const getIngredientImageById = (id) => { 
+    if (id) { return ingredients.find(item => item._id === id).image }
+    else { return '' } 
+  }
 
   const handleAdd = async () => {
     const ingredientObj = createIngredient()
-    console.log(ingredientObj)
     if (isValid(ingredientObj)) {
       setPantryAddition((prevIngredients) => [...prevIngredients, ingredientObj]) // Sent to database
       setScrollToBottom(true)
@@ -63,8 +57,9 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
   }
 
   const isValid = ({ ingredientId, quantity, units }) => {
-    return ingredients.some((item) => item._id === ingredientId) &&
-           !isNaN(+quantity) &&
+    return ingredientId &&
+           ingredients.some((item) => item._id === ingredientId) &&
+           !isNaN(+quantity) && quantity > 0.0 &&
            units !== "Select Units"
   }
 
@@ -99,12 +94,18 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
           <ul>
             {pantryAddition.map((ingredient, index) => (
               <li key={index} className='highlight'>
-                <span style={{ color: '#99e386', fontWeight: 'bold' }}>+&ensp;</span>
-                {ingredient.quantity} {ingredient.units} of {pluralizeIngredient(getIngredientNameById(ingredient.ingredientId), ingredient.quantity)}
                 {ingredient.image && (
-                  <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
-                )}
-                <button className="remove-button" onClick={() => handleRemove(index)}>Remove</button>
+                    <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
+                  )}
+                  <div className="row">
+                    <span className="quantity-display hidden">{ingredient.quantity}{ingredient.units} of</span>
+                    <div className="col">
+                      <span className="tag hidden">
+                        {pluralizeIngredient(ingredient.name, ingredient.quantity)}
+                      </span>
+                    </div>
+                  </div>
+                  <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
               </li>
             ))}
           </ul>
