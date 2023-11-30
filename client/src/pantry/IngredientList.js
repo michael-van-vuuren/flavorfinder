@@ -1,13 +1,13 @@
 import React from 'react'
 import pluralizeIngredient from '../utility/pluralizeIngredient.js'
 
-function IngredientList({ mode, pantry, removeToggle, handleTagClick, handleRemove }) {
+function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagClick, handleRemove }) {
 
   return (
     <div>
       {
         pantry.map((ingredient, index) => (
-          <li key={index} className={mode ? '' : 'highlight'}>
+          <li key={index} className={mode ? '' : 'highlight'} onClick={() => handleRowClick(ingredient.name, ingredient.ingredientId)}>
             {ingredient.image && (
               <img
                 className="ingredient-image"
@@ -23,7 +23,7 @@ function IngredientList({ mode, pantry, removeToggle, handleTagClick, handleRemo
               )}
               <div className="col">
                 {mode ? (
-                  <span className="tag" onClick={() => handleTagClick(ingredient.name, ingredient.ingredientId)}>
+                  <span className="tag" onClick={(event) => handleTagClick(ingredient.name, ingredient.ingredientId, event)}>
                     {pluralizeIngredient(ingredient.name, ingredient.quantity)}
                   </span>
                 ) : (
@@ -32,12 +32,12 @@ function IngredientList({ mode, pantry, removeToggle, handleTagClick, handleRemo
                   </span>
                 )}
               </div>
-            </div>
-            {removeToggle && (
+              {removeToggle && (
               <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>
                 Remove
               </button>
             )}
+            </div>
           </li>
         ))
       }
