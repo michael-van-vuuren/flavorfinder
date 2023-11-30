@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 import SearchBar from "./SearchBar.js"
 import DropDown from "./DropDown.js"
-import pluralizeIngredient from '../utility/pluralizeIngredient.js'
+import IngredientList from './IngredientList.js'
 import './Pantry.css'
 
 const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
@@ -12,7 +12,7 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
   const selectQuantity = (event) => { setQuantitySelected(event.target.value) }
   const selectIngredient = (id) => { setIdSelected(id) }
   const selectUnit = (unit) => { setUnitSelected(unit) }
-  
+
   const [scrollToBottom, setScrollToBottom] = useState(false)
   const ingredientListRef = useRef(null)
 
@@ -23,13 +23,13 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
     }
   }, [scrollToBottom])
 
-  const getIngredientNameById = (id) => { 
+  const getIngredientNameById = (id) => {
     if (id) { return ingredients.find(item => item._id === id).name }
     else { return '' }
   }
-  const getIngredientImageById = (id) => { 
+  const getIngredientImageById = (id) => {
     if (id) { return ingredients.find(item => item._id === id).image }
-    else { return '' } 
+    else { return '' }
   }
 
   const handleAdd = async () => {
@@ -58,9 +58,9 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
 
   const isValid = ({ ingredientId, quantity, units }) => {
     return ingredientId &&
-           ingredients.some((item) => item._id === ingredientId) &&
-           !isNaN(+quantity) && quantity > 0.0 &&
-           units !== "Select Units"
+      ingredients.some((item) => item._id === ingredientId) &&
+      !isNaN(+quantity) && quantity > 0.0 &&
+      units !== "Select Units"
   }
 
   return (
@@ -89,33 +89,16 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
         </div>
       </div>
 
-      {pantryAddition.length > 0 ? (
+      <div className='pantry-add-page'>
         <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
-            {pantryAddition.map((ingredient, index) => (
-              <li key={index} className='highlight'>
-                {ingredient.image && (
-                    <img src={process.env.PUBLIC_URL + "/images/svg/" + ingredient.image} alt="Ingredient" className="ingredient-image" />
-                  )}
-                  <div className="row">
-                    <span className="quantity-display hidden">{ingredient.quantity}{ingredient.units} of</span>
-                    <div className="col">
-                      <span className="tag hidden">
-                        {pluralizeIngredient(ingredient.name, ingredient.quantity)}
-                      </span>
-                    </div>
-                  </div>
-                  <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>Remove</button>
-              </li>
-            ))}
+            <IngredientList mode={false} pantry={pantryAddition} removeToggle={true} handleRemove={handleRemove} />
           </ul>
         </div>
-      ) : (
-        <div className='ingredient-list' ref={ingredientListRef}></div>
-      )}
+      </div>
+
     </div>
   )
-
 }
 
 export default AddToPantry
