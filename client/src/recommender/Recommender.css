@@ -6,17 +6,32 @@
     width: 700px;
     height: 300px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     overflow-y: auto;
 }
 
 .inputDiv {
     display: flex;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5px;
 }
 
 .indivdualMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: solid;
+    background-color: rgb(97, 172, 246);
+    border-color: rgb(97, 172, 246);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.botMessage {
     display: flex;
     flex-direction: row;
     border: solid;
@@ -25,7 +40,6 @@
     border-radius: 10px;
     margin-left: 5px;
     margin-top: 5px;
-    overflow-wrap: break-word;
     color: white;
 }
 
