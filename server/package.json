@@ -6,9 +6,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js",
-    "initdb": "node server/non-api/ingredientsToDB.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "initdb": "node non-api/ingredientsToDB.js"
   },
   "keywords": [],
   "author": "",
@@ -21,10 +21,7 @@
     "graphlib": "^2.1.8",
     "graphviz": "^0.0.9",
     "jwt-decode": "^4.0.0",
-    "mongodb": "^6.2.0",
-    "pluralize": "^8.0.0",
-    "typeface-roboto": "^1.1.13",
-    "typewriter-effect": "^2.21.0"
+    "mongodb": "^6.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
