@@ -17,9 +17,13 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
             )}
             <div className="row">
               {mode ? (
-                <span className="quantity-display">{ingredient.quantity}{ingredient.units} of</span>
+                <span className="quantity-display">
+                  {ingredient.units === 'count' ? ingredient.quantity : `${ingredient.quantity}${ingredient.units} of`}
+                </span>
               ) : (
-                <span className="quantity-display hidden">{ingredient.quantity}{ingredient.units} of</span>
+                <span className="quantity-display hidden">
+                  {ingredient.units === 'count' ? ingredient.quantity : `${ingredient.quantity}${ingredient.units} of`}
+                </span>
               )}
               <div className="col">
                 {mode ? (
@@ -33,10 +37,10 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
                 )}
               </div>
               {removeToggle && (
-              <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>
-                Remove
-              </button>
-            )}
+                <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>
+                  Remove
+                </button>
+              )}
             </div>
           </li>
         ))
