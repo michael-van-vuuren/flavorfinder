@@ -5,6 +5,7 @@ import RecipePool from './recipe-pool/RecipePool';
 import PantryHome from './pantry/PantryHome';
 import { MainContext } from './MainContext';
 import Typewriter from 'typewriter-effect';
+import Home from './Home';
 
 function Tabs({ returningUser }) {
     const [toggleState, setToggleState] = useState(1)
@@ -73,36 +74,18 @@ function Tabs({ returningUser }) {
                     onClick={() => toggleTab(4)}
                 >RecipeBot</div>
             </div>
-
-            <div className="content-tabs">
-                <div className={toggleState === 1 ? "content active-content" : "content"}>
-                    <h2>
-                        <Typewriter
-                            options={{
-                                strings: welcomeStrings,
-                                autoStart: true,
-                                loop: false,
-                                delay: 75,
-                                deleteSpeed: Infinity,
-                                cursor: '',
-                            }}
-                        />
-                    </h2>
-                    <p>
-                        {tutorialStrings}
-                    </p>
-                </div>
-                <div className={toggleState === 2 ? "content active-content" : "content"}>
-                    <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} fetchIngredients={fetchIngredients} userId={userId} />
-                </div>
-                <div className={toggleState === 3 ? "content active-content" : "content"}>
-                    <RecipePool />
-                </div>
-                <div className={toggleState === 4 ? "content active-content" : "content"}>
-                    <Recommender />
-                </div>
+            <div className={toggleState === 1 ? "content active-content" : "content"}>
+                <Home returningUser={returningUser} name={name} /> 
             </div>
-
+            <div className={toggleState === 2 ? "content active-content" : "content"}>
+                <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} fetchIngredients={fetchIngredients} userId={userId} />
+            </div>
+             <div className={toggleState === 3 ? "content active-content" : "content"}>
+                <RecipePool />
+            </div>
+            <div className={toggleState === 4 ? "content active-content" : "content"}>
+                <Recommender />
+            </div>
         </div>
     );
 }
