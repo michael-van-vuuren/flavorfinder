@@ -16,9 +16,11 @@ const RecipeRecommender = () => {
 
 
   const handleChatButtonSubmit = () => {
-    const userMessage = pushMessage(userInput);
-    setMessages([...messages, userMessage]); // display the message
-    setUserInput(""); // reset input field
+    if (userInput.length !== 0) {
+      const userMessage = pushMessage(userInput);
+      setMessages([...messages, userMessage]); // display the message
+      setUserInput(""); // reset input field
+    }
   }
 
   const handleClearLog = () => {
@@ -29,21 +31,26 @@ const RecipeRecommender = () => {
   const pushMessage = (message) => {
     return (
       <div>
-        <div style={{ display: "flex", justifyContent: "flex-end" }}>
-          <div className='indivdualMessage'>
-            <p>
-              Me:
-            </p>
-            <p>{message}</p>
-
+        <div className="chat-message">
+            <div className="center-chat-message user">
+              <div className="avatar">
+                <img className="avatar-image" src={"/images/svg/user-avatar.svg"}/>
+              </div>
+              <div className="bot-response">
+                <p>{message}</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div style={{ display: "flex", justifyContent: "flex-start" }}>
-          <div className='botMessage'>
-            <p>RecipeBot:</p>
-            <p>response</p>
+          <div className="chat-message">
+            <div className="center-chat-message recipeBot">
+              <div className="avatar">
+              <img className="avatar-image" src={"/images/svg/bot-avatar.svg"}/>
+              </div>
+              <div className="bot-response">
+                <p>response</p>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     )
   }
@@ -51,19 +58,20 @@ const RecipeRecommender = () => {
   return (
     <div>
       <div>
-        <button onClick={handleClearLog}>Clear Messages</button>
+        <button className="clearButton" onClick={handleClearLog}>Clear Messages</button>
       </div>
-      <div style={{ display: "flex", justifyContent: "center", alignContent: "center" }}>
-        <div className='chatBox' ref={messagesRef}>
+      <div className='chatBox'>
+        <div className='chatBox chatLog' ref={messagesRef}>
           <div className='messages'>
-            {messages.map((element) => { return (<div style={{ marginBottom: "10px" }}>{element}</div>) })}
+            {messages.map((element) => { return (<div>{element}</div>) })}
           </div>
-
         </div >
       </div>
       <div className="inputDiv">
-        <input type="text" value={userInput} placeholder="Chat with RecipeBot..." style={{ width: "500px", }} onChange={(e) => setUserInput(e.target.value)} />
-        <button onClick={handleChatButtonSubmit} style={{ backgroundColor: "rgb(97, 172, 246)", color: "white", borderRadius: "10px" }}>Send</button>
+        <input className="textInputBox" type="text" value={userInput} placeholder="Chat with RecipeBot..." style={{ width: "625px", height: "36px" }} onChange={(e) => setUserInput(e.target.value)} />
+        <div className="buttonDiv">
+          <button className="submitButton" onClick={handleChatButtonSubmit}>Send</button>
+        </div>
       </div>
     </div>
 

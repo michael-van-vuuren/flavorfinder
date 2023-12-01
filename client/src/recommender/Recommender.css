@@ -1,4 +1,14 @@
+.clearButton {
+    margin-bottom: 20px;
+}
+
 .chatBox {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chatBox.chatLog{
     background-color: rgb(232, 232, 231);
     border: solid;
     border-radius: 5px;
@@ -15,6 +25,27 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.textInputBox {
+    height: 36px;
+    background-color: #cfcfcf;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.75em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.submitButton {
+    background-color: rgb(97, 172, 246);
+    color: white;
+    border-radius: 10px;
+    width: max-content;
+    height: 36px;
+    font-size: 0.75em;
 }
 
 .indivdualMessage {
@@ -43,8 +74,34 @@
     color: white;
 }
 
-
 .messages {
     display: flex;
     flex-direction: column;
+}
+
+.center-chat-message {
+    padding: 12px;
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-chat-message.recipeBot{
+    background-color: #cfcfcf;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.avatar-image {
+    width: 24px;
+    height: 24px;
+}
+
+.bot-response {
+    padding-left: 12px;
+    padding-right: 12px;
 }
