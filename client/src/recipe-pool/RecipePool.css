@@ -1,0 +1,17 @@
+.recipeCardContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: space-around;
+}
+
+.recipeCard {
+    margin-top: 10px;
+    border: solid;
+    border-radius: 10px;
+    border-color: bisque;
+    background-color: bisque;
+    width: 200px;
+    height: 100px;
+}
