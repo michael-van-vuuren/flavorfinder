@@ -5,6 +5,7 @@ function DropDown({ toSelectUnits }) {
         <div className="drop-down">
             <select id="unitSelect" onChange= {event => toSelectUnits(event.target.value)}>
                 <option>Select Units</option>
+                <option>count</option>
                 <option>oz</option>
                 <option>fl-oz</option>
                 <option>g</option>
