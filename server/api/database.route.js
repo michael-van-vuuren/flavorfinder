@@ -2,6 +2,7 @@ import express from 'express'
 import PantryCtrl from './pantry.controller.js'
 import IngredientCtrl from './ingredient.controller.js'
 import GoogleLoginCtrl from './google-login.controller.js'
+import LLMCtrl from './llm.controller.js'
 
 const router = express.Router()
 
@@ -26,5 +27,9 @@ router.route('/ingredients')
 // get expanded-form ingredient
 router.route('/ingredient/:id')
   .get(IngredientCtrl.serverGetIngredient)
+
+// chatbot<->llm endpoint
+router.route('/chatbot')
+  .post(LLMCtrl.serverSendMessage)
 
 export default router
