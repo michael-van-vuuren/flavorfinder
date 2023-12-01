@@ -7,10 +7,30 @@
     height: 300px;
     display: flex;
     justify-content: center;
+    overflow-y: auto;
 }
 
 .inputDiv {
     display: flex;
     align-items: flex-end;
     margin-bottom: 5px;
+}
+
+.indivdualMessage {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    background-color: rgb(97, 172, 246);
+    border-color: rgb(97, 172, 246);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+
+.messages {
+    display: flex;
+    flex-direction: column;
 }
