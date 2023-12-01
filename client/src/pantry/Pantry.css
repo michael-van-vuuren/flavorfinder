@@ -48,7 +48,7 @@ body::before {
     background-color: rgba(104, 104, 104, 0.064);
     padding: 15px;
     border-radius: 4px;
-    margin-bottom: 45px;
+    margin: 45px 20px;
 }
 
 button:active {
