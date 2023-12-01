@@ -1,14 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 function InfoBox({ name, longName, description, group, subgroup, image }) {
+    const [imageLoadError, setImageLoadError] = useState(false)
+
+    useEffect(() => {
+        setImageLoadError(false);
+      }, [name])
 
     return (
         <div className="info-box" style={{ padding: "25px" }}>
 
             <strong style={{ fontSize: "14pt" }}>{name ? name.charAt(0).toUpperCase() + name.slice(1) : 'No ingredient selected'}</strong>
 
-            {image && (
-                <img className="ingredient-image" src={image} alt={name} style={{ marginRight: '10px', float: 'right', borderRadius: '50%', width: '55px', height: '55px' }}></img>
+            {!imageLoadError && image && (
+                <img className="ingredient-image" src={image} alt={name} style={{ marginRight: '10px', float: 'right', borderRadius: '50%', width: '55px', height: '55px' }} onError={() => { setImageLoadError(true) }} ></img>
             )}
             <br />
             {(group || subgroup) ? (
