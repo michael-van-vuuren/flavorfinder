@@ -1,3 +1,12 @@
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
 .recipeCardContainer {
     display: flex;
     flex-direction: row;
