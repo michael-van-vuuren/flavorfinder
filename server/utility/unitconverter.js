@@ -4,7 +4,7 @@ class UnitConverter {
   static convertToSI(ingredient) {
     const { name, ingredientId, quantity, units, image } = ingredient
 
-    if (units === 'g' || units === 'ml')
+    if (units === 'g' || units === 'ml' || units === 'count')
       return ingredient
 
     try {
