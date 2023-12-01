@@ -37,7 +37,7 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
                 )}
               </div>
               {removeToggle && (
-                <button className="remove-button" onClick={() => handleRemove(ingredient.ingredientId)}>
+                <button className="remove-button" onClick={() => handleRemove([ingredient.ingredientId, index])}>
                   Remove
                 </button>
               )}

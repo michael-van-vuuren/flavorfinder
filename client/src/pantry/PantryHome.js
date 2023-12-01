@@ -7,6 +7,14 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, fetchIngredients, userId
   const [toggleAdd, setToggleAdd] = useState(false)
   const [pantryAddition, setPantryAddition] = useState([])
   const [removeToggle, setRemoveToggle] = useState(false)
+  const [removeToggleLabel, setRemoveToggleLabel] = useState('Remove')
+
+  useEffect(() => {
+    setPantryAddition([])
+    fetchIngredients()
+    setRemoveToggle(false)
+    setRemoveToggleLabel('Remove')
+  }, [toggleAdd])
 
   const handleAddIngredientBtn = () => {
     setToggleAdd(true)
@@ -14,18 +22,17 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, fetchIngredients, userId
 
   const handleCancelBtn = () => {
     setToggleAdd(false)
-    setPantryAddition([])
-    fetchIngredients()
-    setRemoveToggle(false)
   }
 
   const handleRemoveToggle = () => {
     setRemoveToggle(!removeToggle)
+    setRemoveToggleLabel(removeToggle ? 'Remove' : 'Cancel')
   }
 
   const handleConfirmBtn = async () => {
     setToggleAdd(false)
     setRemoveToggle(false)
+    setRemoveToggleLabel('Remove')
     try {
       const url = `http://localhost:3001/api/v1/users/${userId}`
       const response = await fetch(url, {
@@ -58,9 +65,9 @@ const PantryHome = ({ pantry, ingredients, fetchPantry, fetchIngredients, userId
         </div>
       ) : (
         <div>
-          <button className='pantry-menu-remove-toggle-btn' onClick={() => handleRemoveToggle()}>Remove</button>
+          <button className='pantry-menu-remove-toggle-btn' onClick={() => handleRemoveToggle()}>{removeToggleLabel}</button>
           <button className='pantry-menu-btn' onClick={() => handleAddIngredientBtn()}>Add Ingredients</button>
-          <Pantry pantry={pantry} fetchPantry={fetchPantry} userId={userId} removeToggle={removeToggle} />
+          <Pantry pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} userId={userId} removeToggle={removeToggle} />
         </div>
       )}
     </div>
