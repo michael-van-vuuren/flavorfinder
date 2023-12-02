@@ -1,17 +1,29 @@
 import React, { useState } from 'react';
 import Slider from '@mui/material-next/Slider';
+import Dialog from '@mui/material/Dialog';
+import DialogContent from '@mui/material/DialogContent';
 import "./RecipePool.css";
 
 const RecipePool = () => {
-  const [sliderValue, setSliderValue] = useState(0)
+  const [sliderValue, setSliderValue] = useState(0);
+  const [selectedRecipe, setSelectedRecipe] = useState(null);
+
+  const handleRecipeCardClick = (recipeId) => {
+    setSelectedRecipe(recipeId);
+  }
+
+  const handleDialogClose = () => {
+    setSelectedRecipe(null);
+  }
 
   const RecipeCard = (id) => {
-    const handleRecipeCardClick = () => {
-
+    const handleClick = () => {
+      handleRecipeCardClick(id);
     }
+
     return (
-      <div key={id} className='recipeCard' onClick={handleRecipeCardClick}>
-        Recipe
+      <div key={id} className='recipeCard' onClick={handleClick}>
+        Recipe {id}
       </div>
     )
   }
@@ -46,6 +58,13 @@ const RecipePool = () => {
         {RecipeCard(5)}
         {RecipeCard(6)}
       </div>
+
+      <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
+        <DialogContent>
+          <p>{selectedRecipe}</p>
+        </DialogContent>
+      </Dialog>
+
     </div>
   );
 }
