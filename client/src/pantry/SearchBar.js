@@ -11,9 +11,16 @@ function SearchBar({ placeholder, ingredients, toSelectIngredient }) {
     setIngredientEntered(searchInput)
     setShowSuggestions(true)
 
-    const newFilter = ingredients.filter((ingredient) =>
-      ingredient && ingredient.name.toLowerCase().includes(searchInput)
-    )
+    const newFilter = ingredients
+      .filter((ingredient) => ingredient && ingredient.name.toLowerCase().includes(searchInput))
+      .sort((a, b) => { // sorts by closest matching name, then by shorter name
+        const indexOfA = a.name.toLowerCase().indexOf(searchInput)
+        const indexOfB = b.name.toLowerCase().indexOf(searchInput)
+        if (indexOfA === indexOfB) {
+          return a.name.length - b.name.length;
+        }
+        return indexOfA - indexOfB
+      })
 
     setFilteredIngredients(searchInput === "" ? [] : newFilter)
   }

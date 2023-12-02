@@ -6240,7 +6240,7 @@
     "_id": 986,
     "name": "whole wheat bread",
     "food_group": "cereals and cereal products",
-    "food_subgroup": "cereals",
+    "food_subgroup": "leavened breads",
     "image": ""
   },
   {
@@ -6471,7 +6471,7 @@
     "_id": 1019,
     "name": "white bread",
     "food_group": "cereals and cereal products",
-    "food_subgroup": "cereals",
+    "food_subgroup": "leavened breads",
     "image": ""
   },
   {
@@ -7061,5 +7061,12 @@
     "food_group": "vegetables",
     "food_subgroup": "leaf vegetables",
     "image": ""
-  }  
+  },
+  {
+    "_id": 1100,
+    "name": "bread",
+    "food_group": "cereals and cereal products",
+    "food_subgroup": "leavened breads",
+    "image": ""
+  }
 ]
