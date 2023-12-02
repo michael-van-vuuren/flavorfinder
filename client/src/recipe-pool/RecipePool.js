@@ -1,12 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Slider from '@mui/material-next/Slider';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
+import { MainContext } from '../MainContext';
 import "./RecipePool.css";
 
 const RecipePool = () => {
   const [sliderValue, setSliderValue] = useState(0);
   const [selectedRecipe, setSelectedRecipe] = useState(null);
+  const { userId } = useContext(MainContext);
+  const [recipes, setRecipes] = useState([]);
+
+  const fetchRecipes = async () => {} // get personalized list of available recipes
+
+  useEffect(() => {
+    // Fetch recipes from database
+    fetchRecipes();
+  }, []);
 
   const handleRecipeCardClick = (recipeId) => {
     setSelectedRecipe(recipeId);
