@@ -5,9 +5,12 @@ import "./RecipePool.css";
 const RecipePool = () => {
   const [sliderValue, setSliderValue] = useState(0)
 
-  const RecipeCard = () => {
+  const RecipeCard = (id) => {
+    const handleRecipeCardClick = () => {
+
+    }
     return (
-      <div className='recipeCard'>
+      <div key={id} className='recipeCard' onClick={handleRecipeCardClick}>
         Recipe
       </div>
     )
@@ -36,12 +39,12 @@ const RecipePool = () => {
       </div>
 
       <div className="recipeCardContainer">
-        {RecipeCard()}
-        {RecipeCard()}
-        {RecipeCard()}
-        {RecipeCard()}
-        {RecipeCard()}
-        {RecipeCard()}
+        {RecipeCard(1)}
+        {RecipeCard(2)}
+        {RecipeCard(3)}
+        {RecipeCard(4)}
+        {RecipeCard(5)}
+        {RecipeCard(6)}
       </div>
     </div>
   );
