@@ -16,11 +16,22 @@
 }
 
 .recipeCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
     border: solid;
     border-radius: 10px;
     border-color: bisque;
     background-color: bisque;
     width: 200px;
     height: 100px;
+}
+
+.dialogContainer {
+    width: 500px;
+    height: 400px;
+    overflow-y: auto;
 }

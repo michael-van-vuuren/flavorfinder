@@ -11,7 +11,7 @@ const RecipePool = () => {
   const { userId } = useContext(MainContext);
   const [recipes, setRecipes] = useState([]);
 
-  const fetchRecipes = async () => {} // get personalized list of available recipes
+  const fetchRecipes = async () => { } // get personalized list of available recipes
 
   useEffect(() => {
     // Fetch recipes from database
@@ -67,11 +67,26 @@ const RecipePool = () => {
         {RecipeCard(4)}
         {RecipeCard(5)}
         {RecipeCard(6)}
+        {RecipeCard(7)}
+        {RecipeCard(8)}
+        {RecipeCard(9)}
       </div>
 
       <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
         <DialogContent>
-          <p>{selectedRecipe}</p>
+          <div className='dialogContainer'>
+            <h2>{selectedRecipe}</h2>
+            <br></br>
+            <p><b>Description</b></p>
+            <p>dummy description</p>
+
+            <br></br>
+
+            <p><b>Ingredients</b></p>
+            <li>dummy ingredient here</li>
+
+
+          </div>
         </DialogContent>
       </Dialog>
 
