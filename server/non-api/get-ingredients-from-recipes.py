@@ -20,12 +20,18 @@ for ingredient in ingredients:
     ingredient_names[pluralize_word(ingredient['name'])] = ingredient["_id"] 
 
 unit_mappings = {
-    "tablespoon": "tbsp",
+    "tbsp": "Tbs",
+    "tablespoon": "Tbs",
     "teaspoon": "tsp",
-    "pint": "pt"
+    "pint": "pt",
+    "quart" : "qt",
+    "fl oz" : "fl-oz",
+    "pound" : "lb",
+    "gram" : "g",
+    "kilogram" : "kg"
 }
 
-ingredient_units = ["lb", "g", "oz", "ml", "cup"] + list(unit_mappings.keys())
+ingredient_units = ["lb", "g", "oz", "ml", "cup", "mg", "kg"] + list(unit_mappings.keys())
 pluralized_units = {pluralize_word(unit) for unit in ingredient_units}
 
 recipes = []
