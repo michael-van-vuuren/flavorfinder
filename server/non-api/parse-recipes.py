@@ -1,6 +1,7 @@
 import requests
 import json
 from bs4 import BeautifulSoup
+from urllib.parse import unquote
 
 links = set()
 recipeToIngredients = {}
@@ -9,6 +10,12 @@ unicode = {"\u00bd": ".5", "\u00bc": ".25", "\u2154": ".666666666", "\u00e9":"e"
 "\u00f1": "n", "\u00e8":"e", "\u00ee":"i", "\u00fa":"u", "\u00f4": "o", "\u00e7":"c", "\u201d": " inch"
 ,"\u00fb": "u", "\u2159":".166666666", "\u215d":".625", "\u00e4":"a", "\u00ea":"e", "\u00ba":" degrees", "\u00d7":"x", "\u01b0":"u",
 "\u1ebf": "e", "\u1edb":"o", "\u1eaf":"a", "\u00ed":"i", "\u2155":".2", "\u2013": "|"}
+
+def cleanup(url):
+    try:
+        return unquote(url, errors='strict')
+    except UnicodeDecodeError:
+        return unquote(url, encoding='latin-1')
 
 def parse_recipe_url(link):
     response = requests.get(
@@ -37,7 +44,7 @@ def parse_category(link):
         subpages = soup.find(id='mw-pages').find_all("div", {"class" : "mw-category-group"}, recursive=True)
         # get all recipes pages in category
         for page in subpages:
-            links.add('https://en.wikibooks.org/' + page.a['href'])
+            links.add(cleanup('https://en.wikibooks.org' + page.a['href']))
 
     # continue recursively parsing for subcategories
     for category in subcategories:

@@ -37,7 +37,7 @@ def main():
     missed_word_count = {}
     for key in recipes_wikipedia:
         recipe_lines = recipes_wikipedia[key]
-        curr_recipe = {"link": key, "id" : recipe_count, "ingredients": []}
+        curr_recipe = {"link": key, "id" : recipe_count, "ingredients": [], "name" : key.split(":")[-1].replace("_", " ")}
         recipes.append(curr_recipe)
         for line in recipe_lines:
             total_lines = total_lines + 1
