@@ -7068,5 +7068,152 @@
     "food_group": "cereals and cereal products",
     "food_subgroup": "leavened breads",
     "image": "cereals-and-cereal-products.svg"
+  },
+  {
+    "_id": 1101,
+    "name": "onion",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1102,
+    "name": "baguette",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1103,
+    "name": "curry",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1104,
+    "name": "palm oil",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1105,
+    "name": "tomato",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1106,
+    "name": "oil",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1107,
+    "name": "bay leaf",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1108,
+    "name": "mint leaf",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1109,
+    "name": "scent leaf",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1110,
+    "name": "basil leaf",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1111,
+    "name": "stalk celery",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1112,
+    "name": "zucchini",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1113,
+    "name": "scallion",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1114,
+    "name": "cashew",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1115,
+    "name": "raisin",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1116,
+    "name": "celery",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1117,
+    "name": "cilantro",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1118,
+    "name": "mayonnaise",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1119,
+    "name": "orange juice",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1120,
+    "name": "orange sherbet",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
+  },
+  {
+    "_id": 1121,
+    "name": "orange",
+    "food_group": "e",
+    "food_subgroup": "e",
+    "image": "default.svg"
   }
 ]
