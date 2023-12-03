@@ -36,21 +36,31 @@ export default class PantryController {
   }
 
   // res = [{name: <username>, pantry: {"ingredientId":"..","quantity":"..","units":".."},..}]
+  // return when called from recipe.controller.js
   static async apiGetPantry(req, res, next) {
     try {
-      let id = req.params.id
-      
-      let userData = await PantryDAO.getUserData(id)
-      if (!userData) {
-        res.status(404).json({ error: 'cannot find user' })
-        return
-      }
-      res.json(userData || [])
+        let id = req.params.id
+
+        let userData = await PantryDAO.getUserData(id)
+        if (!userData) {
+            const errorResponse = { status: 'error', error: 'cannot find user' }
+
+            if (res) { res.status(404).json(errorResponse) } 
+            else { return errorResponse }
+        }
+        const successResponse = { status: 'success', data: userData || [] }
+
+        if (res) { res.json(successResponse) } 
+        else { return successResponse }
+
     } catch (e) {
-      console.log(`api, ${e}`)
-      res.status(500).json({ error: e })
+        console.log(`api, ${e}`)
+        const errorResponse = { status: 'error', error: e }
+        if (res) { res.status(500).json(errorResponse) } 
+        else { return errorResponse }
     }
-  }
+}
+
 
   static async apiUpdatePantry(req, res, next) {
     try {

@@ -37,8 +37,8 @@ function Tabs({ returningUser }) {
         try {
             const response = await fetch(`http://localhost:3001/api/v1/users/${userId}`)
             const pantryData = await response.json()
-            setName(pantryData.name)
-            setPantry(pantryData.pantry)
+            setName(pantryData.data.name)
+            setPantry(pantryData.data.pantry)
         } catch (e) {
             console.error('error fetching pantry:', e)
         }
