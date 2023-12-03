@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import PantryCtrl from './pantry.controller.js'
+import getPossibleRecipes from '../utility/getPossibleRecipes.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -35,8 +36,8 @@ export default class RecipeController {
                 return
             }
             const pantry = pantryResponse.data
-
-            res.json({ status: 'success', id: id, threshold: threshold, p: pantry, r: recipes })
+            const possibleRecipes = getPossibleRecipes(threshold, recipes, pantry)
+            res.json({ status: 'success', id: id, threshold: threshold, p: pantry, r: possibleRecipes })
 
         } catch (error) {
             console.error('unexpected error:', error)
