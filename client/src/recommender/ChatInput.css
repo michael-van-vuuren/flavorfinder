@@ -1,0 +1,29 @@
+.inputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textInputBox {
+    height: 36px;
+    background-color: #cfcfcf;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.75em;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+}
+
+.submitButton {
+    background-color: rgb(97, 172, 246);
+    color: white;
+    border-radius: 10px;
+    width: max-content;
+    height: 36px;
+    font-size: 0.75em;
+}

@@ -50,7 +50,8 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
     image: getIngredientImageById(idSelected)
   })
 
-  const handleRemove = (index) => {
+  const handleRemove = (id_index) => {
+    const index = id_index[1]
     const pantryAdditionCopy = [...pantryAddition]
     pantryAdditionCopy.splice(index, 1)
     setPantryAddition(pantryAdditionCopy)
@@ -92,11 +93,11 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
       <div className='pantry-add-page'>
         <div className='ingredient-list' ref={ingredientListRef}>
           <ul>
-            <IngredientList mode={false} pantry={pantryAddition} removeToggle={true} handleRowClick={() => {}} handleRemove={handleRemove} />
+            <IngredientList mode={false} pantry={pantryAddition} removeToggle={true} handleRowClick={() => { }} handleRemove={handleRemove} />
           </ul>
         </div>
       </div>
-
+      
     </div>
   )
 }

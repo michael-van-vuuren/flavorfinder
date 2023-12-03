@@ -4,16 +4,17 @@ import Tags from './Tags.js'
 import InfoBox from './InfoBox.js'
 import IngredientList from './IngredientList.js'
 
-const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
+const Pantry = ({ pantry, ingredients, fetchPantry, userId, removeToggle }) => {
   const [info, setInfo] = useState({ name: '', longName: '', description: '', group: '', subgroup: '', image: null })
 
-  const handleRemove = async (idToRemove) => {
+  const handleRemove = async (id_index) => {
+    const id = id_index[0]
     try {
       const url = `http://localhost:3001/api/v1/users/${userId}`
       const response = await fetch(url, {
         method: 'DELETE',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ deleteme: idToRemove }),
+        body: JSON.stringify({ deleteme: id }),
       })
 
       if (!response.ok) {
@@ -28,19 +29,29 @@ const Pantry = ({ pantry, fetchPantry, userId, removeToggle }) => {
     }
   }
 
+  const getIngredientGroupingById = (id) => {
+    if (id) { 
+      return [
+        ingredients.find(item => item._id === id).food_group, 
+        ingredients.find(item => item._id === id).food_subgroup
+      ]
+    }
+    else { return ['',''] }
+  }
+
   const handleTagClick = async (name, id, event) => {
     try {
-      // reset image for fade in
       event.stopPropagation()
+      // reset image for fade in
       setInfo(member => ({ ...member, image: null }))
 
-      const tagResult = await Tags.ingredientTag(id);
+      const groupings = getIngredientGroupingById(id)
       const imagePath = `https://foodb.ca/system/foods/pictures/${id}/full/${id}.png`;
 
       setInfo({
         name: name,
-        group: tagResult.food_group,
-        subgroup: tagResult.food_subgroup,
+        group: groupings[0],
+        subgroup: groupings[1],
         image: imagePath,
 
         longName: '',

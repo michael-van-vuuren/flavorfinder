@@ -1,3 +1,102 @@
-#recommender-title {
-    color:black;
+.chatBox {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chatBox.chatLog{
+    background-color: rgb(232, 232, 231);
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(189, 189, 189);
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.indivdualMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: solid;
+    background-color: rgb(97, 172, 246);
+    border-color: rgb(97, 172, 246);
+    border-radius: 10px;
+    margin-right: 5px;
+    margin-top: 5px;
+    overflow-wrap: break-word;
+    color: white;
+}
+
+.botMessage {
+    display: flex;
+    flex-direction: row;
+    border: solid;
+    background-color: rgb(97, 172, 246);
+    border-color: rgb(97, 172, 246);
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: white;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-chat-message {
+    padding: 12px;
+    display: flex;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center-chat-message.user{
+    display: flex;
+    justify-content: space-between;
+}
+
+.center-chat-message.recipeBot{
+    padding-top: 12px;
+    padding-bottom: 8px;
+    background-color: #cfcfcf;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.avatar-image {
+    width: 24px;
+    height: 24px;
+}
+
+.avatar.user {
+    margin-left: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.user-response {
+    padding-left: 56px;
+    padding-right: 12px;
+    float: left;
+    text-align: left;
+}
+
+.actual-user-msg {
+    padding-top: 4px;
+    margin-left: 0;
+    float: left;
+}
+
+.bot-response {
+    padding-left: 12px;
+    padding-right: 12px;
 }
