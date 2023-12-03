@@ -14,10 +14,10 @@ def singularize_word(word):
   return inflect.engine().singular_noun(word)
 
 # create list of ingredient names from ingredient json
-ingredient_names = []
+ingredient_names = {}
 for ingredient in ingredients:
-    ingredient_names.append(ingredient['name'])
-    ingredient_names.append(pluralize_word(ingredient['name']))
+    ingredient_names[ingredient['name']] = ingredient["_id"] 
+    ingredient_names[pluralize_word(ingredient['name'])] = ingredient["_id"] 
 
 unit_mappings = {
     "tablespoon": "tbsp",
@@ -74,7 +74,8 @@ def main():
                 ingredient = {
                     "name": name,
                     "quantity": quantity,
-                    "units": units
+                    "units": units,
+                    "id": ingredient_names[name]
                 }
 
                 # add ingredients array to recipe obj
@@ -87,6 +88,8 @@ def main():
                 missed_lines = missed_lines + 1
                 if "orange" in line:
                     print(line)
+            
+        curr_recipe["ingredients"].sort(key=lambda ingredient: ingredient["id"])
         recipe_count = recipe_count + 1
 
     json_output = json.dumps(recipes, indent=2)
