@@ -21,7 +21,7 @@ const RecipeRecommender = () => {
   // scrolling logic for chatbox
   useEffect(() => {
     if (messagesRef.current) {
-      messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+      messagesRef.current.scrollTop = messagesRef.current.scrollHeight
     }
   }, [messagesDivList]);
 
@@ -97,7 +97,7 @@ const RecipeRecommender = () => {
       <div className='chatBox'>
         <div className='chatBox chatLog' ref={messagesRef}>
           <div className='messages'>
-            {messagesDivList.map((element) => { return (<div>{element}</div>) })}
+            {messagesDivList.map((element, index) => { return (<div key={index}>{element}</div>) })}
           </div>
         </div >
       </div>
@@ -106,7 +106,7 @@ const RecipeRecommender = () => {
       </div>
     </div>
 
-  );
+  )
 }
 
-export default RecipeRecommender;
+export default RecipeRecommender
