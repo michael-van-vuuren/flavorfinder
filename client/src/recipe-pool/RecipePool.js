@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect, useContext, useRef } from 'react';
 import Slider from '@mui/material-next/Slider';
 import Dialog from '@mui/material/Dialog';
 import DialogContent from '@mui/material/DialogContent';
@@ -10,6 +10,9 @@ const RecipePool = () => {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
   const { userId } = useContext(MainContext);
   const [recipes, setRecipes] = useState([]);
+
+  const [scrollToBottom, setScrollToBottom] = useState(false)
+  const recipeCardContainerRef = useRef(null);
 
   // get personalized list of available recipes
   const fetchRecipes = async () => {
@@ -28,6 +31,13 @@ const RecipePool = () => {
     // Fetch recipes from database
     fetchRecipes();
   }, [sliderValue]);
+
+  useEffect(() => {
+    if (scrollToBottom && recipeCardContainerRef.current) {
+      recipeCardContainerRef.current.scrollTop = recipeCardContainerRef.current.scrollHeight;
+      setScrollToBottom(false)
+    }
+  }, [scrollToBottom, recipes])
 
   const handleRecipeCardClick = (recipe) => {
     setSelectedRecipe(recipe);
@@ -68,10 +78,11 @@ const RecipePool = () => {
           valueLabelDisplay="auto"
           aria-labelledby="non-linear-slider"
           style={{ width: "500%" }}
+          marks={true}
         />
       </div>
 
-      <div className="recipeCardContainer">
+      <div className="recipeCardContainer" ref={recipeCardContainerRef}>
         {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
       </div>
 
@@ -82,20 +93,10 @@ const RecipePool = () => {
               <h2>{selectedRecipe.name}</h2>
               <br></br>
               <p><b>Description</b></p>
-              <p>{selectedRecipe.link}</p>
 
               <br></br>
 
-              <p><b>Ingredients</b></p>
-              <ul>
-                {selectedRecipe.ingredients.map(ingredient => (
-                  <li key={ingredient.id}>
-                    {ingredient.quantity} {ingredient.units} {ingredient.name}
-                  </li>
-                ))}
-              </ul>
-
-
+              <p>{selectedRecipe.name}</p>
             </div>
           </DialogContent>
         </Dialog>
