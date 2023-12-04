@@ -11,7 +11,15 @@ const RecipePool = () => {
   const { userId } = useContext(MainContext);
   const [recipes, setRecipes] = useState([]);
 
-  const fetchRecipes = async () => { } // get personalized list of available recipes
+  const fetchRecipes = async () => {
+    const url = `http://localhost:3001/api/v1/recipe-pool/${userId}/${sliderValue}`
+    const res = await fetch(url, {
+      method: 'GET',
+      headers: { 'Content-Type': 'application/json' }
+    })
+    let responseData = await res.json()
+    console.log(responseData);
+  } // get personalized list of available recipes
 
   useEffect(() => {
     // Fetch recipes from database
