@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url'
 import PantryCtrl from './pantry.controller.js'
 import RecipeCalc from '../utility/getPossibleRecipes.js'
 import RecipeDisplayScraperController from './recipe-display-scraper.controller.js'
+import { JSDOM } from 'jsdom';
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -43,11 +44,18 @@ export default class RecipeController {
                     const stdoutData = await RecipeDisplayScraperController.getRecipeDisplay(recipe.link);
                     // console.log('Received stdout', stdoutData);
 
+                    const dom = new JSDOM(stdoutData);
+                    const document = dom.window.document;
+
+                    const mwBodyContentParagraphs = document.querySelectorAll('.mw-body-content p');
+                    const shortDescription = Array.from(mwBodyContentParagraphs).map(paragraph => paragraph.textContent.trim()).join(', ');
+
                     // Now, you can return the result from the mapping function
                     return {
                         id: recipe.id,
                         name: recipe.name,
                         description: stdoutData,
+                        short: shortDescription
                     };
                 } catch (error) {
                     console.error('Error:', error);
@@ -56,6 +64,7 @@ export default class RecipeController {
                         id: recipe.id,
                         name: recipe.name,
                         description: 'Error fetching description',
+                        short: 'Error fetching short description'
                     };
                 }
             }));
