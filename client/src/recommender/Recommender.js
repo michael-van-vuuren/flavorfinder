@@ -28,7 +28,7 @@ const RecipeRecommender = () => {
   // helper functions
   const handleChatButtonSubmit = async (message) => {
     const userMessage = pushUserMessage(message);
-    setMessagesDivList([...messagesDivList, userMessage]); // how we keep track of divs
+    setMessagesDivList((prevMessages) => [...prevMessages, userMessage]); // how we keep track of divs
     const userMessageforLLM = { "role": "user", "content": message };
     setMessagesSenttoLLM([...messagesSenttoLLM, userMessageforLLM]); // what we send to the LLM
 
@@ -38,7 +38,7 @@ const RecipeRecommender = () => {
     // Handle the response from OpenAI and update the state accordingly
     const assistantMessage = response.choices[0].message.content;
     const assistantReply = pushAssistantMessage(assistantMessage);
-    setMessagesDivList([...messagesDivList, assistantReply]); // how we keep track of divs
+    setMessagesDivList((prevMessages) => [...prevMessages, assistantReply]); // how we keep track of divs
     const assistantMessageforLLM = { "role": "assistant", "content": assistantMessage };
     setMessagesSenttoLLM([...messagesSenttoLLM, assistantMessageforLLM]); // what we send to the LLM
   }
