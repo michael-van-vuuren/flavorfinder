@@ -101,7 +101,7 @@ function Tabs({ returningUser }) {
                 <RecipePool recipes={recipes} />
             </div>
             <div className={toggleState === 4 ? "content active-content" : "content"}>
-                <Recommender />
+                <Recommender recipes={recipes} />
             </div>
         </div>
     );
