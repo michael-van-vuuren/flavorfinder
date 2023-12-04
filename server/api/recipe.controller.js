@@ -3,6 +3,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import PantryCtrl from './pantry.controller.js'
 import RecipeCalc from '../utility/getPossibleRecipes.js'
+import RecipeDisplayScraperController from './recipe-display-scraper.controller.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -21,7 +22,6 @@ export default class RecipeController {
     static async serverGetRecipePool(req, res, next) {
         try {
             // get threshold and id
-            let id = req.params.id
             let threshold = req.params.threshold
 
             // get recipes
@@ -39,14 +39,34 @@ export default class RecipeController {
             const possibleRecipes = RecipeCalc.calculateRecipePool(pantry, recipes, threshold)
 
             const displayReadyRecipes = await Promise.all(possibleRecipes.map(async recipe => {
-                // const description = await getDescription(recipe.link);
-                const description = 'PLACEHOLDER DESCRIPTION'
-                return {
-                    id: recipe.id,
-                    name: recipe.name,
-                    description: description,
+                try {
+                    const stdoutData = await RecipeDisplayScraperController.getRecipeDisplay(recipe.link);
+                    // console.log('Received stdout', stdoutData);
+
+                    // Now, you can return the result from the mapping function
+                    return {
+                        id: recipe.id,
+                        name: recipe.name,
+                        description: stdoutData,
+                    };
+                } catch (error) {
+                    console.error('Error:', error);
+                    // Handle the error here, you might want to return some default values or handle it accordingly
+                    return {
+                        id: recipe.id,
+                        name: recipe.name,
+                        description: 'Error fetching description',
+                    };
                 }
-            }))
+            }));
+
+            // const description = 'PLACEHOLDER DESCRIPTION'
+            // return {
+            //     id: recipe.id,
+            //     name: recipe.name,
+            //     description: description,
+            // }
+
 
             res.json({ status: 'success', recipes: displayReadyRecipes })
 

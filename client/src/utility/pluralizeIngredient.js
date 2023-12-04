@@ -20,6 +20,7 @@ const irregular =
         'celery',
         'wild celery',
         'beer',
+        'beef'
     ]
 
 irregular.forEach(x => {
