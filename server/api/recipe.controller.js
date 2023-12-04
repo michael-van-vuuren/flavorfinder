@@ -2,6 +2,7 @@ import { readFile } from 'fs/promises'
 import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import PantryCtrl from './pantry.controller.js'
+import RecipeCalc from '../utility/getPossibleRecipes.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -24,7 +25,7 @@ export default class RecipeController {
             let threshold = req.params.threshold
 
             // get recipes
-            const filePath = join(__dirname, '../resources/recipe-with-ingredients.json')
+            const filePath = join(__dirname, '../resources/recipe-with-ingredients2.json')
             const recipes = await RecipeController.fetchData(filePath)
 
             // get pantry
@@ -34,9 +35,20 @@ export default class RecipeController {
                 res.status(500).json({ error: 'internal server error' })
                 return
             }
-            const pantry = pantryResponse.data
+            const pantry = pantryResponse.data.pantry
+            const possibleRecipes = RecipeCalc.calculateRecipePool(pantry, recipes, threshold)
 
-            res.json({ status: 'success', id: id, threshold: threshold, p: pantry, r: recipes })
+            const displayReadyRecipes = await Promise.all(possibleRecipes.map(async recipe => {
+                // const description = await getDescription(recipe.link);
+                const description = 'PLACEHOLDER DESCRIPTION'
+                return {
+                    id: recipe.id,
+                    name: recipe.name,
+                    description: description,
+                }
+            }))
+
+            res.json({ status: 'success', recipes: displayReadyRecipes })
 
         } catch (error) {
             console.error('unexpected error:', error)
