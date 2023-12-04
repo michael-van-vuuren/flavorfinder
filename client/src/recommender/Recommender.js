@@ -37,10 +37,28 @@ const RecipeRecommender = () => {
 
     // Handle the response from OpenAI and update the state accordingly
     const assistantMessage = response.choices[0].message.content;
+    const recipeId = messageParse(assistantMessage);
+
+    // Get recipe information from backend
+
     const assistantReply = pushAssistantMessage(assistantMessage);
     setMessagesDivList((prevMessages) => [...prevMessages, assistantReply]); // how we keep track of divs
     const assistantMessageforLLM = { "role": "assistant", "content": assistantMessage };
     setMessagesSenttoLLM([...messagesSenttoLLM, assistantMessageforLLM]); // what we send to the LLM
+  }
+
+  // Get recipe ID from GPT's response
+  // Message in form "ID: x, Recipe: y"
+  const messageParse = (message) => {
+    const splitString = message.split(',');
+    const idPart = splitString.find(part => part.includes('ID:'));
+    if (idPart) {
+      const extractedId = idPart.split(':')[1].trim();
+      return extractedId;
+    } else {
+      console.log("Could not find ID");
+    }
+    return null;
   }
 
   const LLMResponse = async (userMessage) => {
