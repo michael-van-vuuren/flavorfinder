@@ -44,10 +44,12 @@ class RecipeCalculator {
 
         for (const recipe of recipes) {
             const recipe_ingredients = UnitConverter.convertPantryToSI(recipe.ingredients)
-            const matching = this.findPartialMatch(pantry_ingredients, recipe_ingredients, threshold)
-            if (matching) { 
-                console.log('MATCH FOUND:', recipe)
-                recipe_pool.push(recipe) 
+            for (let k = threshold; k >= 0; k--) {
+                const matching = this.findPartialMatch(pantry_ingredients, recipe_ingredients, k)
+                if (matching) { 
+                    console.log('MATCH FOUND:', recipe)
+                    recipe_pool.push(recipe) 
+                }
             }
         }
 
