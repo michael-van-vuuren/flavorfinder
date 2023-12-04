@@ -5,6 +5,7 @@ export const MainContext = React.createContext();
 function MainContextProvider({ children }) {
     const [login, setLogin] = useState(false);
     const [userId, setUserId] = useState(null);
+    const [sliderValue, setSliderValue] = useState(0);
 
     return (
         <MainContext.Provider
@@ -12,7 +13,9 @@ function MainContextProvider({ children }) {
                 login,
                 setLogin,
                 userId,
-                setUserId
+                setUserId,
+                sliderValue,
+                setSliderValue
             }}>
             {children}
         </MainContext.Provider>
