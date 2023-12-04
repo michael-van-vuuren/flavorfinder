@@ -1,37 +1,59 @@
-export default function getPossibleRecipes(threshold, recipes, pantry) {
-    const matchedRecipes = [] // store all matched recipes
-    const pantryIngredients = pantry.ingredients
-    // sort pantry ingredients by ingredient id ascending
-    pantryIngredients.sort((a, b) => a.ingredientId - b.ingredientId)
+import UnitConverter from "./unitconverter2.js"
 
-    // loop over all recipes to find matches
-    for (const recipe of recipes) {
-        const totalIngredients = recipe.ingredients.length
-        let matching = 0;
+class RecipeCalculator {
+    static findPartialMatch(p_list, r_list, k) {
+        const p_len = p_list.length
+        const r_len = r_list.length
+        const k_store = k
+        let i = 0
+        let j = 0
 
-        let index1 = 0;
-        let index2 = 0;
-
-        while (index1 < pantryIngredients.length && index2 < recipe.ingredients.length) {
-            if (pantryIngredients[index1].id === recipe.ingredients[index2].ingredientId) {
-                if (pantryIngredients[index1].quantity >= recipe.ingredients[index2].quantity) {
-                    matching++
-                }
-                index1++;
-                index2++;
+        while (i < p_len && j < r_len) {
+            let p = p_list[i]
+            let r = r_list[j]
+            let p_id = p.ingredientId
+            let r_id = r.id
+            
+            if (p_id === r_id && p.quantity >= r.quantity && p.units === r.units) {
+                i++
+                j++
             }
-
-            else if (pantryIngredients[index1].id > recipe.ingredients[index2].ingredientId) {
-                index2++;
+            else if (p_id > r_id) {
+                i++
             }
-
+            else if (p_id < r_id) {
+                j++
+                k--
+            } 
             else {
-                index1++;
+                i++
+                k--
+            }
+
+            if (k < 0) { return false }
+        }
+        if (r_len - j > k) { return false }
+        if (r_len <= k_store) { return false }
+        return true
+    }
+
+    static calculateRecipePool(pantry, recipes, threshold) {
+        const recipe_pool = []
+        const pantry_ingredients = [...pantry]
+        pantry_ingredients.sort((a,b) => b.ingredientId - a.ingredientId)
+
+        for (const recipe of recipes) {
+            const recipe_ingredients = UnitConverter.convertPantryToSI(recipe.ingredients)
+            const matching = this.findPartialMatch(pantry_ingredients, recipe_ingredients, threshold)
+            if (matching) { 
+                console.log('MATCH FOUND:', recipe)
+                recipe_pool.push(recipe) 
             }
         }
 
-        if (matching / totalIngredients >= threshold) matchedRecipes.push(recipe)
+        return recipe_pool
     }
-
-    return matchedRecipes
 }
+
+export default RecipeCalculator
+
