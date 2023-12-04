@@ -3,6 +3,7 @@ import { join, dirname } from 'path'
 import { fileURLToPath } from 'url'
 import PantryCtrl from './pantry.controller.js'
 import RecipeCalc from '../utility/getPossibleRecipes.js'
+import RecipeDisplayScraperController from './recipe-display-scraper.controller.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -37,6 +38,9 @@ export default class RecipeController {
             }
             const pantry = pantryResponse.data.pantry
             const possibleRecipes = RecipeCalc.calculateRecipePool(pantry, recipes, threshold)
+
+            // const d = await RecipeDisplayScraperController.getRecipeDisplay('https://en.wikibooks.org/wiki/Cookbook:Salat%C4%83_de_Boeuf')
+            // console.log(d)
 
             const displayReadyRecipes = await Promise.all(possibleRecipes.map(async recipe => {
                 // const description = await getDescription(recipe.link);
