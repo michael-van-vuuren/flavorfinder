@@ -91,3 +91,11 @@ button {
   display: block;
   border-radius: 4px;
 }
+
+.listElement {
+  margin-left: 5%
+}
+
+.accordionContainer {
+  margin-top: 5%;
+}
