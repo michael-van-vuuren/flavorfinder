@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 function DropDown({ toSelectUnits }) {
 
     return (
         <div className="drop-down">
-            <select id="unitSelect" onChange= {event => toSelectUnits(event.target.value)}>
+            <select id="unitSelect" onChange= {event => toSelectUnits(event.target.value)} data-testid={"Select Units"}>
                 <option>Select Units</option>
                 <option>count</option>
                 <option>oz</option>

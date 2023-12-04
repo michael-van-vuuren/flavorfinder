@@ -1,25 +1,25 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react'
 import ChatInput from "./ChatInput.js"
 import ChatMessageBox from "./ChatMessageBox"
-import "./Recommender.css";
+import "./Recommender.css"
 
 const RecipeRecommender = () => {
   const [messages, setMessages] = useState([])
-  const messagesRef = useRef(null);
+  const messagesRef = useRef(null)
 
   useEffect(() => {
     if (messagesRef.current) {
-      messagesRef.current.scrollTop = messagesRef.current.scrollHeight;
+      messagesRef.current.scrollTop = messagesRef.current.scrollHeight
     }
-  }, [messages]);
+  }, [messages])
 
   const handleChatButtonSubmit = (message) => {
-    const userMessage = pushMessage(message);
-    setMessages([...messages, userMessage]);
+    const userMessage = pushMessage(message)
+    setMessages([...messages, userMessage])
   }
 
   const handleClearLog = () => {
-    setMessages([]);
+    setMessages([])
   }
 
   const pushMessage = (message) => {
@@ -36,7 +36,7 @@ const RecipeRecommender = () => {
       <div className='chatBox'>
         <div className='chatBox chatLog' ref={messagesRef}>
           <div className='messages'>
-            {messages.map((element) => { return (<div>{element}</div>) })}
+            {messages.map((element, index) => { return (<div key={index}>{element}</div>) })}
           </div>
         </div >
       </div>
@@ -45,7 +45,7 @@ const RecipeRecommender = () => {
       </div>
     </div>
 
-  );
+  )
 }
 
-export default RecipeRecommender;
+export default RecipeRecommender
