@@ -5,12 +5,26 @@ import ChatMessageUser from "./ChatMessageUser"
 import ChatMessageAssistant from "./ChatMessageAssistant"
 import "./Recommender.css";
 
-const RecipeRecommender = () => {
+const RecipeRecommender = (recipes) => {
   const [messagesDivList, setMessagesDivList] = useState([]);
+  const [recipeList, setRecipeList] = useState('');
   const [messagesSenttoLLM, setMessagesSenttoLLM] = useState([{
-    "role": "system", "content": "You are an assistant that is a professional in recommending recipes based on user preferences and recipes that a user can make. Respond with just the recipe and id number (in this format: 'ID: x, Recipe: y'). Here are the recipes: {id:1,tomato soup},{id:2,butter chicken},{id:3,lemon cod and rice},{id:4,ahi poke}"
+    "role": "system", "content": ""
   }]);
   const messagesRef = useRef(null);
+
+  useEffect(() => {
+    const newRecipeList = recipes.recipes.map(recipe => {
+      return `ID: ${recipe.id}, Name: ${recipe.name}`;
+    }).join(' ');
+    console.log(newRecipeList)
+    const initializationMessage = "You are an assistant that is a professional in recommending recipes based on user preferences and recipes that a user can make. Respond with ONLY ONE recipe and id number (in the format 'ID: x, Recipe: y'). Only use the following recipes. Here are the recipes: ".concat(recipeList)
+    setRecipeList(newRecipeList);
+    setMessagesSenttoLLM([{
+      "role": "system", "content": initializationMessage
+    }]);
+    console.log(messagesSenttoLLM)
+  }, [recipes]);
 
   // OpenAI config
   const openai = new OpenAI({
