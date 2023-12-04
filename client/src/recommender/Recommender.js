@@ -6,6 +6,7 @@ import ChatMessageAssistant from "./ChatMessageAssistant"
 import "./Recommender.css";
 
 const RecipeRecommender = (recipes) => {
+  console.log(recipes)
   const [messagesDivList, setMessagesDivList] = useState([]);
   const [recipeList, setRecipeList] = useState('');
   const [messagesSenttoLLM, setMessagesSenttoLLM] = useState([{
@@ -15,7 +16,8 @@ const RecipeRecommender = (recipes) => {
 
   useEffect(() => {
     const newRecipeList = recipes.recipes.map(recipe => {
-      return `ID: ${recipe.id}, Name: ${recipe.name}`;
+      // return `ID: ${recipe.id}, Name: ${recipe.name}`;
+      return `ID: ${recipe.id}, Name: ${recipe.name}, Description: ${recipe.short}`;
     }).join(' ');
     console.log(newRecipeList)
     const initializationMessage = "You are an assistant that is a professional in recommending recipes based on user preferences and recipes that a user can make. Respond with ONLY ONE recipe and id number (in the format 'ID: x, Recipe: y'). Only use the following recipes. Here are the recipes: ".concat(recipeList)
