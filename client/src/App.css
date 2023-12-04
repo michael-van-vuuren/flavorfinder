@@ -23,7 +23,6 @@ body {
   word-break: break-all;
   border: 1px solid rgba(0, 0, 0, 0.274);
   border-radius: 4px;
-  filter: drop-shadow(0 0 1.0rem #00000054);
 }
 
 .bloc-tabs {

@@ -81,11 +81,11 @@ const RecipePool = () => {
           marks={true}
         />
       </div>
-
-      <div className="recipeCardContainer" ref={recipeCardContainerRef}>
-        {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
+      <div className="outerRecipeBox">
+        <div className="recipeCardContainer" ref={recipeCardContainerRef}>
+          {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
+        </div>
       </div>
-
       {selectedRecipe !== null && (
         <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
           <DialogContent>

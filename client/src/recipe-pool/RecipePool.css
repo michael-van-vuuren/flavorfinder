@@ -7,19 +7,31 @@
     margin-top: 25px;
 }
 
+.outerRecipeBox {
+    margin-top: 20px;
+    height: 500px;
+    overflow-y: auto;
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(189, 189, 189);
+}
+
 .recipeCardContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
 }
 
 .recipeCard {
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px;
+    margin-bottom: 40px;
     margin-left: 2px;
     margin-right: 2px;
     border: solid;
@@ -28,6 +40,13 @@
     background-color: bisque;
     width: 200px;
     height: 100px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s ease;
+    animation: fadeIn 0.7s ease-in forwards;
+}
+
+.recipeCard:hover {
+    transform: scale(1.1);
 }
 
 .dialogContainer {
