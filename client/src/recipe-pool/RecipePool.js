@@ -56,14 +56,14 @@ const RecipePool = () => {
   return (
     <div>
       <h2 id="recipepool-title">Potential Recipes</h2>
-      <p>Based on ingredients in your pantry</p>
+      <p>Allowing {sliderValue} extra {sliderValue === 1 ? 'ingredient' : 'ingredients'}</p>
       <div className='sliderContainer'>
         <p>Tolerance</p>
         <Slider
           value={sliderValue}
           min={0}
-          step={.05}
-          max={1}
+          step={1}
+          max={15}
           onChange={handleChange}
           valueLabelDisplay="auto"
           aria-labelledby="non-linear-slider"
