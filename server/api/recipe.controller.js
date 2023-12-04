@@ -37,7 +37,18 @@ export default class RecipeController {
             }
             const pantry = pantryResponse.data.pantry
             const possibleRecipes = RecipeCalc.calculateRecipePool(pantry, recipes, threshold)
-            res.json({ status: 'success', id: id, threshold: threshold, p: pantry, r: possibleRecipes })
+
+            const displayReadyRecipes = await Promise.all(possibleRecipes.map(async recipe => {
+                // const description = await getDescription(recipe.link);
+                const description = 'PLACEHOLDER DESCRIPTION'
+                return {
+                    id: recipe.id,
+                    name: recipe.name,
+                    description: description,
+                }
+            }))
+
+            res.json({ status: 'success', recipes: displayReadyRecipes })
 
         } catch (error) {
             console.error('unexpected error:', error)
