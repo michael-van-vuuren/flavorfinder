@@ -29,24 +29,30 @@
 }
 
 .recipeCard {
-    display: flex;
+    background-image: url("/public/images/svg/recipe-card.svg");
+    background-size: contain;
+    resize: both;
     margin-top: 10px;
     margin-bottom: 40px;
     margin-left: 2px;
     margin-right: 2px;
-    border: solid;
-    border-radius: 10px;
-    border-color: bisque;
-    background-color: bisque;
-    width: 200px;
-    height: 100px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    width: 175px;
+    height: 175px;
     transition: transform 0.2s ease;
     animation: fadeIn 0.7s ease-in forwards;
+    display: table; 
 }
 
 .recipeCard:hover {
     transform: scale(1.1);
+}
+
+.recipe-name {
+    text-align:center; 
+    vertical-align: middle;
+    display: table-cell;
+    word-break: normal;
+    padding: 5px;
 }
 
 .dialogContainer {

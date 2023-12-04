@@ -54,7 +54,7 @@ const RecipePool = () => {
 
     return (
       <div key={recipe.id} className='recipeCard' onClick={handleClick}>
-        <p>{recipe.name}</p>
+          <div className="recipe-name">{recipe.name}</div>
       </div>
     )
   }
