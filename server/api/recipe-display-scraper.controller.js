@@ -1,22 +1,38 @@
-import { spawnSync } from 'child_process';
+import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
+import { dirname, join } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export default class RecipeDisplayScraperController {
     static async getRecipeDisplay(url) {
-        const wikibooksUrl = url;
-        console.log('visiting', url)
+        return new Promise((resolve, reject) => {
+            const wikibooksUrl = url;
+            const pythonScriptPath = join(__dirname, 'recipe-display-scraper.py');
 
-        const pythonProcess = spawnSync('python', ['./recipe-display-scraper.py', wikibooksUrl]);
+            const py = spawn('python', [pythonScriptPath, wikibooksUrl]);
+            let stdoutData = '';
 
-        if (pythonProcess.error) {
-            console.error(`python process error: ${pythonProcess.error.message}`);
-        }
-        if (pythonProcess.stdout) {
-            console.log(`python script stdout: ${pythonProcess.stdout}`);
-            return pythonProcess.stdout.toString()
-        }
-        if (pythonProcess.stderr) {
-            console.error(`python script errors: ${pythonProcess.stderr}`);
-        }
-        console.log(`python script exit code: ${pythonProcess.status}`);
+            py.on('error', (err) => {
+                console.error('Failed to start subprocess.');
+            });
+
+            py.stdout.on('data', (data) => {
+                stdoutData += data.toString();
+            });
+
+            py.stderr.on('data', (data) => {
+                console.log(`stderr: ${data}`);
+            });
+
+            py.on('close', (code) => {
+                if (code === 0) {
+                    resolve(stdoutData);
+                } else {
+                    reject(`Child process exited with non-zero code: ${code}`);
+                }
+            });
+        });
     }
 }
