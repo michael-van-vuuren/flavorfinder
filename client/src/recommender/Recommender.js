@@ -8,13 +8,13 @@ import "./Recommender.css";
 const RecipeRecommender = () => {
   const [messagesDivList, setMessagesDivList] = useState([]);
   const [messagesSenttoLLM, setMessagesSenttoLLM] = useState([{
-    "role": "system", "content": "You are an assistant that is a professional in recommending recipes based on user preferences."
+    "role": "system", "content": "You are an assistant that is a professional in recommending recipes based on user preferences and recipes that a user can make. Respond with just the recipe and id number (in this format: 'ID: x, Recipe: y'). Here are the recipes: {id:1,tomato soup},{id:2,butter chicken},{id:3,lemon cod and rice},{id:4,ahi poke}"
   }]);
   const messagesRef = useRef(null);
 
   // OpenAI config
   const openai = new OpenAI({
-    apiKey: "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" // This is also the default, can be omitted
+    apiKey: "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" // This is also the default, can be omitted
     , dangerouslyAllowBrowser: true
   });
 
@@ -26,14 +26,14 @@ const RecipeRecommender = () => {
   }, [messagesDivList]);
 
   // helper functions
-  const handleChatButtonSubmit = (message) => {
+  const handleChatButtonSubmit = async (message) => {
     const userMessage = pushUserMessage(message);
     setMessagesDivList([...messagesDivList, userMessage]); // how we keep track of divs
     const userMessageforLLM = { "role": "user", "content": message };
     setMessagesSenttoLLM([...messagesSenttoLLM, userMessageforLLM]); // what we send to the LLM
 
     // get response from LLM based on user input (message)
-    const response = LLMResponse(message);
+    const response = await LLMResponse(message);
 
     // Handle the response from OpenAI and update the state accordingly
     const assistantMessage = response.choices[0].message.content;
