@@ -22,7 +22,7 @@ const RecipePool = () => {
       headers: { 'Content-Type': 'application/json' }
     })
     let responseData = await res.json()
-    const recipes = responseData.r;
+    const recipes = responseData.recipes;
     console.log(recipes);
     setRecipes(recipes);
   }
