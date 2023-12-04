@@ -5,32 +5,11 @@ import DialogContent from '@mui/material/DialogContent';
 import { MainContext } from '../MainContext';
 import "./RecipePool.css";
 
-const RecipePool = () => {
-  const [sliderValue, setSliderValue] = useState(0);
+const RecipePool = ({ recipes }) => {
   const [selectedRecipe, setSelectedRecipe] = useState(null);
-  const { userId } = useContext(MainContext);
-  const [recipes, setRecipes] = useState([]);
-
+  const { sliderValue, setSliderValue } = useContext(MainContext);
   const [scrollToBottom, setScrollToBottom] = useState(false)
   const recipeCardContainerRef = useRef(null);
-
-  // get personalized list of available recipes
-  const fetchRecipes = async () => {
-    const url = `http://localhost:3001/api/v1/recipe-pool/${userId}/${sliderValue}`
-    const res = await fetch(url, {
-      method: 'GET',
-      headers: { 'Content-Type': 'application/json' }
-    })
-    let responseData = await res.json()
-    const recipes = responseData.recipes;
-    console.log(recipes);
-    setRecipes(recipes);
-  }
-
-  useEffect(() => {
-    // Fetch recipes from database
-    fetchRecipes();
-  }, [sliderValue]);
 
   useEffect(() => {
     if (scrollToBottom && recipeCardContainerRef.current) {
@@ -54,7 +33,7 @@ const RecipePool = () => {
 
     return (
       <div key={recipe.id} className='recipeCard' onClick={handleClick}>
-        <p>{recipe.name}</p>
+          <div className="recipe-name">{recipe.name}</div>
       </div>
     )
   }
@@ -81,11 +60,11 @@ const RecipePool = () => {
           marks={true}
         />
       </div>
-
-      <div className="recipeCardContainer" ref={recipeCardContainerRef}>
-        {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
+      <div className="outerRecipeBox">
+        <div className="recipeCardContainer" ref={recipeCardContainerRef}>
+          {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
+        </div>
       </div>
-
       {selectedRecipe !== null && (
         <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
           <DialogContent>

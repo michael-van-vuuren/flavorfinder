@@ -11,8 +11,9 @@ function Tabs({ returningUser }) {
     const [toggleState, setToggleState] = useState(1)
     const [pantry, setPantry] = useState([])
     const [ingredients, setIngredients] = useState([])
-    const { userId } = useContext(MainContext)
+    const { userId, sliderValue } = useContext(MainContext)
     const [name, setName] = useState('')
+    const [recipes, setRecipes] = useState([]);
 
     const welcomeStrings = returningUser
         ? [`Welcome back ${name}`]
@@ -33,6 +34,10 @@ function Tabs({ returningUser }) {
         };
     }, []);
 
+    useEffect(() => {
+        fetchRecipes()
+    }, [sliderValue, pantry])
+
     const fetchPantry = async () => {
         try {
             const response = await fetch(`http://localhost:3001/api/v1/users/${userId}`)
@@ -51,6 +56,18 @@ function Tabs({ returningUser }) {
         } catch (e) {
             console.error('error fetching ingredients:', e)
         }
+    }
+
+    // get personalized list of available recipes
+    const fetchRecipes = async () => {
+        const url = `http://localhost:3001/api/v1/recipe-pool/${userId}/${sliderValue}`
+        const res = await fetch(url, {
+        method: 'GET',
+        headers: { 'Content-Type': 'application/json' }
+        })
+        let responseData = await res.json()
+        const recipes = responseData.recipes;
+        setRecipes(recipes);
     }
 
     const toggleTab = (index) => {
@@ -81,7 +98,7 @@ function Tabs({ returningUser }) {
                 <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} fetchIngredients={fetchIngredients} userId={userId} />
             </div>
              <div className={toggleState === 3 ? "content active-content" : "content"}>
-                <RecipePool />
+                <RecipePool recipes={recipes} />
             </div>
             <div className={toggleState === 4 ? "content active-content" : "content"}>
                 <Recommender />
