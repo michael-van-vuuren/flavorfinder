@@ -9,11 +9,13 @@
 
 .recipeCardContainer {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    overflow-y: auto; 
+    max-height: 400px; 
     margin-top: 10px;
     justify-content: space-around;
 }
+
 
 .recipeCard {
     display: flex;
@@ -27,11 +29,11 @@
     border-color: bisque;
     background-color: bisque;
     width: 200px;
-    height: 100px;
+    min-height: 100px; 
 }
 
+
 .dialogContainer {
-    width: 500px;
-    height: 400px;
-    overflow-y: auto;
+    max-height: 300px; 
+    overflow-y: auto; 
 }
