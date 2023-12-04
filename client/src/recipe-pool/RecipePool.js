@@ -11,6 +11,7 @@ const RecipePool = () => {
   const { userId } = useContext(MainContext);
   const [recipes, setRecipes] = useState([]);
 
+  // get personalized list of available recipes
   const fetchRecipes = async () => {
     const url = `http://localhost:3001/api/v1/recipe-pool/${userId}/${sliderValue}`
     const res = await fetch(url, {
@@ -18,30 +19,32 @@ const RecipePool = () => {
       headers: { 'Content-Type': 'application/json' }
     })
     let responseData = await res.json()
-    console.log(responseData);
-  } // get personalized list of available recipes
+    const recipes = responseData.r;
+    console.log(recipes);
+    setRecipes(recipes);
+  }
 
   useEffect(() => {
     // Fetch recipes from database
     fetchRecipes();
-  }, []);
+  }, [sliderValue]);
 
-  const handleRecipeCardClick = (recipeId) => {
-    setSelectedRecipe(recipeId);
+  const handleRecipeCardClick = (recipe) => {
+    setSelectedRecipe(recipe);
   }
 
   const handleDialogClose = () => {
     setSelectedRecipe(null);
   }
 
-  const RecipeCard = (id) => {
+  const RecipeCard = ({ recipe }) => {
     const handleClick = () => {
-      handleRecipeCardClick(id);
+      handleRecipeCardClick(recipe);
     }
 
     return (
-      <div key={id} className='recipeCard' onClick={handleClick}>
-        Recipe {id}
+      <div key={recipe.id} className='recipeCard' onClick={handleClick}>
+        <p>{recipe.name}</p>
       </div>
     )
   }
@@ -69,35 +72,34 @@ const RecipePool = () => {
       </div>
 
       <div className="recipeCardContainer">
-        {RecipeCard(1)}
-        {RecipeCard(2)}
-        {RecipeCard(3)}
-        {RecipeCard(4)}
-        {RecipeCard(5)}
-        {RecipeCard(6)}
-        {RecipeCard(7)}
-        {RecipeCard(8)}
-        {RecipeCard(9)}
+        {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
       </div>
 
-      <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
-        <DialogContent>
-          <div className='dialogContainer'>
-            <h2>{selectedRecipe}</h2>
-            <br></br>
-            <p><b>Description</b></p>
-            <p>dummy description</p>
+      {selectedRecipe !== null && (
+        <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
+          <DialogContent>
+            <div className='dialogContainer'>
+              <h2>{selectedRecipe.name}</h2>
+              <br></br>
+              <p><b>Description</b></p>
+              <p>{selectedRecipe.link}</p>
 
-            <br></br>
+              <br></br>
 
-            <p><b>Ingredients</b></p>
-            <li>dummy ingredient here</li>
+              <p><b>Ingredients</b></p>
+              <ul>
+                {selectedRecipe.ingredients.map(ingredient => (
+                  <li key={ingredient.id}>
+                    {ingredient.quantity} {ingredient.units} {ingredient.name}
+                  </li>
+                ))}
+              </ul>
 
 
-          </div>
-        </DialogContent>
-      </Dialog>
-
+            </div>
+          </DialogContent>
+        </Dialog>
+      )}
     </div>
   );
 }
