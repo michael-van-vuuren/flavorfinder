@@ -3,6 +3,8 @@ import OpenAI from 'openai'
 import ChatInput from "./ChatInput.js"
 import ChatMessageUser from "./ChatMessageUser"
 import ChatMessageAssistant from "./ChatMessageAssistant"
+import Dialog from '@mui/material/Dialog'
+import DialogContent from '@mui/material/DialogContent'
 import "./Recommender.css";
 
 const RecipeRecommender = (recipes) => {

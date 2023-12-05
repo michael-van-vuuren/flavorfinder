@@ -1,18 +1,16 @@
 import React, { useState, useEffect, useContext, useRef } from 'react'
 import Slider from '@mui/material-next/Slider'
 import Dialog from '@mui/material/Dialog'
-import DialogContent from '@mui/material/DialogContent'
 import { MainContext } from '../MainContext'
 import "./RecipePool.css"
-import DOMPurify from 'dompurify'
-import HTMLModifier from './HTMLModifier.js'
+import RecipeDialog from './RecipeDialog'
 
 const RecipePool = ({ recipes }) => {
   const [selectedRecipe, setSelectedRecipe] = useState(null)
   const { sliderValue, setSliderValue } = useContext(MainContext)
   const [scrollToBottom, setScrollToBottom] = useState(false)
-  const recipeCardContainerRef = useRef(null)
   const [recipeCompleted, setRecipeCompleted] = useState(false)
+  const recipeCardContainerRef = useRef(null)
 
   useEffect(() => {
     if (scrollToBottom && recipeCardContainerRef.current) {
@@ -23,11 +21,6 @@ const RecipePool = ({ recipes }) => {
 
   const handleRecipeCardClick = (recipe) => {
     setSelectedRecipe(recipe)
-  }
-
-  const handleDialogClose = () => {
-    setSelectedRecipe(null)
-    setRecipeCompleted(false)
   }
 
   const RecipeCard = ({ recipe }) => {
@@ -46,12 +39,11 @@ const RecipePool = ({ recipes }) => {
     setSliderValue(e.target.value)
   }
 
-  const handleCompletedRecipe = (id) => {
-    setRecipeCompleted(true)
-    
-    console.log('completed')
-    console.log(id)
+  const handleDialogClose = () => {
+    setSelectedRecipe(null)
+    setRecipeCompleted(false)
   }
+
 
   return (
     <div>
@@ -76,22 +68,7 @@ const RecipePool = ({ recipes }) => {
         </div>
       </div>
       {selectedRecipe !== null && (
-        <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
-          <DialogContent>
-            <div className='dialogContainer'>
-              <div className='dialogTitle'>
-                <h2>{selectedRecipe.name}</h2>
-                {recipeCompleted ? (
-                  <p>Pantry updated!</p>
-                ) : (
-                  <button className="completeRecipeButton" onClick={() => handleCompletedRecipe(selectedRecipe.id)}>Complete</button>
-                )}
-              </div>
-              <br />
-              <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(HTMLModifier.modifyHTML(selectedRecipe.description)) }} />
-            </div>
-          </DialogContent>
-        </Dialog>
+        <RecipeDialog recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} handleDialogClose={handleDialogClose} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></RecipeDialog>
       )}
     </div>
   )
