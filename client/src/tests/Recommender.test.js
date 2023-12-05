@@ -3,8 +3,21 @@ import { render, fireEvent, screen, waitFor } from '@testing-library/react'
 import RecipeRecommender from "../recommender/Recommender"
 
 describe("RecipeRecommender Page", () => {
+    const recipes = [
+        {
+            id: 1462,
+            name: 'Dereniówka (Polish Dogwood Liqueur)',
+            link: 'https://en.wikibooks.org/wiki/Cookbook:Dereniówka_(Polish_Dogwood_Liqueur)',
+            ingredients: [
+              { name: 'fruits', quantity: 200, units: 'g', id: 903 },
+              { name: 'sugar', quantity: 40, units: 'g', id: 670 },
+              { name: 'vodka', quantity: 1, units: 'count', id: 639 }
+            ]
+          }
+        ]
+
     test("Check RecipeRecommender renders properly", () => {
-        const recommender = render(<RecipeRecommender />)
+        const recommender = render(<RecipeRecommender recipes={recipes}/>)
         expect(recommender).toBeDefined()
         const clearButton = screen.getByText("Clear Messages")
         expect(clearButton).toBeInTheDocument()
@@ -15,7 +28,7 @@ describe("RecipeRecommender Page", () => {
     })
 
     test("Verify Clear Messages button", async () => {
-        render(<RecipeRecommender />)
+        render(<RecipeRecommender recipes={recipes}/>)
         const clearButton = screen.getByText("Clear Messages")
         const inputText = screen.getByPlaceholderText("Chat with RecipeBot...")
         fireEvent.change(inputText, {target: {value: "Hello World!"}})
@@ -32,7 +45,7 @@ describe("RecipeRecommender Page", () => {
     })
 
     test("Verify RecipeRecommender renders 4 user messages", () => {
-        render(<RecipeRecommender />)
+        render(<RecipeRecommender recipes={recipes}/>)
         const sendButton = screen.getByText("Send")
         const inputText = screen.getByPlaceholderText("Chat with RecipeBot...")
         fireEvent.change(inputText, {target: {value: "Hello World 1!"}})
