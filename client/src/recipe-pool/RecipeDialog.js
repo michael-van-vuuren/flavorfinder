@@ -2,8 +2,9 @@ import React, { useState, useEffect, useContext, useRef } from 'react'
 import Dialog from '@mui/material/Dialog'
 import DialogContent from '@mui/material/DialogContent'
 import DOMPurify from 'dompurify'
+import HTMLModifier from "./HTMLModifier.js"
 
-const DisplayRecipe = ({selectedRecipe, modifyHTML, setSelectedRecipe, setRecipeCompleted, recipeCompleted}) => {
+const RecipeDialog = ({selectedRecipe, modifyHTML, setSelectedRecipe, setRecipeCompleted, recipeCompleted}) => {
     
     const handleDialogClose = () => {
     setSelectedRecipe(null)
@@ -32,7 +33,7 @@ const DisplayRecipe = ({selectedRecipe, modifyHTML, setSelectedRecipe, setRecipe
                 )}
               </div>
               <br />
-              <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(modifyHTML(selectedRecipe.description)) }} />
+              <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(HTMLModifier.modifyHTML(selectedRecipe.description)) }} />
             </div>
           </DialogContent>
         </Dialog>
@@ -41,4 +42,4 @@ const DisplayRecipe = ({selectedRecipe, modifyHTML, setSelectedRecipe, setRecipe
     )
   }
 
-export default DisplayRecipe
+export default RecipeDialog
