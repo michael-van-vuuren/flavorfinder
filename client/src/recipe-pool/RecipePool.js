@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useContext, useRef } from 'react'
 import Slider from '@mui/material-next/Slider'
-import Dialog from '@mui/material/Dialog'
 import { MainContext } from '../MainContext'
 import "./RecipePool.css"
 import RecipeDialog from './RecipeDialog'

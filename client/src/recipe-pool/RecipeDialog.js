@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useContext, useRef } from 'react'
+import React from 'react'
 import Dialog from '@mui/material/Dialog'
 import DialogContent from '@mui/material/DialogContent'
 import DOMPurify from 'dompurify'
 import HTMLModifier from "./HTMLModifier.js"
 
-const RecipeDialog = ({selectedRecipe, modifyHTML, setSelectedRecipe, setRecipeCompleted, recipeCompleted}) => {
+const RecipeDialog = ({selectedRecipe, setSelectedRecipe, setRecipeCompleted, recipeCompleted}) => {
     
     const handleDialogClose = () => {
     setSelectedRecipe(null)

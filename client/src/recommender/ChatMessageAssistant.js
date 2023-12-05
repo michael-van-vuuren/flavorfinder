@@ -9,7 +9,7 @@ const ChatMessageAssistant = ({ assistantMessage }) => {
             <img className="avatar-image" src={"/images/svg/bot-avatar.svg"} />
           </div>
           <div className="bot-response">
-            <p>{assistantMessage}</p>
+            <p onClick={() => {}} style={{marginLeft: '18px', cursor: 'pointer'}}>{assistantMessage}</p>
           </div>
         </div>
       </div>
