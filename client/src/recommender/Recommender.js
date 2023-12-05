@@ -4,8 +4,12 @@ import ChatInput from "./ChatInput.js"
 import ChatMessageUser from "./ChatMessageUser"
 import ChatMessageAssistant from "./ChatMessageAssistant"
 import "./Recommender.css";
+import RecipeDialog from '../recipe-pool/RecipeDialog.js';
 
 const RecipeRecommender = (recipes) => {
+  const [selectedRecipe, setSelectedRecipe] = useState(null)
+  const [recipeCompleted, setRecipeCompleted] = useState(false)
+
   console.log(recipes)
   const validIds = recipes.recipes.map(recipe => recipe.id.toString());
   const [messagesDivList, setMessagesDivList] = useState([]);
@@ -65,6 +69,8 @@ const RecipeRecommender = (recipes) => {
     }
 
     const recipeObj = idToObj(assistantMessage)
+    setSelectedRecipe(recipeObj)
+
     assistantMessage = recipeObj.name
 
     // Get recipe information from backend
@@ -132,22 +138,26 @@ const RecipeRecommender = (recipes) => {
   }
 
   return (
-    <div className='chatInteractives'>
-      <div>
-        <button className="clearButton" style={{ position: 'absolute', top: '60px', left: '30px' }} onClick={handleClearLog}>Clear Messages</button>
+    <div>
+      <div className='chatInteractives'>
+        <div>
+          <button className="clearButton" style={{ position: 'absolute', top: '60px', left: '30px' }} onClick={handleClearLog}>Clear Messages</button>
+        </div>
+        <div className='chatBox'>
+          <div className='chatBox chatLog' ref={messagesRef}>
+            <div className='messages'>
+              {messagesDivList.map((element, index) => { return (<div key={index}>{element}</div>) })}
+            </div>
+          </div >
+        </div>
+        <div className="inputDiv">
+          <ChatInput onSubmit={handleChatButtonSubmit} />
+        </div>
       </div>
-      <div className='chatBox'>
-        <div className='chatBox chatLog' ref={messagesRef}>
-          <div className='messages'>
-            {messagesDivList.map((element, index) => { return (<div key={index}>{element}</div>) })}
-          </div>
-        </div >
-      </div>
-      <div className="inputDiv">
-        <ChatInput onSubmit={handleChatButtonSubmit} />
-      </div>
+      {selectedRecipe !== null && (
+        <RecipeDialog recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></RecipeDialog>
+      )}
     </div>
-
   )
 }
 
