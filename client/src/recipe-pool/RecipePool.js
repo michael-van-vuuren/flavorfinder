@@ -11,6 +11,7 @@ const RecipePool = ({ recipes }) => {
   const { sliderValue, setSliderValue } = useContext(MainContext)
   const [scrollToBottom, setScrollToBottom] = useState(false)
   const recipeCardContainerRef = useRef(null)
+  const [recipeCompleted, setRecipeCompleted] = useState(false)
 
   useEffect(() => {
     if (scrollToBottom && recipeCardContainerRef.current) {
@@ -25,6 +26,7 @@ const RecipePool = ({ recipes }) => {
 
   const handleDialogClose = () => {
     setSelectedRecipe(null)
+    setRecipeCompleted(false)
   }
 
   const RecipeCard = ({ recipe }) => {
@@ -86,7 +88,7 @@ const RecipePool = ({ recipes }) => {
     Array.from(infoboxElements).forEach((infobox) => {
       infobox.style.borderRadius = '10px'
       infobox.style.overflow = 'hidden'
-      infobox.style.border = '1px solid #ccc' 
+      infobox.style.border = '1px solid #ccc'
       infobox.style.marginBottom = '20px'
       infobox.style.width = '100%'
 
@@ -96,7 +98,7 @@ const RecipePool = ({ recipes }) => {
         firstTh.style.backgroundColor = '#a9d97f'
         firstTh.style.borderRadius = '5px'
         firstTh.style.padding = '10px'
-        firstTh.style.color = 'white' 
+        firstTh.style.color = 'white'
       }
     })
 
@@ -107,6 +109,13 @@ const RecipePool = ({ recipes }) => {
     })
 
     return tempDiv.innerHTML
+  }
+
+  const handleCompletedRecipe = (id) => {
+    setRecipeCompleted(true)
+    
+    console.log('completed')
+    console.log(id)
   }
 
   return (
@@ -125,7 +134,7 @@ const RecipePool = ({ recipes }) => {
           marks={true}
         />
       </div>
-      <p>With less than <span style={{color: '#a9d97f', fontSize: '20pt'}}><strong>{sliderValue}</strong></span> additional {sliderValue === 1 ? 'ingredient' : 'ingredients'}, you can make</p>
+      <p>With less than <span style={{ color: '#a9d97f', fontSize: '20pt' }}><strong>{sliderValue}</strong></span> additional {sliderValue === 1 ? 'ingredient' : 'ingredients'}, you can make</p>
       <div className="outerRecipeBox">
         <div className="recipeCardContainer" ref={recipeCardContainerRef}>
           {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
@@ -135,7 +144,14 @@ const RecipePool = ({ recipes }) => {
         <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
           <DialogContent>
             <div className='dialogContainer'>
-              <h2>{selectedRecipe.name}</h2>
+              <div className='dialogTitle'>
+                <h2>{selectedRecipe.name}</h2>
+                {recipeCompleted ? (
+                  <p>Pantry updated!</p>
+                ) : (
+                  <button className="completeRecipeButton" onClick={() => handleCompletedRecipe(selectedRecipe.id)}>Complete</button>
+                )}
+              </div>
               <br />
               <div dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(modifyHTML(selectedRecipe.description)) }} />
             </div>

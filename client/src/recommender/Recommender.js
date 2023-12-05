@@ -7,6 +7,7 @@ import "./Recommender.css";
 
 const RecipeRecommender = (recipes) => {
   console.log(recipes)
+  const validIds = recipes.recipes.map(recipe => recipe.id.toString());
   const [messagesDivList, setMessagesDivList] = useState([]);
   const [recipeList, setRecipeList] = useState('');
   const [messagesSenttoLLM, setMessagesSenttoLLM] = useState([{
@@ -52,13 +53,19 @@ const RecipeRecommender = (recipes) => {
     const response = await LLMResponse(message);
 
     // Handle the response from OpenAI and update the state accordingly
-    const assistantMessage = response.choices[0].message.content;
+    let assistantMessage = response.choices[0].message.content;
     const recipeId = messageParse(assistantMessage);
+    console.log(recipeId)
+
+    if (!recipeId) {
+      assistantMessage = "Please ask for help choosing a recipe."
+    }
 
     // Get recipe information from backend
 
     const assistantReply = pushAssistantMessage(assistantMessage);
     setMessagesDivList((prevMessages) => [...prevMessages, assistantReply]); // how we keep track of divs
+
     const assistantMessageforLLM = { "role": "assistant", "content": assistantMessage };
     setMessagesSenttoLLM([...messagesSenttoLLM, assistantMessageforLLM]); // what we send to the LLM
   }
@@ -70,10 +77,11 @@ const RecipeRecommender = (recipes) => {
     const idPart = splitString.find(part => part.includes('ID:'));
     if (idPart) {
       const extractedId = idPart.split(':')[1].trim();
-      return extractedId;
-    } else {
-      console.log("Could not find ID");
+      if (validIds.includes(extractedId)) {
+        return extractedId;
+      }
     }
+    console.log("Could not find ID");
     return null;
   }
 
