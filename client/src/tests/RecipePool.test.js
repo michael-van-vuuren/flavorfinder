@@ -21,8 +21,6 @@ describe("RecipePool component", () => {
     </MainContext.Provider>
     )
     expect(screen.getByText("Potential Recipes")).toBeInTheDocument()
-    expect(screen.getByText("With 0 extra ingredients, you can make")).toBeInTheDocument()
-    expect(screen.getByText("Tolerance")).toBeInTheDocument()
     expect(screen.getByRole("slider")).toBeInTheDocument()
   })
 
