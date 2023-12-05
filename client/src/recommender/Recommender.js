@@ -3,8 +3,6 @@ import OpenAI from 'openai'
 import ChatInput from "./ChatInput.js"
 import ChatMessageUser from "./ChatMessageUser"
 import ChatMessageAssistant from "./ChatMessageAssistant"
-import Dialog from '@mui/material/Dialog'
-import DialogContent from '@mui/material/DialogContent'
 import "./Recommender.css";
 
 const RecipeRecommender = (recipes) => {
@@ -56,21 +54,39 @@ const RecipeRecommender = (recipes) => {
 
     // Handle the response from OpenAI and update the state accordingly
     let assistantMessage = response.choices[0].message.content;
-    const recipeId = messageParse(assistantMessage);
-    console.log(recipeId)
+    console.log(assistantMessage)
 
+    let recipeId = filterOutput(assistantMessage);
     if (!recipeId) {
       assistantMessage = "Please ask for help choosing a recipe."
     }
+    else {
+      assistantMessage = recipeId;
+    }
+
+    const recipeObj = idToObj(assistantMessage)
+    assistantMessage = recipeObj.name
 
     // Get recipe information from backend
-
     const assistantReply = pushAssistantMessage(assistantMessage);
     setMessagesDivList((prevMessages) => [...prevMessages, assistantReply]); // how we keep track of divs
 
     const assistantMessageforLLM = { "role": "assistant", "content": assistantMessage };
     setMessagesSenttoLLM([...messagesSenttoLLM, assistantMessageforLLM]); // what we send to the LLM
   }
+
+  const filterOutput = (message) => {
+    const splitString = message.split(',');
+    const idPart = splitString.find(part => part.includes('ID:'));
+    if (!idPart) { return null }
+    const extractedId = idPart.split(':')[1].trim();
+    return extractedId;
+  }
+
+  const idToObj = (id) => {
+    return recipes.recipes.find(recipe => recipe.id === parseInt(id))
+  }
+
 
   // Get recipe ID from GPT's response
   // Message in form "ID: x, Recipe: y"
