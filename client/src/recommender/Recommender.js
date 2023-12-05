@@ -66,13 +66,11 @@ const RecipeRecommender = (recipes) => {
     }
     else {
       assistantMessage = recipeId;
+      const recipeObj = idToObj(assistantMessage)
+      setSelectedRecipe(recipeObj)
+      assistantMessage = recipeObj.name
     }
-
-    const recipeObj = idToObj(assistantMessage)
-    setSelectedRecipe(recipeObj)
-
-    assistantMessage = recipeObj.name
-
+    
     // Get recipe information from backend
     const assistantReply = pushAssistantMessage(assistantMessage);
     setMessagesDivList((prevMessages) => [...prevMessages, assistantReply]); // how we keep track of divs
