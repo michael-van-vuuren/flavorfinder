@@ -4,23 +4,23 @@ import DialogContent from '@mui/material/DialogContent'
 import DOMPurify from 'dompurify'
 import HTMLModifier from "./HTMLModifier.js"
 
-const RecipeDialog = ({selectedRecipe, setSelectedRecipe, setRecipeCompleted, recipeCompleted}) => {
-    
-    const handleDialogClose = () => {
+const RecipeDialog = ({ selectedRecipe, setSelectedRecipe, setRecipeCompleted, recipeCompleted }) => {
+
+  const handleDialogClose = () => {
     setSelectedRecipe(null)
     setRecipeCompleted(false)
-    }
+  }
 
-    const handleCompletedRecipe = (id) => {
-        setRecipeCompleted(true)
-        
-        console.log('completed')
-        console.log(id)
-    }
+  const handleCompletedRecipe = (id) => {
+    setRecipeCompleted(true)
 
-    return (
-      <div>
-        {selectedRecipe !== null && (
+    console.log('completed')
+    console.log(id)
+  }
+
+  return (
+    <div>
+      {selectedRecipe !== null && (
         <Dialog open={selectedRecipe !== null} onClose={handleDialogClose}>
           <DialogContent>
             <div className='dialogContainer'>
@@ -38,8 +38,8 @@ const RecipeDialog = ({selectedRecipe, setSelectedRecipe, setRecipeCompleted, re
           </DialogContent>
         </Dialog>
       )}
-      </div>
-    )
-  }
+    </div>
+  )
+}
 
 export default RecipeDialog

@@ -5,11 +5,11 @@ import "./RecipePool.css"
 import RecipeDialog from './RecipeDialog'
 
 const RecipePool = ({ recipes }) => {
-  const [selectedRecipe, setSelectedRecipe] = useState(null)
   const { sliderValue, setSliderValue } = useContext(MainContext)
   const [scrollToBottom, setScrollToBottom] = useState(false)
-  const [recipeCompleted, setRecipeCompleted] = useState(false)
   const recipeCardContainerRef = useRef(null)
+  const [selectedRecipe, setSelectedRecipe] = useState(null)
+  const [recipeCompleted, setRecipeCompleted] = useState(false)
 
   useEffect(() => {
     if (scrollToBottom && recipeCardContainerRef.current) {
@@ -38,12 +38,6 @@ const RecipePool = ({ recipes }) => {
     setSliderValue(e.target.value)
   }
 
-  const handleDialogClose = () => {
-    setSelectedRecipe(null)
-    setRecipeCompleted(false)
-  }
-
-
   return (
     <div>
       <h2 id="recipepool-title">Potential Recipes</h2>
@@ -67,7 +61,7 @@ const RecipePool = ({ recipes }) => {
         </div>
       </div>
       {selectedRecipe !== null && (
-        <RecipeDialog recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} handleDialogClose={handleDialogClose} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></RecipeDialog>
+        <RecipeDialog recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></RecipeDialog>
       )}
     </div>
   )
