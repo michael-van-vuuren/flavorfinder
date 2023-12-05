@@ -42,6 +42,7 @@
     transition: transform 0.2s ease;
     animation: fadeIn 0.7s ease-in forwards;
     display: table; 
+    cursor: pointer;
 }
 
 .recipeCard:hover {
@@ -60,5 +61,19 @@
     width: 500px;
     height: 800px;
     padding: 20px;
-    /* overflow-y: auto; */
+}
+
+.dialogTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.dialogTitle h2 {
+    margin-right: auto;
+}
+
+.dialogTitle button:hover {
+    background-color: #a9d97f;
+    color: white;
 }
