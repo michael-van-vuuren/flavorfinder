@@ -112,9 +112,7 @@ const RecipePool = ({ recipes }) => {
   return (
     <div>
       <h2 id="recipepool-title">Potential Recipes</h2>
-      <p>With {sliderValue} extra {sliderValue === 1 ? 'ingredient' : 'ingredients'}, you can make</p>
       <div className='sliderContainer'>
-        <p>Tolerance</p>
         <Slider
           value={sliderValue}
           min={0}
@@ -127,6 +125,7 @@ const RecipePool = ({ recipes }) => {
           marks={true}
         />
       </div>
+      <p>With less than <span style={{color: '#a9d97f', fontSize: '20pt'}}><strong>{sliderValue}</strong></span> additional {sliderValue === 1 ? 'ingredient' : 'ingredients'}, you can make</p>
       <div className="outerRecipeBox">
         <div className="recipeCardContainer" ref={recipeCardContainerRef}>
           {recipes.map(recipe => (<RecipeCard key={recipe.id} recipe={recipe} />))}
