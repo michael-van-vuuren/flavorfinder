@@ -4,21 +4,21 @@
     justify-content: center;
     margin-right: 50px;
     margin-left: 50px;
-    margin-top: 25px;
+    margin-top: 0px;
 }
 
 .outerRecipeBox {
-    margin-top: 20px;
-    height: 500px;
+    height: 470px;
     overflow-y: auto;
-    border: solid;
-    border-radius: 5px;
-    border-color: rgb(189, 189, 189);
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
+    margin: 30px 20px;
+    box-shadow: inset 0px 0px 2px gray;
 }
 
 .recipeCardContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: 10px;

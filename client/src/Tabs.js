@@ -14,14 +14,7 @@ function Tabs({ returningUser }) {
     const { userId, sliderValue } = useContext(MainContext)
     const [name, setName] = useState('')
     const [recipes, setRecipes] = useState([]);
-
-    const welcomeStrings = returningUser
-        ? [`Welcome back ${name}`]
-        : [`Welcome, ${name}!`];
-
-    const tutorialStrings = returningUser
-        ? ['Visit the Pantry tab to add ingredients']
-        : ['Visit the Pantry tab to get started'];
+    const [pantryIngredientAmt, setPantryIngredientAmt] = useState(0)
 
     useEffect(() => {
         // entry
@@ -44,6 +37,7 @@ function Tabs({ returningUser }) {
             const pantryData = await response.json()
             setName(pantryData.data.name)
             setPantry(pantryData.data.pantry)
+            setPantryIngredientAmt(pantryData.data.pantry.length)
         } catch (e) {
             console.error('error fetching pantry:', e)
         }
@@ -92,7 +86,7 @@ function Tabs({ returningUser }) {
                 >RecipeBot</div>
             </div>
             <div className={toggleState === 1 ? "content active-content" : "content"}>
-                <Home returningUser={returningUser} name={name} /> 
+                <Home returningUser={returningUser} name={name} pantrySize={pantryIngredientAmt}/> 
             </div>
             <div className={toggleState === 2 ? "content active-content" : "content"}>
                 <PantryHome pantry={pantry} ingredients={ingredients} fetchPantry={fetchPantry} fetchIngredients={fetchIngredients} userId={userId} />

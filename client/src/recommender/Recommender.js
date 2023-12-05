@@ -106,9 +106,9 @@ const RecipeRecommender = (recipes) => {
   }
 
   return (
-    <div>
+    <div className='chatInteractives'>
       <div>
-        <button className="clearButton" style={{ marginBottom: "20px" }} onClick={handleClearLog}>Clear Messages</button>
+        <button className="clearButton" style={{ position: 'absolute', top: '60px', left: '30px' }} onClick={handleClearLog}>Clear Messages</button>
       </div>
       <div className='chatBox'>
         <div className='chatBox chatLog' ref={messagesRef}>
