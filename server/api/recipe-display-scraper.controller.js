@@ -11,7 +11,7 @@ export default class RecipeDisplayScraperController {
             const wikibooksUrl = url;
             const pythonScriptPath = join(__dirname, 'recipe-display-scraper.py');
 
-            const py = spawn('python', [pythonScriptPath, wikibooksUrl]);
+            const py = spawn('python3', [pythonScriptPath, wikibooksUrl]);
             let stdoutData = '';
 
             py.on('error', (err) => {
