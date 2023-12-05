@@ -1,12 +1,9 @@
 import React, { useState, useEffect, useContext, useRef } from 'react'
 import Slider from '@mui/material-next/Slider'
 import Dialog from '@mui/material/Dialog'
-import DialogContent from '@mui/material/DialogContent'
 import { MainContext } from '../MainContext'
 import "./RecipePool.css"
-import DOMPurify from 'dompurify'
-import DisplayRecipe from './RecipeDialog'
-import HTMLModifier from "./HTMLModifier.js"
+import RecipeDialog from './RecipeDialog'
 
 const RecipePool = ({ recipes }) => {
   const [selectedRecipe, setSelectedRecipe] = useState(null)
@@ -71,7 +68,7 @@ const RecipePool = ({ recipes }) => {
         </div>
       </div>
       {selectedRecipe !== null && (
-        <DisplayRecipe recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} handleDialogClose={handleDialogClose} modifyHTML={modifyHTML} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></DisplayRecipe>
+        <RecipeDialog recipeCompleted={recipeCompleted} selectedRecipe={selectedRecipe} handleDialogClose={handleDialogClose} setSelectedRecipe={setSelectedRecipe} setRecipeCompleted={setRecipeCompleted}></RecipeDialog>
       )}
     </div>
   )
