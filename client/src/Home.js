@@ -115,7 +115,7 @@ function Home({ returningUser, name, pantrySize }) {
                                         "Pick something that is sweet and salty"
                                     </li>
                                     <li className="listElement">
-                                        "Surpise me"
+                                        "Surprise me"
                                     </li>
                                     <li className="listElement">
                                         "I'm Feeling Lucky"
