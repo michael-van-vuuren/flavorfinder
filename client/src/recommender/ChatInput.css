@@ -1,29 +1,34 @@
 .inputDiv {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: center;
+    width: 100%;
 }
 
 .textInputBox {
+    flex-grow: 2;
+    max-width: 48%;
     height: 36px;
-    background-color: #cfcfcf;
+    background-color: rgb(232, 232, 231);
     padding: 8px;
-    border-radius: 5px;
-    font-size: 0.75em;
-    border: none;
-    outline: none;
-    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px gray;
+    font-size: 14px;
+    margin: 10px;
 }
 
 .submitButton {
+    flex-shrink: 0;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 2px 1px 2px gray;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.submitButton:hover {
     background-color: #a9d97f;
     color: white;
-    border-radius: 10px;
-    width: max-content;
-    height: 36px;
-    font-size: 10pt;
 }
