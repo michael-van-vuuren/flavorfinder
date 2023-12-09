@@ -67,11 +67,11 @@ export default class PantryDAO {
     }
   }
 
-  static async deletePantryItem(userId, ingredientIdToDelete) {
+  static async deletePantryItem(userId, idToDelete) {
     try {
       const result = await pantrydb.updateOne(
         { _id: new ObjectId(userId) },
-        { $pull: { pantry: { ingredientId: ingredientIdToDelete } } }
+        { $pull: { pantry: { id: idToDelete } } }
       )
       return result
 

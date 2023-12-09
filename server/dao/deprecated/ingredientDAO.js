@@ -43,9 +43,9 @@ export default class IngredientDAO {
     }
   }
 
-  static async getIngredientImage(ingredientId) {
+  static async getIngredientImage(id) {
     try {
-      const query = { _id: new ObjectId(ingredientId) }
+      const query = { _id: new ObjectId(id) }
       const projection = { _id: 0, image: 1 }
 
       const result = await ingredientdb.find(
