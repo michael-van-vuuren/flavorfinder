@@ -1,4 +1,4 @@
-import UnitConverter from "./unitconverter2.js"
+import UnitConverter from "./unit.js"
 
 class RecipeCalculator {
     static findPartialMatch(p_list, r_list, k) {
@@ -11,9 +11,9 @@ class RecipeCalculator {
         while (i < p_len && j < r_len) {
             let p = p_list[i]
             let r = r_list[j]
-            let p_id = p.ingredientId
+            let p_id = p.id
             let r_id = r.id
-            
+
             if (p_id === r_id && p.quantity >= r.quantity && p.units === r.units) {
                 i++
                 j++
@@ -24,7 +24,7 @@ class RecipeCalculator {
             else if (p_id < r_id) {
                 j++
                 k--
-            } 
+            }
             else {
                 i++
                 k--
@@ -40,16 +40,16 @@ class RecipeCalculator {
     static calculateRecipePool(pantry, recipes, threshold) {
         const recipe_pool = []
         const pantry_ingredients = [...pantry]
-        pantry_ingredients.sort((a,b) => b.ingredientId - a.ingredientId)
+        pantry_ingredients.sort((a, b) => b.id - a.id)
 
         for (const recipe of recipes) {
             const recipe_ingredients = UnitConverter.convertPantryToSI(recipe.ingredients)
             for (let k = threshold; k >= 0; k--) {
                 const matching = this.findPartialMatch(pantry_ingredients, recipe_ingredients, k)
-                if (matching) { 
+                if (matching) {
                     if (!recipe_pool.some(item => item.id === recipe.id)) {
-                        console.log('MATCH FOUND:', recipe)
-                        recipe_pool.push(recipe) 
+                        // console.log('MATCH FOUND:', recipe)
+                        recipe_pool.push(recipe)
                     }
                 }
             }

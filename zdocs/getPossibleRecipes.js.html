@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>getPossibleRecipes.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="RecipeCalculator.html">RecipeCalculator</a><ul class='methods'><li data-type='method'><a href="RecipeCalculator.html#.calculateRecipePool">calculateRecipePool</a></li><li data-type='method'><a href="RecipeCalculator.html#.findPartialMatch">findPartialMatch</a></li></ul></li><li><a href="UnitConverter.html">UnitConverter</a><ul class='methods'><li data-type='method'><a href="UnitConverter.html#.convertPantryToSI">convertPantryToSI</a></li><li data-type='method'><a href="UnitConverter.html#.convertToSI">convertToSI</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">getPossibleRecipes.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import UnitConverter from "./unit.js"
+
+/**
+ * @typedef {Object} Ingredient
+ * @property {string} [Ingredient.name] - The name of the ingredient.
+ * @property {number} Ingredient.id - The unique identifier for the ingredient.
+ * @property {number} Ingredient.quantity - The quantity of the ingredient.
+ * @property {string} Ingredient.units - The original units of measurement for the quantity.
+ * @property {string} [Ingredient.image] - The image URL of the ingredient (optional).
+ */
+
+/**
+ * A class for calculating pantry-recipe matches.
+ *
+ * @class RecipeCalculator
+ */
+class RecipeCalculator {
+    /**
+     * @static
+     * @param {Ingredient[]} p_list - The pantry ingredients.
+     * @param {Ingredient[]} r_list - The recipe ingredients.
+     * @param {number} k - The allowed number of missing ingredients (must be integer).
+     * @returns {boolean} - True if partial match exists.
+     */
+    static findPartialMatch(p_list, r_list, k) {
+        const p_len = p_list.length
+        const r_len = r_list.length
+        const k_store = k
+        let i = 0
+        let j = 0
+
+        while (i &lt; p_len &amp;&amp; j &lt; r_len) {
+            let p = p_list[i]
+            let r = r_list[j]
+            let p_id = p.id
+            let r_id = r.id
+
+            if (p_id === r_id &amp;&amp; p.quantity >= r.quantity &amp;&amp; p.units === r.units) {
+                i++
+                j++
+            }
+            else if (p_id > r_id) {
+                i++
+            }
+            else if (p_id &lt; r_id) {
+                j++
+                k--
+            }
+            else {
+                i++
+                k--
+            }
+
+            if (k &lt; 0) { return false }
+        }
+        if (r_len - j > k) { return false }
+        if (r_len &lt;= k_store) { return false }
+        return true
+    }
+
+    /**
+     * Calculates a pool of recipes that can be prepared with the given pantry ingredients.
+     *
+     * @static
+     * @param {Ingredient[]} pantry - The list of ingredients in the pantry.
+     * @param {Recipe[]} recipes - The list of recipes to consider.
+     * @param {number} threshold - The allowed number of missing ingredients (must be integer).
+     * @returns {Recipe[]} - Returns an array of recipes that can be prepared with the available pantry ingredients.
+     */
+    static calculateRecipePool(pantry, recipes, threshold) {
+        const recipe_pool = []
+        const pantry_ingredients = [...pantry]
+        pantry_ingredients.sort((a, b) => b.id - a.id)
+
+        for (const recipe of recipes) {
+            const recipe_ingredients = UnitConverter.convertPantryToSI(recipe.ingredients)
+            for (let k = threshold; k >= 0; k--) {
+                const matching = this.findPartialMatch(pantry_ingredients, recipe_ingredients, k)
+                if (matching) {
+                    if (!recipe_pool.some(item => item.id === recipe.id)) {
+                        // console.log('MATCH FOUND:', recipe)
+                        recipe_pool.push(recipe)
+                    }
+                }
+            }
+        }
+
+        return recipe_pool
+    }
+}
+
+export default RecipeCalculator
+
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Fri Dec 08 2023 00:52:38 GMT-0800 (Pacific Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

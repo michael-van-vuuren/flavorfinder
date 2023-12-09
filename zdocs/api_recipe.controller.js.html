@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>api/recipe.controller.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="GoogleLoginController.html">GoogleLoginController</a><ul class='methods'><li data-type='method'><a href="GoogleLoginController.html#.apiGetClientId">apiGetClientId</a></li></ul></li><li><a href="GoogleLoginDAO.html">GoogleLoginDAO</a><ul class='methods'><li data-type='method'><a href="GoogleLoginDAO.html#.getClientId">getClientId</a></li><li data-type='method'><a href="GoogleLoginDAO.html#.injectDB">injectDB</a></li></ul></li><li><a href="LLMController.html">LLMController</a></li><li><a href="PantryController.html">PantryController</a><ul class='methods'><li data-type='method'><a href="PantryController.html#.apiAddUser">apiAddUser</a></li></ul></li><li><a href="RecipeCalculator.html">RecipeCalculator</a><ul class='methods'><li data-type='method'><a href="RecipeCalculator.html#.calculateRecipePool">calculateRecipePool</a></li><li data-type='method'><a href="RecipeCalculator.html#.findPartialMatch">findPartialMatch</a></li></ul></li><li><a href="RecipeController.html">RecipeController</a></li><li><a href="UnitConverter.html">UnitConverter</a><ul class='methods'><li data-type='method'><a href="UnitConverter.html#.convertPantryToSI">convertPantryToSI</a></li><li data-type='method'><a href="UnitConverter.html#.convertToSI">convertToSI</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">api/recipe.controller.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { readFile } from 'fs/promises'
+import { join, dirname } from 'path'
+import { fileURLToPath } from 'url'
+import PantryCtrl from './pantry.controller.js'
+import RecipeCalc from '../utility/getPossibleRecipes.js'
+import RecipeDisplayScraperController from './recipe-display-scraper.controller.js'
+import { JSDOM } from 'jsdom';
+
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = dirname(__filename)
+
+/**
+ * Controller class for handling API functionality.
+ * @class RecipeController
+ */
+class RecipeController {
+    static async fetchData(filePath) {
+        try {
+            const data = await readFile(filePath, 'utf-8')
+            return JSON.parse(data)
+        } catch (error) {
+            console.error('error reading or parsing data:', error)
+            throw error
+        }
+    }
+
+    static async serverGetRecipePool(req, res, next) {
+        try {
+            // get threshold and id
+            let threshold = req.params.threshold
+
+            // get recipes
+            const filePath = join(__dirname, '../resources/recipe-with-ingredients2.json')
+            const recipes = await RecipeController.fetchData(filePath)
+
+            // get pantry
+            const pantryResponse = await PantryCtrl.apiGetPantry(req)
+            if (pantryResponse.status === 'error') {
+                console.error('Pantry API error:', pantryResponse.error)
+                res.status(500).json({ error: 'internal server error' })
+                return
+            }
+            const pantry = pantryResponse.data.pantry
+            const possibleRecipes = RecipeCalc.calculateRecipePool(pantry, recipes, threshold)
+
+            const displayReadyRecipes = await Promise.all(possibleRecipes.map(async recipe => {
+                try {
+                    const stdoutData = await RecipeDisplayScraperController.getRecipeDisplay(recipe.link);
+                    // console.log('Received stdout', stdoutData);
+
+                    const dom = new JSDOM(stdoutData);
+                    const document = dom.window.document;
+
+                    const mwBodyContentParagraphs = document.querySelectorAll('.mw-body-content p');
+                    const shortDescription = Array.from(mwBodyContentParagraphs).map(paragraph => paragraph.textContent.trim()).join(', ');
+
+                    // Now, you can return the result from the mapping function
+                    return {
+                        id: recipe.id,
+                        name: recipe.name,
+                        description: stdoutData,
+                        short: shortDescription
+                    };
+                } catch (error) {
+                    console.error('Error:', error);
+                    // Handle the error here, you might want to return some default values or handle it accordingly
+                    return {
+                        id: recipe.id,
+                        name: recipe.name,
+                        description: 'Error fetching description',
+                        short: 'Error fetching short description'
+                    };
+                }
+            }));
+            res.json({ status: 'success', recipes: displayReadyRecipes })
+
+        } catch (error) {
+            console.error('unexpected error:', error)
+            res.status(500).json({ error: 'internal server error' })
+        }
+    }
+
+}
+
+export default RecipeController
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Fri Dec 08 2023 21:48:35 GMT-0800 (Pacific Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

@@ -1,6 +1,4 @@
-
-
-export default class LLMController {
+class LLMController {
     static async serverSendMessage(req, res, next) {
         try {
             const message = req.body.message
@@ -11,3 +9,5 @@ export default class LLMController {
         }
     }
 }
+
+export default LLMController

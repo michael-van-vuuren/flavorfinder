@@ -1,23 +1,71 @@
-import PantryDAO from '../dao/pantryDAO.js'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>api/pantry.controller.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="GoogleLoginController.html">GoogleLoginController</a><ul class='methods'><li data-type='method'><a href="GoogleLoginController.html#.apiGetClientId">apiGetClientId</a></li></ul></li><li><a href="GoogleLoginDAO.html">GoogleLoginDAO</a><ul class='methods'><li data-type='method'><a href="GoogleLoginDAO.html#.getClientId">getClientId</a></li><li data-type='method'><a href="GoogleLoginDAO.html#.injectDB">injectDB</a></li></ul></li><li><a href="LLMController.html">LLMController</a></li><li><a href="PantryController.html">PantryController</a><ul class='methods'><li data-type='method'><a href="PantryController.html#.apiAddUser">apiAddUser</a></li></ul></li><li><a href="RecipeCalculator.html">RecipeCalculator</a><ul class='methods'><li data-type='method'><a href="RecipeCalculator.html#.calculateRecipePool">calculateRecipePool</a></li><li data-type='method'><a href="RecipeCalculator.html#.findPartialMatch">findPartialMatch</a></li></ul></li><li><a href="RecipeController.html">RecipeController</a></li><li><a href="UnitConverter.html">UnitConverter</a><ul class='methods'><li data-type='method'><a href="UnitConverter.html#.convertPantryToSI">convertPantryToSI</a></li><li data-type='method'><a href="UnitConverter.html#.convertToSI">convertToSI</a></li></ul></li></ul><h3><a href="global.html">Global</a></h3>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">api/pantry.controller.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import PantryDAO from '../dao/pantryDAO.js'
 import UnitConverter from '../utility/unit.js'
 
 /**
- * Controller class for Pantry management functionality.
+ * Controller class for handling API functionality.
  * @class PantryController
+ * @api
  */
 class PantryController {
   /**
-   * Add a user pantry to DB.
+   * Add a user to the DB.
    *
    * @static
    * @async
    * @function
-   * @param {Object} req
-   * @param {string} req.user - The user id.
-   * @param {string} req.name - The user's name.
-   * @param {string|Error} res - The new user sub.
+   * @param {Request} req - Include user and name properties.
+   * @param {Response|Error} res - The new user MongoDB _id.
    */
-  static async apiAddUser(req, res, next) {
+  static async apiAddUser(req, res) {
     try {
       const user = req.body.user
       const name = req.body.name
@@ -35,17 +83,6 @@ class PantryController {
     }
   }
 
-  /**
-   * Check if user pantry exists in DB.
-   *
-   * @static
-   * @async
-   * @function
-   * @param {Object} req
-   * @param {string} req.sub - The user sub.
-   * @param {string|Error} res - The new user MongoDB _id.
-   * @returns Returns null if sub not found.
-   */
   static async apiUserExists(req, res, next) {
     try {
       let sub = req.params.sub
@@ -61,18 +98,8 @@ class PantryController {
     }
   }
 
-
-  /**
-   * Get user pantry ingredients.
-   *
-   * @static
-   * @async
-   * @function
-   * @param {Object} req
-   * @param {string} req.id - The user id.
-   * @param {User|Error} res - The user object in DB.
-   * @returns Returns null if sub not found.
-   */
+  // res = [{name: &lt;username>, pantry: {"id":"..","quantity":"..","units":".."},..}]
+  // return when called from recipe.controller.js
   static async apiGetPantry(req, res, next) {
     try {
       let id = req.params.id
@@ -86,7 +113,6 @@ class PantryController {
       }
       const successResponse = { status: 'success', data: userData || [] }
 
-      // switch that sends output to res on external call, returns on internal server call
       if (res) { res.json(successResponse) }
       else { return successResponse }
 
@@ -98,18 +124,7 @@ class PantryController {
     }
   }
 
-  /**
-   * Update the ingredients in a user's pantry.
-   *
-   * @static
-   * @async
-   * @function
-   * @param {Object} req
-   * @param {string} req.userId - The user id.
-   * @param {Ingredient[]} req.newPantry - The pantry object to be added.
-   * @param {Success|Error} res - Responds with success or error.
-   * @returns Returns null if user not found.
-   */
+
   static async apiUpdatePantry(req, res, next) {
     try {
       const userId = req.params.id
@@ -156,17 +171,6 @@ class PantryController {
     return combinedPantry
   }
 
-  /**
-   * Delete an ingredient in a user's pantry.
-   *
-   * @static
-   * @async
-   * @function
-   * @param {Object} req
-   * @param {string} req.id - The user id.
-   * @param {number} req.deleteme - The ingredient id to be deleted.
-   * @param {Success|Error} res - Responds with success or error.
-   */
   static async apiDeletePantryItem(req, res, next) {
     try {
       const userId = req.params.id
@@ -194,4 +198,30 @@ class PantryController {
 
 }
 
-export default PantryController
+export default PantryController</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.2</a> on Fri Dec 08 2023 21:48:35 GMT-0800 (Pacific Standard Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

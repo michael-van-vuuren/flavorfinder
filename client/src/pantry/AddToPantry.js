@@ -44,7 +44,7 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
 
   const createIngredient = () => ({
     name: getIngredientNameById(idSelected),
-    ingredientId: idSelected,
+    id: idSelected,
     quantity: parseFloat(quantitySelected),
     units: unitSelected,
     image: getIngredientImageById(idSelected)
@@ -57,9 +57,9 @@ const AddToPantry = ({ pantryAddition, setPantryAddition, ingredients }) => {
     setPantryAddition(pantryAdditionCopy)
   }
 
-  const isValid = ({ ingredientId, quantity, units }) => {
-    return ingredientId &&
-      ingredients.some((item) => item._id === ingredientId) &&
+  const isValid = ({ id, quantity, units }) => {
+    return id &&
+      ingredients.some((item) => item._id === id) &&
       !isNaN(+quantity) && quantity > 0.0 &&
       units !== "Select Units"
   }

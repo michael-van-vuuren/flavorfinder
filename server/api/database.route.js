@@ -25,11 +25,11 @@ router.route('/clientid')
 // get ingredients for pantry; name and image (server/resources/ingredients.json)
 router.route('/ingredients')
   .get(IngredientCtrl.serverGetIngredients)
-// get expanded-form ingredient
+// get expanded-form ingredient 
 router.route('/ingredient/:id')
   .get(IngredientCtrl.serverGetIngredient)
 
-// chatbot<->llm endpoint
+// chatbot<->llm endpoint (NOT USED)
 router.route('/chatbot')
   .post(LLMCtrl.serverSendMessage)
 

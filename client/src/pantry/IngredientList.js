@@ -7,7 +7,7 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
     <div>
       {
         pantry.map((ingredient, index) => (
-          <li key={index} className={mode ? '' : 'highlight'} onClick={() => handleRowClick(ingredient.name, ingredient.ingredientId)}>
+          <li key={index} className={mode ? '' : 'highlight'} onClick={() => handleRowClick(ingredient.name, ingredient.id)}>
             {ingredient.image && (
               <img
                 className="ingredient-image"
@@ -18,16 +18,16 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
             <div className="row">
               {mode ? (
                 <span className="quantity-display">
-                  {ingredient.units === 'count' ? ingredient.quantity : `${ingredient.quantity}${ingredient.units} of`}
+                  {ingredient.units === 'count' ? ingredient.quantity.toFixed(2) : `${ingredient.quantity.toFixed(2)}${ingredient.units} of`}
                 </span>
               ) : (
                 <span className="quantity-display hidden">
-                  {ingredient.units === 'count' ? ingredient.quantity : `${ingredient.quantity}${ingredient.units} of`}
+                  {ingredient.units === 'count' ? ingredient.quantity.toFixed(2) : `${ingredient.quantity.toFixed(2)}${ingredient.units} of`}
                 </span>
               )}
               <div className="col">
                 {mode ? (
-                  <span className="tag" onClick={(event) => handleTagClick(ingredient.name, ingredient.ingredientId, event)}>
+                  <span className="tag" onClick={(event) => handleTagClick(ingredient.name, ingredient.id, event)}>
                     {pluralizeIngredient(ingredient.name, ingredient.quantity)}
                   </span>
                 ) : (
@@ -37,7 +37,7 @@ function IngredientList({ mode, pantry, removeToggle, handleRowClick, handleTagC
                 )}
               </div>
               {removeToggle && (
-                <button className="remove-button" onClick={() => handleRemove([ingredient.ingredientId, index])}>
+                <button className="remove-button" onClick={() => handleRemove([ingredient.id, index])}>
                   Remove
                 </button>
               )}
